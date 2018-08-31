@@ -31,6 +31,7 @@ bibliography: SOE.bib
 
 # Introduction
 As national and international policy increasingly calls for ecosystem-based management of natural resources, it is important for decision-makers to understand the current status and recent trends of key ecosystem attributes. For example, an ecosystem in a high productivity state may withstand extractive activities better than the same ecosystem in a low productivity state. 
+
 * EBFM sounds hard but it doesnt have to be, here is an example of ecosystem reporting that is useful to managers and how we did it.  Initial drafts followed a format used in another region but managers wanted to know "so what". Here is how we addressed this to produce two relatively automated reports that Councils are now requesting annually. lessons learned could serve as example for other ecosystem reporting efforts.
 
 # Methods
@@ -39,7 +40,7 @@ As national and international policy increasingly calls for ecosystem-based mana
 * put most manager-relevant things first: HUMAN DIMENSIONS instead of salinity, etc
 * keep it short, <25 printed pages
 * keep language non-technical, don't include references etc in report
-* publish technical methods separately for those that are interested (see supplement here; Technical methods as individual rmarkdown documents rolled up into one bookdown.)
+* publish technical methods separately for those that are interested (see [supplement](https://noaa-edab.github.io/tech-memo/); Technical methods as individual rmarkdown documents rolled up into one bookdown.)
 produce in Rmarkdown for reproducibility and ease of conversion to different reports
 * data in standardized format with standardized plotting
 * version control on github
@@ -49,6 +50,8 @@ Councils receive reports in April of each year, main message is whether there ar
 
 # Results
 * the SOE report itself, with parts of both reports as examples (maybe have one report and call out where the other was different)
+The full [Mid-Atlantic State of the Ecosystem 2018](http://www.mafmc.org/s/Tab04_State-of-the-Ecosystem-Apr2018.pdf) and
+[New England State of the Ecosystem 2018](https://s3.amazonaws.com/nefmc.org/2_Ecosystem-Status-Report.pdf) reports are posted as part of the public record on each Fishery Management Council's website. 
 
 # Discussion
 * Rising to the "so what" challenge improved ecosystem reporting in the NE US and has resulted in other analyses of use to managers (e.g. ref risk assessment, hopefully published by then). An effective annual process has evolved where contextual information is presented that can change multiple decisions if necessary (ref Zador, value of qualitative information). Flexibility and responsiveness to audience important, willing to change reporting as manager needs change.
