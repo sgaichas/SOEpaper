@@ -29,9 +29,6 @@ bibliography: SOE.bib
 *- name: Donald Anderson, Amani Bassyouni, Lisa Calvo, Lisa Colburn, Geret DePiper, Deb Duarte, Kevin Friedland, Heather Haas, Mike Hammil, Kimberly Hyde, Loren Kellogg, Kristin Kleisner, Dave Kulis, Chris Melrose, Ryan Morse, Kimberly Murray, Chris Orphanides, Charles Perretti, Karl Roscher, Vincent Saba, Laurel Smith, Mark Terceiro, John Walden, Harvey Walsh, Mark Wuenschel*
 *affiliation: NEFSC and other places, need to sort out, USA*
 
-abstract:  
-
-
 # Introduction
 As national and international policy increasingly calls for ecosystem-based management of natural resources, it is important for decision-makers to understand the current status and recent trends of key ecosystem attributes. For example, an ecosystem in a high productivity state may withstand extractive activities better than the same ecosystem in a low productivity state. 
 * EBFM sounds hard but it doesnt have to be, here is an example of ecosystem reporting that is useful to managers and how we did it.  Initial drafts followed a format used in another region but managers wanted to know "so what". Here is how we addressed this to produce two relatively automated reports that Councils are now requesting annually. lessons learned could serve as example for other ecosystem reporting efforts.
