@@ -57,7 +57,8 @@ library(colorRamps);library(Hmisc);library(rgdal)
 library(maps);library(mapdata);library(raster)
 library(grid);library(stringr);library(png)
 library(ncdf4);library(marmap); library(magick);
-library(knitr); library(readr); library(kableExtra)
+library(knitr); library(readr); library(kableExtra);
+library(multipanelfigure)
 
 
 #get map data and set constants
