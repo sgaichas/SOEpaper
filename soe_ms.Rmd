@@ -523,23 +523,56 @@ Councils receive reports in April of each year, main message is whether there ar
 
 # Results
 The results of this process were the full [Mid-Atlantic State of the Ecosystem 2018](http://www.mafmc.org/s/Tab04_State-of-the-Ecosystem-Apr2018.pdf) and
-[New England State of the Ecosystem 2018](https://s3.amazonaws.com/nefmc.org/2_Ecosystem-Status-Report.pdf) reports delivered in April 2018, which are posted as part of the public record on each Fishery Management Council's website. Here, we highlight key aspects and findings of the reports that arose from the multidiscplinary approach. 
+[New England State of the Ecosystem 2018](https://s3.amazonaws.com/nefmc.org/2_Ecosystem-Status-Report.pdf) reports delivered in April 2018, which are posted as part of the public record on each Fishery Management Council's website. Here, we highlight key aspects and findings of the reports that arose from the multidiscplinary approach. We reproduce the leading pages of the Mid-Atlantic report as an example below, demonstrating the use of conceptual models, place-based spatial units, and alignment of ecosystem indicators with management objectives. Key messages were highlighted in **boldface**, with relevant tables and figures immediately adjacent to the text. 
 
-## Objectives aligned with indicators
+## SOE Report Introduction
+>The purpose of this report is to provide **ecosystem-scale information for fishery managers** to consider along with existing species-scale analyses.  An overview of ecosystem relationships as represented by **a conceptual model helps place more detailed species-level management in context** by highlighting relationships between focal species groups organized by Mid Atlantic Fishery Management Council (MAFMC) Fishery Management Plan (FMP), managed human activities, environmental drivers, habitats, and key ecological links (Fig. \ref{conceptual}). Here, human activities link to high level strategic management objectives. Many components of the conceptual model are represented by indicators in this report, and key paths connecting components and objectives are highlighted.
 
-Table \ref{obj_cats_MAB}
+## SOE Report Executive Summary
+>We have organized this report using a proposed set of **ecosystem-scale objectives** derived from US legislation and current management practices (Table \ref{tab:obj_cats_MAB}). We report indicators at the spatial scale of either the Mid-Atlantic Bight (MAB; Fig. \ref{map}), for Mid Atlantic states, or Northeast US coastwide where appropriate. Indicator spatial scale is noted in each section heading. 
 
-## Place-based spatial units
+### Synthesis of single species status in executive summary
+>The Mid Atlantic Council (MAFMC) is meeting objectives at the managed species (stockwide) level for fishing mortality (F) rates for 8 of 15 stocks and biomass (B) levels for 11 of 15 stocks relative to established reference points (Fig. \ref{KOBE}). The exceptions include high F rates for summer flounder and Atlantic mackerel, low B status for Atlantic mackerel, and likely high F rates for blueline tilefish. Three stocks (*Illex* squid, Northern and Southern monkfish) have unknown status for both F and B, blueline tilefish for B, and longfin squid have unknown F status.
 
-Figure \ref{map}
+### Synthesis across ecosystem indicators in executive summary
+>**Performance against human dimensions objectives is mixed, with declines in seafood production and recreational opportunities but stabilization of fleet numbers and revenue diversity.**  Revenue has seen substantial 
+interannual variability in recent years, driven primarily by increases in prices of benthos (i.e. scallops & clams). Total volume of landings have decreased since at least 2010, with seafood production by both commercial and recreational fisheries declining overall. This corresponds to a stark decrease in recreational fishing effort and participation since 2008, although the number of commercial fleets, and the diversity of revenue generated from those fleets, have been relatively stable in the last few years. The diversity of species revenue, measured at the individual permit level, has also been relatively stable over the past 10 years. However, many communities in the Mid-Atlantic Bight (MAB) that are highly engaged and/or reliant on commercial fishing are socially vulnerable, and **5 of the 6 largest commercial fishing ports in the MAB (in terms of revenue) are heavily dependent on benthic species which are in turn highly vulnerable to climate change.**
+>
+>**Fisheries are currently meeting objectives with respect to protected species bycatch reduction, but climate and ecosystem changes may upset this balance.** Fisheries interactions with harbor porpoise have decreased due to management measures, but climate driven distribution changes for sea turtles may lead to future fishery interactions and potential regulations. In addition, the most endangered species in the system (North Atlantic right whale) may be declining over the most recent few years after a slow but steady increase. **Ecosystem conditions combined with changing distributions may be contributing to the decline and observed unusual mortality event for right whales in 2017.**
+>
+>**Biomass of resource species changes seasonally in this dynamic system.**  Survey biomass trends for aggregated trophic groups of resource species differ in the fall and spring. Larval survey data indicates species diversity has increased in the spring, but no similar shift has been witnessed in the fall. At the lowest trophic level, benthos, including commercial shellfish, show long term increases in both seasons. In contrast, piscivores at higher trophic levels have conflicting long term trends depending on the season sampled. Seasonally divergent aggregate trends require further investigation.
+>
+>**Additional indicators in this report suggest a note of caution for the aggregate productivity of fish species in the region** (fish condition declined and recovered for some species while survey based aggregate “recruitment” has declined overall). These changes in fish productivity may be linked to observed patterns in plankton communities, to changes in habitat, or both.  While there are some long-term productivity trends at the bottom of the food web in the Mid Atlantic, changes in species composition and shifts in seasonal timing may have a greater impact on upper trophic levels. Temperature is increasing in long term sea surface records as well as surface and bottom measurements from surveys. The seasonal temperature signal also shows sustained warming. **Warming waters have impacts on the ecosystem that can be complex due to differential impacts at the species level, including observed shifts in species distribution and changes in productivity as thermal habitats shift.** 
 
-## Conceptual models
+The main body of the report follows the executive summary with more detail on the indicator results. Below we give illustrative examples of SOE reporting from the main body of the report. In the first, we demonstrate how reporting of the same indicator suite was tailored for a single ecological production unit (Mid-Atlantic) and for two ecological production units within one management jurisdiction (New England). This was the first in-depth indicator discussion in each report following the exectuive summary.
 
-Figure \ref{conceptual}
+## Human dimensions objectives first
 
-## Human dimensions first
+### Seafood production (MAB)
+>Seafood production is a stated goal of optimal fishery management as part of the definition of “benefits to the nation” under MSA. Both commercial and recreational fishing contributes to seafood production, the latter for personal consumption, and indicators for each of these human activities track management performance against this objective. 
+>
+>The MAFMC only manages a portion of the total commercial landings that occur in the MAB region.  For example, blue crabs represent a substantial portion of category D (Benthivores) landings. Therefore in 2016, MAFMC accounted for 15% of the Benthivore landings and 12% of the revenue generated from those landings in the MAB.
+>
+Figure \ref{landings} shows the removals for human consumption of trophic groups including both all species landed in the MAB as well as the subset of those removals managed by the MAFMC.  Landings for managed species are all trending up in recent years, but only Benthivore landings are above the long term-mean. There is a significant decline in MAFMC-managed landings of benthos. We note that time series at the Mid-Atlantic regional scale may not include all state landings prior to 1994.
+>
+Total commercial seafood landings from all species and from MAFMC managed species in teh MAB indicate total seafood production. Years prior to 1977 included foreign landings, so we begin the time series in 1986. Recent landings are all domestic fisheries. Looking across all regions, there is a significant recent decrease in seafood landings, indicating high risk to regional domestic seafood production. 
+>
+Recreational seafood landings (as opposed to total landings which include catch and release that are captured under other risk elements/indicators) were used to assess food use of recreationally caught fish in the Mid-Atlantic.
 
-## Synthesis across indicators
+
+### Seafood production (GOM and GB)
+>Seafood production is a stated goal of optimal fishery management as part of the definition of “benefits to the nation” under MSA. Both commercial and recreational fishing contributes to seafood production, the latter for personal consumption, and indicators for each of these human activities track management performance against this objective.  
+>
+Commercial landings include all seafood landings in the region, including species not managed by NEFMC. For example, category D, Benthivores, includes lobsters, which are a substantial portion of the landings and drive increases in landings and revenue. In 2016, NEFSC managed stocks made up from 5%-98% of total landings by category, as detailed below (Table \ref{tab:prop_table_NE}). 
+>
+Figure \ref{landings_NE} shows the removals for human consumption both at the entire EPU level as well as those removals managed by the NEFMC. Landings of piscivores have decreased over the long term in both systems. Benthos landings show no long term trends in either system. Other groups have a decreasing landings trend in either GOM or GB. 
+>
+Total commercial seafood landings from all species and from NEFMC managed species indicate total seafood production in the GOM and GB, which has declined over the long term (Fig. \ref{fig:managed_landings_NE}). 
+>
+Recreational seafood landings (as opposed to total landings which include catch and release that are captured under other risk elements/indicators) were used to assess food use of recreationally caught fish. This trend is also declining (Fig. \ref{fig:rec_catch_NE}). 
+
+## Synthesis across indicators within a section
+
 
 # Discussion
 * Rising to the "so what" challenge improved ecosystem reporting in the NE US and has resulted in other analyses of use to managers (e.g. ref risk assessment, hopefully published by then). An effective annual process has evolved where contextual information is presented that can change multiple decisions if necessary (ref Zador, value of qualitative information). Flexibility and responsiveness to audience important, willing to change reporting as manager needs change.
@@ -569,6 +602,252 @@ knitr::include_graphics(file.path(image.dir, 'SOE_MAB_ConceptMod.png'))
 
 \newpage
 
+
+```{r, fig.cap="Summary of single species status for MAFMC stocks \\label{KOBE}", fig.height=7, fig.width=7, out.width='0.65\\linewidth', fig.align='center', echo = F, message = FALSE, warning = FALSE, eval = T,fig.pos='H'}
+#knitr::include_graphics(file.path(image.dir, 'MAFMC_joint_stocks_2017.pdf'))
+
+dat <- read.csv(file.path(data.dir, "2017assess.csv"))
+
+stocks <- unique(dat$Entity.Name)
+n.stocks <- length(stocks)
+
+decoder <- read.csv(file.path(data.dir,"2017decoder.csv"))
+# set up the headers for most.recent structure - will contain oldest Assessment.Year
+most.recent <- dat[1,]
+most.recent <- most.recent[-1,]
+
+for (i in 1:n.stocks){
+  temp <- dat[dat$Entity.Name == decoder$Entity.Name[i],]
+  most.recent <- rbind(most.recent,temp[temp$Assessment.Year == max(temp$Assessment.Year),])
+}
+#cbind(n.stocks,length(most.recent[,1]))
+
+# get the max of F.Flimit and F.Fmsy and the max of B.Blimit and B.Bmsy
+Frat <- most.recent$F.Fmsy
+Brat <- most.recent$B.Bmsy
+#Frat[6] <- most.recent$F.Flimit[6]  # Ocean Quahog use Flimit because no Fmsy
+#Frat[18] <- 0.88  # hardwire average of the two GOM models for GOM cod
+#Brat[18] <- 0.155 # hardwire average of the two GOM models for GOM cod
+#model averages have been calculated and included in F/Fmsy column in 2017assess.csv
+#cbind(most.recent$Entity.Name,most.recent$F.Flimit,most.recent$F.Fmsy)
+
+# figure out appropriate range for axes WARNING HARD CODED
+#max(Frat,na.rm=T)
+#max(Brat,na.rm=T)
+x.r <- c(0,3)
+y.r <- c(0,3)
+
+# set some colors
+my.col <- rep(NA,n.stocks)
+MA.col <- "blue"
+NE.col <- "blue"
+BO.col <- "purple"
+for (i in 1:n.stocks){
+  if(decoder$Council[i] == "MAFMC") my.col[i] <- MA.col
+  if(decoder$Council[i] == "NEFMC") my.col[i] <- NE.col
+  if(decoder$Council[i] == "Both")  my.col[i] <- BO.col
+}
+
+# create new matrix for plotting
+xx <- as.data.frame(cbind(decoder[,2:8],Frat,Brat,my.col))
+newlist <- as.factor(decoder$Code)
+others <- as.factor(c("7 Skates", "B. Tilefish"))
+sppcodes <- unlist(list(newlist, others))
+MA.unknown <- sppcodes[c(51,3,4,47,48)] #mackerel, Loligo, Illex, monkfish unknown
+#MA.unknown <- decoder$Code[c(1,3,4,8)] #BSB known
+#NE.unknown <- c(decoder$Code[c(14,23,33)],"7 Skates")
+NE.overfished <- sppcodes[c(17,19)] # GB cod, halibut
+NE.unknown <- sppcodes[c(14,23,33,35,37,47,48,50)] #Red deepsea crab,  Offshore hake, GOM winter flounder, Witch flounder, GB YT,2 monkfish, 7 skates unknown
+
+
+# break out the Councils
+MA <- xx[xx$Council == "MAFMC",]
+NE <- xx[xx$Council == "NEFMC",]
+BO <- xx[xx$Council == "Both",]
+MABO<-rbind(MA, BO)
+NEBO<-rbind(NE, BO)
+
+#if(saveplots) png(file = "MAFMC_joint_stocks_2017.png",  units="in", width = 6, height = 6, res=1200)
+plot(MABO$Brat,MABO$Frat,xlim=x.r,ylim=y.r,xlab="B/Bmsy",ylab="F/Fmsy",pch=16,col=my.col[c(1:11,47:49)])
+  abline(v=0.5,lty=2)
+  abline(v=1,lty=3)
+  abline(h=1,lty=2)
+  title(expression("MAFMC " * phantom("and Joint Stocks")), col.main="blue")
+  title(expression(phantom("MAFMC ") * "and " * phantom("Joint Stocks")), col.main="black")
+  title(expression(phantom("MAFMC and ") * "Joint" * phantom(" Stocks")), col.main="purple")
+  title(expression(phantom("MAFMC and Joint") * " Stocks"), col.main="black")  
+  legend('topright',legend=MA.unknown,pch=NA,text.col=my.col[c(1,3,4,47,48)], title="Unknown Status", title.col = "black")
+  text(MABO$Brat,MABO$Frat,labels=MABO$Code,pos=MABO$my.pos3,col=my.col[c(1:11,47:49)],cex=0.8)
+#if(saveplots) savePlot("MAFMC_Joint_stocks.png", type='png')
+#if(saveplots) dev.off()
+
+#if(saveplots) pdf(file = "NEFMC_joint_stocks.pdf",  width = 6, height = 6)
+#if(saveplots) png(file = "NEFMC_joint_stocks.png",  units="in", width = 6, height = 9, res=1200)
+# plot(NEBO$Brat,NEBO$Frat,xlim=x.r,ylim=y.r,xlab="B/Bmsy",ylab="F/Fmsy",pch=16,col=my.col[12:49])
+#    abline(v=0.5,lty=2)
+#    abline(v=1,lty=3)
+#    abline(h=1,lty=2)
+#    title(expression("NEFMC " * phantom("and Joint Stocks")), col.main="blue")
+#    title(expression(phantom("NEFMC ") * "and " * phantom("Joint Stocks")), col.main="black")
+#    title(expression(phantom("NEFMC and ") * "Joint" * phantom(" Stocks")), col.main="purple")
+#    title(expression(phantom("NEFMC and Joint") * " Stocks"), col.main="black")  
+#    legend('topright',legend=NE.overfished,pch=NA,title="Overfished, F \nStatus Unknown",bty="n", text.width=strwidth("Offshore Hake"), inset=c(0,.05))
+#    legend('right',legend=NE.unknown,pch=NA,title="Unknown Status", bty="n")
+#    text(NEBO$Brat,NEBO$Frat,labels=NEBO$Code,pos=NEBO$my.pos3,col=my.col[12:49],cex=0.8)
+#if(saveplots) savePlot("NEFMC_Joint_stocks.png", type='png')
+#if(saveplots) dev.off()
+
+```
+
+\newpage
+
+```{r seafood_landings_MAB, fig.cap="MAFMC seafood specific landings (red) and total commericial landings (black). A: Apex predators, B: Piscivore, C: Planktivore, D: Benthivore, E: Benthos \\label{landings}",echo = F, warning = F, include = T, fig.asp=0.78, fig.align='center',fig.pos='H', out.width='0.7\\linewidth'}
+
+## Ecosystem-wide and managed species total landings
+opar <- par(mfrow = c(5, 1), mar = c(0, 0, 0, 0), oma = c(4, 6.5, 2, 6))
+
+soe.plot(SOE.data.2018, "Time","Apex Predator Landings MAB", stacked = "A",status = F,
+         endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 1,end.start = 2007, x.start = 1986,
+         ymin = FALSE, y.lower = 0 )
+
+soe.plot(SOE.data.2018, "Time", "Piscivore Landings MAB", stacked = "B",status = F,
+         endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1986,
+         ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
+         y.var2 = "Piscivore MAFMC managed species sea food MAB")
+
+soe.plot(SOE.data.2018, "Time", "Planktivore Landings MAB", stacked = "C",status = F,
+         endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1986,
+         ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
+         y.var2 = "Planktivore MAFMC managed species sea food MAB")
+
+soe.plot(SOE.data.2018, "Time", "Benthivore Landings MAB", stacked = "D",status = F,
+         endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1986,
+         ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
+         y.var2 = "Benthivore MAFMC managed species sea food MAB")
+
+soe.plot(SOE.data.2018, "Time", "Benthos Landings MAB", stacked = "E",status = F,
+         endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1986,
+         ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
+         y.var2 = "Benthos MAFMC managed species sea food MAB")
+
+soe.stacked.axis("Year", expression("Landings, 10"^3*"metric tons"), x.line = 2.7)
+
+```
+
+
+
+```{r managed_landings, fig.cap="Total commercial seafood landings (black), MAFMC managed seafood landings (red)", echo=F, message=FALSE, warning=FALSE , fig.asp=0.35, fig.align = 'center',fig.pos='H'}
+
+opar <- par(mar = c(4, 6, 2, 6))
+
+soe.plot(SOE.data.2018, "Time", "Total Landings MAB", rel.y.text = 1, 
+         rel.y.num = 1.1, scale.axis = 10^3, end.start = 2007, x.start = 1986,
+         ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
+         y.var2 = "Total managed landings MAB", x.label = 'Year', y.line = 2.7,
+         y.label = expression('Landings, 10'^3 * 'metric tons'))
+
+```
+
+
+
+```{r rec_catch_MAB, fig.cap="Total recreational harvest  \\label{recfood}", echo = F, message=F, include=T, warning=F, fig.asp=0.35, fig.align = 'center',fig.pos='H'}
+
+opar <- par(mar = c(4, 6, 2, 6))
+
+soe.plot(SOE.data.2018, "Time", "Recreational Seafood MA", scale.axis = 10^6,
+         end.start = 2008, x.label = 'Year', rel.y.text = 1, rel.y.num = 1.1,
+         y.line = 2.5, y.label = expression("Fish caught, 10"^6 *" n"))
+```
+
+
+
+```{r seafood_landings_GOM,  fig.cap = "Total landings (black) and total seafood specific landings managed by NEFMC (red) in Gulf of Maine (left) and Georges Bank (right) (A: Apex predators, B: Piscivore, C: Planktivore, D: Benthivore, E: Benthos).\\label{landings_NE}", echo = F, fig.show='hold',fig.height = 5.5, fig.align='default',out.width='.49\\linewidth',warning = F, message = F,fig.pos='H'}
+
+## Gulf of Maine cosystem-wide and managed species total landings
+opar <- par(mfrow = c(5, 1), mar = c(0, 0, 0, 0), oma = c(4, 6.5, 2, 6))
+
+soe.plot(SOE.data.2018, "Time","Apex Predator Landings GOM", stacked = "A",status = F,
+         endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
+         ymin = FALSE, y.lower = 0, cex.stacked = 2)
+
+soe.plot(SOE.data.2018, "Time", "Piscivore Landings GOM", stacked = "B",status = F,
+         endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
+         ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
+         y.var2 = "Piscivore NEFMC managed species sea food GOM", mean_line = T, cex.stacked = 2)
+
+
+soe.plot(SOE.data.2018, "Time", "Planktivore Landings GOM", stacked = "C",status = F,
+         endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
+         ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
+         y.var2 ="Planktivore NEFMC managed species sea food GOM", mean_line = T, cex.stacked = 2)
+soe.plot(SOE.data.2018, "Time", "Benthivore Landings GOM", stacked = "D",status = F,
+         endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
+         ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
+         y.var2 = "Benthivore NEFMC managed species sea food GOM", mean_line = T, cex.stacked = 2)
+soe.plot(SOE.data.2018, "Time", "Benthos Landings GOM", stacked = "E",status = F,
+         endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
+         ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
+         y.var2 = "Benthos NEFMC managed species sea food GOM", mean_line = T, cex.stacked = 2)
+soe.stacked.axis("Time",expression("Landings, 10"^3*"metric tons"), outer = T)
+
+## Goerges Bank ecosystem-wide and managed species total landings
+opar <- par(mfrow = c(5, 1), mar = c(0, 0, 0, 0), oma = c(4, 6.5, 2, 6))
+
+soe.plot(SOE.data.2018, "Time","Apex Predator Landings GB", stacked = "A",status = F,
+         endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
+         ymin = FALSE, y.lower = 0, cex.stacked = 2)
+
+soe.plot(SOE.data.2018, "Time", "Piscivore Landings GB", stacked = "B",status = F,
+         endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
+         ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
+         y.var2 = "Piscivore NEFMC managed species sea food GB", mean_line = T, cex.stacked = 2)
+
+
+soe.plot(SOE.data.2018, "Time", "Planktivore Landings GB", stacked = "C",status = F,
+         endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
+         ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
+         y.var2 ="Planktivore NEFMC managed species sea food GB", mean_line = T, cex.stacked = 2)
+soe.plot(SOE.data.2018, "Time", "Benthivore Landings GB", stacked = "D",status = F,
+         endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
+         ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
+         y.var2 = "Benthivore NEFMC managed species sea food GB", mean_line = T, cex.stacked = 2)
+soe.plot(SOE.data.2018, "Time", "Benthos Landings GB", stacked = "E",status = F,
+         endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
+         ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
+         y.var2 = "Benthos NEFMC managed species sea food GB", mean_line = T, cex.stacked = 2)
+soe.stacked.axis("Time",expression("Landings, 10"^3*"metric tons"), outer = T)
+
+```
+
+
+ 
+```{r managed_landings_NE, fig.cap = "Total landings (black) and total landings managed by NEFMC (red) in Gulf of Maine (A) and Georges Bank (B).", echo=F, message=FALSE, warning=FALSE , fig.asp=.5, fig.align = 'center'}
+opar <- par(mfrow = c(2, 1), mar = c(0, 0, 0, 0), oma = c(4, 6, 2, 6))
+
+soe.plot(SOE.data.2018, "Time", "Total Landings GOM", stacked = "A",status = F,
+         endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
+         ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
+         y.var2 =  "Total managed landings GOM")
+soe.plot(SOE.data.2018, "Time", "Total Landings GB", stacked = "B",status = F,
+         endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
+         ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
+         y.var2 =  "Total managed landings GB")
+soe.stacked.axis("Time",expression("Landings, 10"^3*"metric tons"), outer = T, rel.x.text = 1.2, rel.y.text = 1.2)
+```
+
+
+
+```{r rec_catch_NE, fig.cap = "Recreational seafood landings in New England.",echo = F, message=F, include=T, warning=F,fig.asp = 0.45, fig.align = 'center',fig.pos='H'}
+opar <- par(mar = c(4, 6, 2, 6))
+
+soe.plot(SOE.data.2018, "Time", "Recreational Seafood NE", stacked = NA, status = F, full.trend = T,
+         scale.axis = 10^6,end.start = 2007, suppressAxis = T)
+soe.stacked.axis("Time",expression("Fish caught, 10"^6*" n"), outer = F, rel.x.text = 1.2, rel.y.text = 1.2)
+
+```
+
+\newpage
+
 # Tables
 
 **Table 1**: Mid-Atlantic ecosystem objectives
@@ -589,7 +868,56 @@ tabl <- "
 cat(tabl) # output the table in a format good for HTML/PDF/docx conversion
 ```
 
-\newpage
+**Table 2**: Proportion of landings and revenue derived from managed species in the Mid-Atlantic region. 
+```{r prop_landings_rev_MAB, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
+tabl <- "
+| Groups          | MAB Landings| MAB Revenue|
+|:----------------|:------------|:-----------|
+| Piscivore       | 0.16        | 0.50       |
+| Planktivore     | 0.64        | 0.93       |
+| Benthivore      | 0.15        | 0.12       |
+| Benthos         | 0.62        | 0.10       |
+"
+cat(tabl) # output the table in a format good for HTML/PDF/docx conversion
+```
 
+
+```{r prop_table_NE,echo = F, results = 'asis', fig.width=5, fig.align = 'center', eval = T}
+#Use this to create table of proportion of landings/revenue derived from NEFMC species (stargazer produces latex. Set eval = F)
+#library(stargazer)
+#convert to kable
+gom_landings <- SOE.data.2018[grepl("GOM Landings 2016", SOE.data.2018$Var),]$Value
+gom_landings <- gom_landings[c(1,3,2,4)]
+joint_gom_landings <- SOE.data.2018[grepl("GOM Joint Landings 2016", SOE.data.2018$Var),]$Value
+joint_gom_landings <- joint_gom_landings[c(1,3,2,4)]
+
+gb_landings <- SOE.data.2018[grepl("GB Landings 2016", SOE.data.2018$Var),]$Value
+gb_landings <- gb_landings[c(1,3,2,4)]
+
+joint_gb_landings <- SOE.data.2018[grepl("GB Joint Landings 2016", SOE.data.2018$Var),]$Value
+joint_gb_landings <- joint_gb_landings[c(1,3,2,4)]
+
+gom_revenue <- SOE.data.2018[grepl("GOM Revenue 2016", SOE.data.2018$Var),]$Value
+joint_gom_revenue <- SOE.data.2018[grepl("GOM Joint Revenue 2016", SOE.data.2018$Var),]$Value
+gom_revenue <- gom_revenue[c(1,3,2,4)]
+
+gb_revenue <- SOE.data.2018[grepl("GB Revenue 2016", SOE.data.2018$Var),]$Value
+joint_gb_revenue <- SOE.data.2018[grepl("GB Joint Revenue 2016", SOE.data.2018$Var),]$Value
+joint_gom_revenue <- joint_gom_revenue[c(1,3,2,4)]
+
+df <- data.frame(Groups = c("Piscivore","Planktivore","Benthivore","Benthos"),
+                 gom_landings = gom_landings+joint_gom_landings,
+                 gb_landings = gb_landings+joint_gb_landings,
+                 
+                 gom_revenue = gom_revenue + joint_gom_revenue,
+                 gb_revenue = gb_revenue + joint_gb_revenue)
+                 
+
+names(df) <- c("Groups", "GOM Landings", "GB Landings", "GOM Revenue",
+                "GB Revenue")
+
+kable(df, digits=2, caption = "Proportion managed by NEFMC")
+#stargazer(df, summary = F, rownames = T, title = "Proportion of catch managed by NEFMC (2016)", header = F)
+```
 
 
