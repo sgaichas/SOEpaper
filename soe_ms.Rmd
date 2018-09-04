@@ -532,7 +532,7 @@ The results of this process were the full [Mid-Atlantic State of the Ecosystem 2
 >We have organized this report using a proposed set of **ecosystem-scale objectives** derived from US legislation and current management practices (Table \ref{tab:obj_cats_MAB}). We report indicators at the spatial scale of either the Mid-Atlantic Bight (MAB; Fig. \ref{map}), for Mid Atlantic states, or Northeast US coastwide where appropriate. Indicator spatial scale is noted in each section heading. 
 
 ### Synthesis of single species status in executive summary
->The Mid Atlantic Council (MAFMC) is meeting objectives at the managed species (stockwide) level for fishing mortality (F) rates for 8 of 15 stocks and biomass (B) levels for 11 of 15 stocks relative to established reference points (Fig. \ref{KOBE}). The exceptions include high F rates for summer flounder and Atlantic mackerel, low B status for Atlantic mackerel, and likely high F rates for blueline tilefish. Three stocks (*Illex* squid, Northern and Southern monkfish) have unknown status for both F and B, blueline tilefish for B, and longfin squid have unknown F status.
+>**We also report single-species status relative to established objectives and reference points**. The Mid Atlantic Council (MAFMC) is meeting objectives at the managed species (stockwide) level for fishing mortality (F) rates for 8 of 15 stocks and biomass (B) levels for 11 of 15 stocks relative to established reference points (Fig. \ref{KOBE}). The exceptions include high F rates for summer flounder and Atlantic mackerel, low B status for Atlantic mackerel, and likely high F rates for blueline tilefish. Three stocks (*Illex* squid, Northern and Southern monkfish) have unknown status for both F and B, blueline tilefish for B, and longfin squid have unknown F status.
 
 ### Synthesis across ecosystem indicators in executive summary
 >**Performance against human dimensions objectives is mixed, with declines in seafood production and recreational opportunities but stabilization of fleet numbers and revenue diversity.**  Revenue has seen substantial 
@@ -544,7 +544,7 @@ interannual variability in recent years, driven primarily by increases in prices
 >
 >**Additional indicators in this report suggest a note of caution for the aggregate productivity of fish species in the region** (fish condition declined and recovered for some species while survey based aggregate “recruitment” has declined overall). These changes in fish productivity may be linked to observed patterns in plankton communities, to changes in habitat, or both.  While there are some long-term productivity trends at the bottom of the food web in the Mid Atlantic, changes in species composition and shifts in seasonal timing may have a greater impact on upper trophic levels. Temperature is increasing in long term sea surface records as well as surface and bottom measurements from surveys. The seasonal temperature signal also shows sustained warming. **Warming waters have impacts on the ecosystem that can be complex due to differential impacts at the species level, including observed shifts in species distribution and changes in productivity as thermal habitats shift.** 
 
-The main body of the report follows the executive summary with more detail on the indicator results. Below we give illustrative examples of SOE reporting from the main body of the report. In the first, we demonstrate how reporting of the same indicator suite was tailored for a single ecological production unit (Mid-Atlantic) and for two ecological production units within one management jurisdiction (New England). This was the first in-depth indicator discussion in each report following the exectuive summary.
+The main body of the report follows the executive summary with more detail on the indicator results. The full set of report sections and includes indicators of fishery performance, human community vulnerability, fishery interactions with protected species, resource species trends, and ecosystem consitions and productivity (Table \ref{SOEcontents}). Below we give illustrative examples of SOE reporting from the main body of the report. In the first, we demonstrate how reporting of the same indicator suite was tailored for a single ecological production unit (Mid-Atlantic) and for two ecological production units within one management jurisdiction (New England). This was the first in-depth indicator discussion in each report following the exectuive summary.
 
 ## Human dimensions objectives first
 
@@ -587,21 +587,18 @@ Recreational seafood landings (as opposed to total landings which include catch 
 
 # Figures
 
+```{r conceptual, fig.cap="Mid-Atlantic Ecosystem \\label{conceptual}", fig.height=6, fig.width=4, out.width='\\linewidth', fig.align='center', echo = F, message = FALSE, warning = FALSE, eval = T,fig.pos='H'}
+knitr::include_graphics(file.path(image.dir, 'SOE_MAB_ConceptMod.png'))
+
+```
+\newpage
+
 ```{r map, fig.cap="Mid Atlantic Bight (MAB) spatial extent \\label{map}", fig.height=6, fig.width=4, out.width='0.8\\linewidth', fig.align='center', echo = F, message = FALSE, warning = FALSE, eval = T}
 image_read(file.path(image.dir,"NEshelfEcoRegionsALL.png")) %>%
 image_trim()
 
 ```
-
 \newpage
-
-```{r conceptual, fig.cap="Mid-Atlantic Ecosystem \\label{conceptual}", fig.height=6, fig.width=4, out.width='\\linewidth', fig.align='center', echo = F, message = FALSE, warning = FALSE, eval = T,fig.pos='H'}
-knitr::include_graphics(file.path(image.dir, 'SOE_MAB_ConceptMod.png'))
-
-```
-
-\newpage
-
 
 ```{r, fig.cap="Summary of single species status for MAFMC stocks \\label{KOBE}", fig.height=7, fig.width=7, out.width='0.65\\linewidth', fig.align='center', echo = F, message = FALSE, warning = FALSE, eval = T,fig.pos='H'}
 #knitr::include_graphics(file.path(image.dir, 'MAFMC_joint_stocks_2017.pdf'))
@@ -867,6 +864,19 @@ tabl <- "
 "
 cat(tabl) # output the table in a format good for HTML/PDF/docx conversion
 ```
+
+```{r SOEcontents, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
+SOEcont <- "
+| Report Section       | Indicators included                                  |
+|:---------------------|:-----------------------------------------------------|
+| Human Dimensions     | Landings by feeding guild, mariculture                    |
+| Protected Species    | Revenue by feeding guild                                  |
+| Resource Species     | Number of anglers and trips; recreational catch           |
+| Ecosystem Conditions | Diversity indices (fishery and species)                   |
+"
+
+```
+
 
 **Table 2**: Proportion of landings and revenue derived from managed species in the Mid-Atlantic region. 
 ```{r prop_landings_rev_MAB, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
