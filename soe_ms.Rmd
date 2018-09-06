@@ -699,7 +699,7 @@ plot(MABO$Brat,MABO$Frat,xlim=x.r,ylim=y.r,xlab="B/Bmsy",ylab="F/Fmsy",pch=16,co
 
 \newpage
 
-```{r seafood_landings_MAB, fig.cap="Mid Atlantic seafood production indicators. A: Mid-Atlantic Council managed seafood landings (red) and total commercial landings (black) by feeding guild. B: Mid-Atlantic Council managed seafood landings (red) and total commercial landings (black) summed across guilds. C: Total recreational harvest. \\label{landings}",echo = F, warning = F, include = T, fig.align='center', fig.pos='H'}
+```{r seafood_landings_MAB, fig.cap="Mid Atlantic seafood production indicators. A: Mid-Atlantic Council managed seafood landings (red) and total commercial landings (black) by feeding guild. B: Mid Atlantic Council managed seafood landings (red) and total commercial landings (black) summed across guilds. C: Total recreational harvest in the Mid Atlantic. \\label{landings}",echo = F, warning = F, include = T, fig.align='center', fig.keep='last'}
 
 ## Figure dimensions
 figureX <- multi_panel_figure(
@@ -709,29 +709,29 @@ figureX <- multi_panel_figure(
 ## Ecosystem-wide and managed species total landings by feeding guild
 ## A: Apex predators, B: Piscivore, C: Planktivore, D: Benthivore, E: Benthos
 guildland <- capture_base_plot({
-  opar <- par(mfrow = c(5, 1), mar = c(0, 0, 0, 0), oma = c(4, 6.5, 2, 6))
+  opar <- par(mfrow = c(5, 1), mar = c(0, 0, 0, 0), oma = c(4, 4, 1, 1))
   
   soe.plot(SOE.data.2018, "Time","Apex Predator Landings MAB", stacked = "Apex predators",status = F,
-           endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 1,end.start = 2007, x.start = 1986,
+           endshade = T, rel.y.num = 0.8, full.trend = T, scale.axis = 1,end.start = 2007, x.start = 1986,
            ymin = FALSE, y.lower = 0 )
   
   soe.plot(SOE.data.2018, "Time", "Piscivore Landings MAB", stacked = "Piscivores",status = F,
-           endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1986,
+           endshade = T, rel.y.num = 0.8, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1986,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
            y.var2 = "Piscivore MAFMC managed species sea food MAB")
   
   soe.plot(SOE.data.2018, "Time", "Planktivore Landings MAB", stacked = "Planktivores",status = F,
-           endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1986,
+           endshade = T, rel.y.num = 0.8, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1986,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
            y.var2 = "Planktivore MAFMC managed species sea food MAB")
   
   soe.plot(SOE.data.2018, "Time", "Benthivore Landings MAB", stacked = "Benthivores",status = F,
-           endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1986,
+           endshade = T, rel.y.num = 0.8, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1986,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
            y.var2 = "Benthivore MAFMC managed species sea food MAB")
   
   soe.plot(SOE.data.2018, "Time", "Benthos Landings MAB", stacked = "Benthos",status = F,
-           endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1986,
+           endshade = T, rel.y.num = 0.8, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1986,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
            y.var2 = "Benthos MAFMC managed species sea food MAB")
   
@@ -743,56 +743,30 @@ figureX <- fill_panel(figureX, guildland, row = 1:2, column = 1)
 
 ## Ecosystem-wide and managed species total landings
 totland <- capture_base_plot({
-  #opar <- par(mar = c(4, 6, 2, 6))
+  opar <- par(mfrow = c(1, 1))#, mar = c (4, 4, 1, 1))
   
-  soe.plot(SOE.data.2018, "Time", "Total Landings MAB", rel.y.text = 1, 
-           rel.y.num = 1.1, scale.axis = 10^3, end.start = 2007, x.start = 1986,
+  soe.plot(SOE.data.2018, "Time", "Total Landings MAB", point.cex = 1, rel.y.text = 1, 
+           rel.y.num = 0.8, scale.axis = 10^3, end.start = 2007, x.start = 1986,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
-           y.var2 = "Total managed landings MAB", x.label = 'Year', y.line = 2.7,
+           y.var2 = "Total managed landings MAB", x.label = 'Year', #y.line = 2.5,
            y.label = expression('Landings, 10'^3 * 'metric tons'))
   
 })
 
 figureX <- fill_panel(figureX, totland, row = 1, column = 2)
 
-# ## Recreational landings
-# recland <-capture_base_plot({
-#   #opar <- par(mar = c(4, 6, 2, 6))
-#   soe.plot(SOE.data.2018, "Time", "Recreational Seafood MA", scale.axis = 10^6,
-#            end.start = 2008, x.label = 'Year', rel.y.text = 1, rel.y.num = 1.1,
-#            y.line = 2.5, y.label = expression("Fish caught, 10"^6 *" n"))
-# })
-# 
-# figureX <- fill_panel(figureX, recland, row = 2, column = 2)
+## Recreational landings
+recland <-capture_base_plot({
+  #opar <- par(mfrow = c(1, 1))
+  soe.plot(SOE.data.2018, "Time", "Recreational Seafood MA", point.cex = 1, scale.axis = 10^6,
+           end.start = 2008, x.label = 'Year', rel.y.text = 1, rel.y.num = 0.8, #y.line = 2.5, 
+           y.label = expression("Fish caught, 10"^6 *" n"))
+})
+
+figureX <- fill_panel(figureX, recland, row = 2, column = 2)
 
 figureX
 ```
-
-
-
-```{r managed_landings, fig.cap="Total commercial seafood landings (black), MAFMC managed seafood landings (red)", echo=F, message=FALSE, warning=FALSE , fig.asp=0.35, fig.align = 'center',fig.pos='H'}
-
-opar <- par(mar = c(4, 6, 2, 6))
-
-soe.plot(SOE.data.2018, "Time", "Total Landings MAB", rel.y.text = 1, 
-         rel.y.num = 1.1, scale.axis = 10^3, end.start = 2007, x.start = 1986,
-         ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
-         y.var2 = "Total managed landings MAB", x.label = 'Year', y.line = 2.7,
-         y.label = expression('Landings, 10'^3 * 'metric tons'))
-
-```
-
-
-
-```{r rec_catch_MAB, fig.cap="Total recreational harvest  \\label{recfood}", echo = F, message=F, include=T, warning=F, fig.asp=0.35, fig.align = 'center',fig.pos='H'}
-
-opar <- par(mar = c(4, 6, 2, 6))
-
-soe.plot(SOE.data.2018, "Time", "Recreational Seafood MA", scale.axis = 10^6,
-         end.start = 2008, x.label = 'Year', rel.y.text = 1, rel.y.num = 1.1,
-         y.line = 2.5, y.label = expression("Fish caught, 10"^6 *" n"))
-```
-
 
 
 ```{r seafood_landings_GOM,  fig.cap = "Total landings (black) and total seafood specific landings managed by NEFMC (red) in Gulf of Maine (left) and Georges Bank (right) (A: Apex predators, B: Piscivore, C: Planktivore, D: Benthivore, E: Benthos).\\label{landings_NE}", echo = F, fig.show='hold',fig.height = 5.5, fig.align='default',out.width='.49\\linewidth',warning = F, message = F,fig.pos='H'}
