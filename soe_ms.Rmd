@@ -735,7 +735,7 @@ guildland <- capture_base_plot({
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
            y.var2 = "Benthos MAFMC managed species sea food MAB")
   
-  soe.stacked.axis("Year", expression("Landings, 10"^3*"metric tons"), x.line = 2.7)
+  soe.stacked.axis("Year", expression("Landings, 10"^3*"metric tons"), x.line = 2.7, y.line=2)
 })
 
 ## Fill the panels
@@ -748,7 +748,7 @@ totland <- capture_base_plot({
   soe.plot(SOE.data.2018, "Time", "Total Landings MAB", point.cex = 1, rel.y.text = 1, 
            rel.y.num = 0.8, scale.axis = 10^3, end.start = 2007, x.start = 1986,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
-           y.var2 = "Total managed landings MAB", x.label = 'Year', #y.line = 2.5,
+           y.var2 = "Total managed landings MAB", x.label = 'Year', y.line = 2,
            y.label = expression('Landings, 10'^3 * 'metric tons'))
   
 })
@@ -759,7 +759,7 @@ figureX <- fill_panel(figureX, totland, row = 1, column = 2)
 recland <-capture_base_plot({
   #opar <- par(mfrow = c(1, 1))
   soe.plot(SOE.data.2018, "Time", "Recreational Seafood MA", point.cex = 1, scale.axis = 10^6,
-           end.start = 2008, x.label = 'Year', rel.y.text = 1, rel.y.num = 0.8, #y.line = 2.5, 
+           end.start = 2008, x.label = 'Year', rel.y.text = 1, rel.y.num = 0.8, y.line = 2, 
            y.label = expression("Fish caught, 10"^6 *" n"))
 })
 
