@@ -211,7 +211,8 @@ fit_lm <- function(dat) {
 soe.plot <- function(data, x.var, y.var, x.label = '', y.label = '', tol = 0.1,
                      x.start = NA, x.end = NA, end.start = 2008, bg.col = background, mean_line = T,
                      end.col = recent, stacked = NA, x.line = 2.5, y.line = 3.5, scale.axis = 1,
-                     rel.y.num = 1.5, rel.y.text = 1.5, suppressAxis = FALSE,status  = F,anomaly = F,
+                     rel.y.num = 1.5, rel.y.text = 1.5, rel.x.text = 1, rel.x.num = 1,
+                     suppressAxis = FALSE, status  = F, anomaly = F,
                      endshade = TRUE, full.trend = TRUE, point.cex = 1.5, lwd = 2, ymax = TRUE,ymin = TRUE,
                      y.upper = y.upper, y.lower = y.lower, extra = FALSE, x.var2 = x.var2, y.var2 = y.var2,
                      line.forward = FALSE, mean_line.2 = T, cex.stacked = 1) {
@@ -291,7 +292,7 @@ soe.plot <- function(data, x.var, y.var, x.label = '', y.label = '', tol = 0.1,
   
   #Add axis
   if (suppressAxis == FALSE){
-    if(is.na(stacked)) axis(1, cex.axis = 1)
+    if(is.na(stacked)) axis(1, cex.axis = rel.x.num) # SKG changed from default of 1, put rel.x.num=1 as default in function call
     if(!is.na(stacked)){
       if(stacked!= 'A') axis(3, cex.axis = 1.5, tck = 0.1, labels = F)
     }
@@ -306,7 +307,7 @@ soe.plot <- function(data, x.var, y.var, x.label = '', y.label = '', tol = 0.1,
     #Add axis labels
     if(!is.na(stacked)) text(u[1], u[4], labels = stacked, cex = cex.stacked, adj = c(-0.5, 1.5))
     if(is.na(stacked)){
-      mtext(1, text = x.label, line = x.line, cex = 1)
+      mtext(1, text = x.label, line = x.line, cex = rel.x.text) #SKG changed from hardcoded cex = 1 for x axis, added default of 1 in function call
       mtext(2, text = y.label, line = y.line, cex = rel.y.text)
     }
   
@@ -709,33 +710,34 @@ figureX <- multi_panel_figure(
 ## Ecosystem-wide and managed species total landings by feeding guild
 ## A: Apex predators, B: Piscivore, C: Planktivore, D: Benthivore, E: Benthos
 guildland <- capture_base_plot({
-  opar <- par(mfrow = c(5, 1), mar = c(0, 0, 0, 0), oma = c(4, 4, 1, 1))
+  opar <- par(mfrow = c(5, 1), mar = c(0, 0, 0, 0), oma = c(3, 3.5, 1, 1))
   
   soe.plot(SOE.data.2018, "Time","Apex Predator Landings MAB", stacked = "Apex predators",status = F,
-           endshade = T, rel.y.num = 0.8, full.trend = T, scale.axis = 1,end.start = 2007, x.start = 1986,
+           endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 1,end.start = 2007, x.start = 1986,
            ymin = FALSE, y.lower = 0 )
   
   soe.plot(SOE.data.2018, "Time", "Piscivore Landings MAB", stacked = "Piscivores",status = F,
-           endshade = T, rel.y.num = 0.8, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1986,
+           endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1986,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
            y.var2 = "Piscivore MAFMC managed species sea food MAB")
   
   soe.plot(SOE.data.2018, "Time", "Planktivore Landings MAB", stacked = "Planktivores",status = F,
-           endshade = T, rel.y.num = 0.8, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1986,
+           endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1986,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
            y.var2 = "Planktivore MAFMC managed species sea food MAB")
   
   soe.plot(SOE.data.2018, "Time", "Benthivore Landings MAB", stacked = "Benthivores",status = F,
-           endshade = T, rel.y.num = 0.8, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1986,
+           endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1986,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
            y.var2 = "Benthivore MAFMC managed species sea food MAB")
   
   soe.plot(SOE.data.2018, "Time", "Benthos Landings MAB", stacked = "Benthos",status = F,
-           endshade = T, rel.y.num = 0.8, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1986,
+           endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1986,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
            y.var2 = "Benthos MAFMC managed species sea food MAB")
   
-  soe.stacked.axis("Year", expression("Landings, 10"^3*"metric tons"), x.line = 2.7, y.line=2)
+  soe.stacked.axis("Year", expression("Landings, 10"^3*" tons"), x.line = 2, 
+                   rel.x.text = 0.8, y.line=2, rel.y.text = 0.8)
 })
 
 ## Fill the panels
@@ -743,13 +745,14 @@ figureX <- fill_panel(figureX, guildland, row = 1:2, column = 1)
 
 ## Ecosystem-wide and managed species total landings
 totland <- capture_base_plot({
-  opar <- par(mfrow = c(1, 1))#, mar = c (4, 4, 1, 1))
+  opar <- par(mfrow = c(1, 1), mar = c (2, 2, 0, 0), oma = c(4, 2.5, 1.8, 1))
   
-  soe.plot(SOE.data.2018, "Time", "Total Landings MAB", point.cex = 1, rel.y.text = 1, 
-           rel.y.num = 0.8, scale.axis = 10^3, end.start = 2007, x.start = 1986,
+  soe.plot(SOE.data.2018, "Time", "Total Landings MAB", point.cex = 1, rel.y.text = 0.8, 
+           rel.y.num = 0.6, scale.axis = 10^3, end.start = 2007, x.start = 1986,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
            y.var2 = "Total managed landings MAB", x.label = 'Year', y.line = 2,
-           y.label = expression('Landings, 10'^3 * 'metric tons'))
+           rel.x.text = 0.8, rel.x.num = 0.6, x.line = 2,
+           y.label = expression('Landings, 10'^3 * ' tons'))
   
 })
 
@@ -759,7 +762,8 @@ figureX <- fill_panel(figureX, totland, row = 1, column = 2)
 recland <-capture_base_plot({
   #opar <- par(mfrow = c(1, 1))
   soe.plot(SOE.data.2018, "Time", "Recreational Seafood MA", point.cex = 1, scale.axis = 10^6,
-           end.start = 2008, x.label = 'Year', rel.y.text = 1, rel.y.num = 0.8, y.line = 2, 
+           end.start = 2008, x.label = 'Year', rel.y.text = 0.8, rel.y.num = 0.6, y.line = 2,
+           rel.x.text = 0.8, rel.x.num = 0.6, x.line = 2,
            y.label = expression("Fish caught, 10"^6 *" n"))
 })
 
