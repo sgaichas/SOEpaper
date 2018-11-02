@@ -524,7 +524,32 @@ The results of this process were the full [Mid-Atlantic State of the Ecosystem 2
 >The purpose of this report is to provide **ecosystem-scale information for fishery managers** to consider along with existing species-scale analyses.  An overview of ecosystem relationships as represented by **a conceptual model helps place more detailed species-level management in context** by highlighting relationships between focal species groups organized by Mid Atlantic Fishery Management Council (MAFMC) Fishery Management Plan (FMP), managed human activities, environmental drivers, habitats, and key ecological links (Fig. \@ref(fig:conceptual). Here, human activities link to high level strategic management objectives. Many components of the conceptual model are represented by indicators in this report, and key paths connecting components and objectives are highlighted.
 
 ## SOE Report Executive Summary
->We have organized this report using a proposed set of **ecosystem-scale objectives** derived from US legislation and current management practices (Table \@ref(tab:objcatsMAB). We report indicators at the spatial scale of either the Mid-Atlantic Bight (MAB; Fig. \@ref(fig:map)), for Mid Atlantic states, or Northeast US coastwide where appropriate. Indicator spatial scale is noted in each section heading. 
+>We have organized this report using a proposed set of **ecosystem-scale objectives** derived from US legislation and current management practices (Table \@ref(tab:objcatsMAB)). We report indicators at the spatial scale of either the Mid-Atlantic Bight (MAB; Fig. \@ref(fig:map)), for Mid Atlantic states, or Northeast US coastwide where appropriate. Indicator spatial scale is noted in each section heading. 
+
+```{r objcatsMAB, echo=FALSE, message=FALSE, warning=FALSE}
+tabl <- "
+|Objective Categories|Indicators Reported Here|
+|:-------------------------|:----------------------------------------------------------|
+| Seafood production       | Landings by feeding guild, mariculture                    |
+| Profits                  | Revenue by feeding guild                                  |
+| Recreation               | Number of anglers and trips; recreational catch           |
+| Stability                | Diversity indices (fishery and species)                   |
+| Social-Cultural          | Commercial and recreational reliance; social vulnerability|
+| Biomass                  | Biomass or abundance by feeding guild from surveys        |
+| Productivity             | Condition and recruitment of MAFMC managed species        |
+| Trophic structure        | Relative biomass of feeding guilds, primary productivity  |
+| Habitat                  | Thermal habitat projections, estimated habitat occurrence |
+"
+#cat(tabl) # output the table in a format good for HTML/PDF/docx conversion
+
+df<-read_delim(tabl, delim="|")
+df<-df[-c(1,2) ,c("Objective Categories","Indicators Reported Here")]
+knitr::kable(
+  df, booktabs = TRUE,
+  caption = 'Ecosystem-level management objectives.'
+)
+```
+
 
 ### Synthesis of single species status in executive summary
 >**We also report single-species status relative to established objectives and reference points**. The Mid Atlantic Council (MAFMC) is meeting objectives at the managed species (stockwide) level for fishing mortality (F) rates for 8 of 15 stocks and biomass (B) levels for 11 of 15 stocks relative to established reference points (Fig. \@ref(fig:KOBE)). The exceptions include high F rates for summer flounder and Atlantic mackerel, low B status for Atlantic mackerel, and likely high F rates for blueline tilefish. Three stocks (*Illex* squid, Northern and Southern monkfish) have unknown status for both F and B, blueline tilefish for B, and longfin squid have unknown F status.
@@ -539,7 +564,43 @@ interannual variability in recent years, driven primarily by increases in prices
 >
 >**Additional indicators in this report suggest a note of caution for the aggregate productivity of fish species in the region** (fish condition declined and recovered for some species while survey based aggregate “recruitment” has declined overall). These changes in fish productivity may be linked to observed patterns in plankton communities, to changes in habitat, or both.  While there are some long-term productivity trends at the bottom of the food web in the Mid Atlantic, changes in species composition and shifts in seasonal timing may have a greater impact on upper trophic levels. Temperature is increasing in long term sea surface records as well as surface and bottom measurements from surveys. The seasonal temperature signal also shows sustained warming. **Warming waters have impacts on the ecosystem that can be complex due to differential impacts at the species level, including observed shifts in species distribution and changes in productivity as thermal habitats shift.** 
 
-The main body of the report follows the executive summary with more detail on the indicator results. The full set of report sections and includes indicators of fishery performance, human community vulnerability, fishery interactions with protected species, resource species trends, and ecosystem consitions and productivity (Table \@ref(SOEcontents)). Many indicators aggregate species by similar functional groups (Table \@ref(tab:guilds)). Below we give illustrative examples of SOE reporting from the main body of the report. In the first, we demonstrate how reporting of the same indicator suite was tailored for a single ecological production unit (Mid-Atlantic) and for two ecological production units within one management jurisdiction (New England). This was the first in-depth indicator discussion in each report following the exectuive summary.
+The main body of the report follows the executive summary with more detail on the indicator results. The full set of report sections and includes indicators of fishery performance, human community vulnerability, fishery interactions with protected species, resource species trends, and ecosystem consitions and productivity (Table \@ref(tab:SOEcontents)). Many indicators aggregate species by similar functional groups (Table \@ref(tab:speciesgroupingsMAB)). 
+
+```{r SOEcontents, echo=FALSE, message=FALSE, warning=FALSE}
+
+SOEcont <- read.csv(file.path(data.dir,"indicatortable.csv"))
+knitr::kable(SOEcont, format = "latex", booktabs = T, caption = 'Report sections, indicators, and scale of information.') %>%
+  kable_styling(font_size=10, latex_options=c("repeat_header", "scale_down")) %>%
+  column_spec(1, width="3cm") %>%
+  column_spec(2:3, width="7cm") %>%
+  collapse_rows(columns = 1, latex_hline = "major", valign = "middle")
+
+```
+
+
+```{r speciesgroupingsMAB, echo=FALSE, message=FALSE, warning=FALSE}
+tabl <- "
+|Group|N species|Major species in the group|
+|:------------------|:-------|:--------------------------------------------|
+| A: **Apex predator** (Highest trophic level)   |  4  | shark (Unc.), swordfish, yellowfin and bluefin tuna |
+| B: **Piscivore** (Eat fish)                    |  23 | spiny dogfish, summer flounder, bluefish, striped bass, weakfish, monkfish, winter and thorny skates, silver and offshore hake, Atlantic cod and halibut, fourspot flounder |
+| C: **Planktivore** (Eat plankton)              |  16 | Atlantic and blueback herring, alewife, shad, menhaden, cusk, Atlantic mackerel, butterfish, blackbelly rosefish, sculpins, lumpfish, northern searobin, northern sand lance, northern shortfin and longfin squid |
+| D: **Benthivore** (Eat bottom dwellers)       |  25 | black sea bass, scup, tilefish, tautog, cunner, blue crab, red crab, lobster, ocean pout, haddock, yellowtail, winter, and witch flounders, barndoor skate, American plaice, other crabs|
+| E: **Benthos**  (Filter feeders)               |  9  |  scallops, surfclam, quahog, mussels, whelks, conchs, sand dollars and urchins |
+"
+#cat(tabl) # output the table in a format good for HTML/PDF/docx conversion
+df<-read_delim(tabl, delim="|")
+df<-df[-c(1,2) ,c("Group","N species", "Major species in the group")]
+knitr::kable(df, booktabs = TRUE, caption = 'Feeding guilds (formatted for Mid-Atlantic report).') %>%
+  kable_styling(font_size=10, latex_options=c("repeat_header", "scale_down")) %>%
+  column_spec(1, width="6cm") %>%
+  column_spec(2, width="2cm") %>%
+  column_spec(3, width="7.5cm") #%>%
+  #collapse_rows(columns = 1, latex_hline = "major", valign = "middle")
+
+```
+
+Below we give illustrative examples of SOE reporting from the main body of the report. In the first, we demonstrate how reporting of the same indicator suite was tailored for a single ecological production unit (Mid-Atlantic) and for two ecological production units within one management jurisdiction (New England). This was the first in-depth indicator discussion in each report following the executive summary.
 
 ## Human dimensions objectives first
 
@@ -547,20 +608,77 @@ The main body of the report follows the executive summary with more detail on th
 >Seafood production is a stated goal of optimal fishery management as part of the definition of “benefits to the nation” under MSA. Both commercial and recreational fishing contributes to seafood production, the latter for personal consumption, and indicators for each of these human activities track management performance against this objective. 
 >
 >The MAFMC only manages a portion of the total commercial landings that occur in the MAB region.  For example, blue crabs represent a substantial portion of category D (Benthivores) landings (Table \@ref(tab:proplandingsrevMAB)). Therefore in 2016, MAFMC accounted for 15% of the Benthivore landings and 12% of the revenue generated from those landings in the MAB.
+
+```{r proplandingsrevMAB, echo=FALSE, message=FALSE, warning=FALSE}
+tabl <- "
+|Groups|MAB Landings|MAB Revenue|
+|:----------------|:------------|:-----------|
+| Piscivore       | 0.16        | 0.50       |
+| Planktivore     | 0.64        | 0.93       |
+| Benthivore      | 0.15        | 0.12       |
+| Benthos         | 0.62        | 0.10       |
+"
+#cat(tabl) # output the table in a format good for HTML/PDF/docx conversion
+
+df<-read_delim(tabl, delim="|")
+df<-df[-c(1,2) ,c("Groups","MAB Landings", "MAB Revenue")]
+knitr::kable(
+  df, booktabs = TRUE,
+  caption = 'Proportion of landings and revenue derived from managed species in the Mid-Atlantic region.'
+)
+```
 >
-Figure \@ref(fig:seafoodlandingsMAB) shows the removals for human consumption of trophic groups including both all species landed in the MAB as well as the subset of those removals managed by the MAFMC.  Landings for managed species are all trending up in recent years, but only Benthivore landings are above the long term-mean. There is a significant decline in MAFMC-managed landings of benthos. We note that time series at the Mid-Atlantic regional scale may not include all state landings prior to 1994.
+>Figure \@ref(fig:seafoodlandingsMAB) shows the removals for human consumption of trophic groups including both all species landed in the MAB as well as the subset of those removals managed by the MAFMC.  Landings for managed species are all trending up in recent years, but only Benthivore landings are above the long term-mean. There is a significant decline in MAFMC-managed landings of benthos. We note that time series at the Mid-Atlantic regional scale may not include all state landings prior to 1994.
 >
-Total commercial seafood landings from all species and from MAFMC managed species in the MAB indicate total seafood production. Years prior to 1977 included foreign landings, so we begin the time series in 1986. Recent landings are all domestic fisheries. Looking across all regions, there is a significant recent decrease in seafood landings, indicating high risk to regional domestic seafood production. 
+>Total commercial seafood landings from all species and from MAFMC managed species in the MAB indicate total seafood production. Years prior to 1977 included foreign landings, so we begin the time series in 1986. Recent landings are all domestic fisheries. Looking across all regions, there is a significant recent decrease in seafood landings, indicating high risk to regional domestic seafood production. 
 >
-Recreational seafood landings (as opposed to total landings which include catch and release that are captured under other risk elements/indicators) were used to assess food use of recreationally caught fish in the Mid-Atlantic.
+>Recreational seafood landings (as opposed to total landings which include catch and release that are captured under other risk elements/indicators) were used to assess food use of recreationally caught fish in the Mid-Atlantic.
 
 
 ### Seafood production (GOM and GB)
 >Seafood production is a stated goal of optimal fishery management as part of the definition of “benefits to the nation” under MSA. Both commercial and recreational fishing contributes to seafood production, the latter for personal consumption, and indicators for each of these human activities track management performance against this objective.  
 >
 Commercial landings include all seafood landings in the region, including species not managed by NEFMC. For example, category D, Benthivores, includes lobsters, which are a substantial portion of the landings and drive increases in landings and revenue. In 2016, NEFSC managed stocks made up from 5%-98% of total landings by category, as detailed below (Table \@ref{tab:proptableNE}). 
+
+```{r proptableNE, echo = F, message=FALSE, warning=FALSE}
+#Use this to create table of proportion of landings/revenue derived from NEFMC species (stargazer produces latex. Set eval = F)
+#library(stargazer)
+#convert to kable
+gom_landings <- SOE.data.2018[grepl("GOM Landings 2016", SOE.data.2018$Var),]$Value
+gom_landings <- gom_landings[c(1,3,2,4)]
+joint_gom_landings <- SOE.data.2018[grepl("GOM Joint Landings 2016", SOE.data.2018$Var),]$Value
+joint_gom_landings <- joint_gom_landings[c(1,3,2,4)]
+
+gb_landings <- SOE.data.2018[grepl("GB Landings 2016", SOE.data.2018$Var),]$Value
+gb_landings <- gb_landings[c(1,3,2,4)]
+
+joint_gb_landings <- SOE.data.2018[grepl("GB Joint Landings 2016", SOE.data.2018$Var),]$Value
+joint_gb_landings <- joint_gb_landings[c(1,3,2,4)]
+
+gom_revenue <- SOE.data.2018[grepl("GOM Revenue 2016", SOE.data.2018$Var),]$Value
+joint_gom_revenue <- SOE.data.2018[grepl("GOM Joint Revenue 2016", SOE.data.2018$Var),]$Value
+gom_revenue <- gom_revenue[c(1,3,2,4)]
+
+gb_revenue <- SOE.data.2018[grepl("GB Revenue 2016", SOE.data.2018$Var),]$Value
+joint_gb_revenue <- SOE.data.2018[grepl("GB Joint Revenue 2016", SOE.data.2018$Var),]$Value
+joint_gom_revenue <- joint_gom_revenue[c(1,3,2,4)]
+
+df <- data.frame(Groups = c("Piscivore","Planktivore","Benthivore","Benthos"),
+                 gom_landings = gom_landings+joint_gom_landings,
+                 gb_landings = gb_landings+joint_gb_landings,
+                 
+                 gom_revenue = gom_revenue + joint_gom_revenue,
+                 gb_revenue = gb_revenue + joint_gb_revenue)
+                 
+
+names(df) <- c("Groups", "GOM Landings", "GB Landings", "GOM Revenue",
+                "GB Revenue")
+
+kable(df, booktabs = TRUE, digits=2, caption = "Proportion managed by NEFMC")
+#stargazer(df, summary = F, rownames = T, title = "Proportion of catch managed by NEFMC (2016)", header = F)
+```
 >
-Figure \ref{fig:seafoodlandingsGOM} shows the removals for human consumption both at the entire EPU level as well as those removals managed by the NEFMC. Landings of piscivores have decreased over the long term in both systems. Benthos landings show no long term trends in either system. Other groups have a decreasing landings trend in either GOM or GB. 
+Figure \ref{fig:seafoodlandingsGOM} shows the removals for human consumption both at the entire EPU level as well as those removals managed by the NEFMC. Landings of piscivores have decreased over the long term in both systems. Benthos landings show no long term trends in either system. Other groups have a decreasing landings trend in either GOM or GB.
 >
 Total commercial seafood landings from all species and from NEFMC managed species indicate total seafood production in the GOM and GB, which has declined over the long term (Fig. \ref{fig:managedlandingsNE}). 
 >
@@ -850,129 +968,4 @@ soe.plot(SOE.data.2018, "Time", "Recreational Seafood NE", stacked = NA, status 
 soe.stacked.axis("Time",expression("Fish caught, 10"^6*" n"), outer = F, rel.x.text = 1.2, rel.y.text = 1.2)
 
 ```
-
-\newpage
-
-# Tables
-
-```{r objcatsMAB, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
-tabl <- "
-|Objective Categories|Indicators Reported Here|
-|:-------------------------|:----------------------------------------------------------|
-| Seafood production       | Landings by feeding guild, mariculture                    |
-| Profits                  | Revenue by feeding guild                                  |
-| Recreation               | Number of anglers and trips; recreational catch           |
-| Stability                | Diversity indices (fishery and species)                   |
-| Social-Cultural          | Commercial and recreational reliance; social vulnerability|
-| Biomass                  | Biomass or abundance by feeding guild from surveys        |
-| Productivity             | Condition and recruitment of MAFMC managed species        |
-| Trophic structure        | Relative biomass of feeding guilds, primary productivity  |
-| Habitat                  | Thermal habitat projections, estimated habitat occurrence |
-"
-#cat(tabl) # output the table in a format good for HTML/PDF/docx conversion
-
-df<-read_delim(tabl, delim="|")
-df<-df[-c(1,2) ,c("Objective Categories","Indicators Reported Here")]
-knitr::kable(
-  df, booktabs = TRUE,
-  caption = 'Ecosystem-level management objectives.'
-)
-```
-
-\newpage
-
-```{r SOEcontents, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
-
-SOEcont <- read.csv(file.path(data.dir,"indicatortable.csv"))
-knitr::kable(SOEcont, format = "latex", booktabs = T, caption = 'Report sections, indicators, and scale of information.') %>%
-  kable_styling(font_size=10, latex_options=c("repeat_header", "scale_down")) %>%
-  column_spec(1, width="3cm") %>%
-  column_spec(2:3, width="7cm") %>%
-  collapse_rows(columns = 1, latex_hline = "major", valign = "middle")
-
-```
-
-\newpage
-
-```{r speciesgroupingsMAB, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
-tabl <- "
-|Group|N species|Major species in the group|
-|:------------------|:-------|:--------------------------------------------|
-| A: **Apex predator** (Highest trophic level)   |  4  | shark (Unc.), swordfish, yellowfin and bluefin tuna |
-| B: **Piscivore** (Eat fish)                    |  23 | spiny dogfish, summer flounder, bluefish, striped bass, weakfish, monkfish, winter and thorny skates, silver and offshore hake, Atlantic cod and halibut, fourspot flounder |
-| C: **Planktivore** (Eat plankton)              |  16 | Atlantic and blueback herring, alewife, shad, menhaden, cusk, Atlantic mackerel, butterfish, blackbelly rosefish, sculpins, lumpfish, northern searobin, northern sand lance, northern shortfin and longfin squid |
-| D: **Benthivore** (Eat bottom dwellers)       |  25 | black sea bass, scup, tilefish, tautog, cunner, blue crab, red crab, lobster, ocean pout, haddock, yellowtail, winter, and witch flounders, barndoor skate, American plaice, other crabs|
-| E: **Benthos**  (Filter feeders)               |  9  |  scallops, surfclam, quahog, mussels, whelks, conchs, sand dollars and urchins |
-"
-#cat(tabl) # output the table in a format good for HTML/PDF/docx conversion
-df<-read_delim(tabl, delim="|")
-df<-df[-c(1,2) ,c("Group","N species", "Major species in the group")]
-knitr::kable(df, booktabs = TRUE, caption = 'Feeding guilds (formatted for Mid-Atlantic report).') %>%
-  kable_styling(font_size=10, latex_options=c("repeat_header", "scale_down")) %>%
-  column_spec(1, width="6cm") %>%
-  column_spec(2, width="2cm") %>%
-  column_spec(3, width="7.5cm") #%>%
-  #collapse_rows(columns = 1, latex_hline = "major", valign = "middle")
-
-```
-
-
-```{r proplandingsrevMAB, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
-tabl <- "
-|Groups|MAB Landings|MAB Revenue|
-|:----------------|:------------|:-----------|
-| Piscivore       | 0.16        | 0.50       |
-| Planktivore     | 0.64        | 0.93       |
-| Benthivore      | 0.15        | 0.12       |
-| Benthos         | 0.62        | 0.10       |
-"
-#cat(tabl) # output the table in a format good for HTML/PDF/docx conversion
-
-df<-read_delim(tabl, delim="|")
-df<-df[-c(1,2) ,c("Groups","MAB Landings", "MAB Revenue")]
-knitr::kable(
-  df, booktabs = TRUE,
-  caption = 'Proportion of landings and revenue derived from managed species in the Mid-Atlantic region.'
-)
-```
-
-
-```{r proptableNE,echo = F, message=FALSE, warnings=FALSE, results = 'asis'}
-#Use this to create table of proportion of landings/revenue derived from NEFMC species (stargazer produces latex. Set eval = F)
-#library(stargazer)
-#convert to kable
-gom_landings <- SOE.data.2018[grepl("GOM Landings 2016", SOE.data.2018$Var),]$Value
-gom_landings <- gom_landings[c(1,3,2,4)]
-joint_gom_landings <- SOE.data.2018[grepl("GOM Joint Landings 2016", SOE.data.2018$Var),]$Value
-joint_gom_landings <- joint_gom_landings[c(1,3,2,4)]
-
-gb_landings <- SOE.data.2018[grepl("GB Landings 2016", SOE.data.2018$Var),]$Value
-gb_landings <- gb_landings[c(1,3,2,4)]
-
-joint_gb_landings <- SOE.data.2018[grepl("GB Joint Landings 2016", SOE.data.2018$Var),]$Value
-joint_gb_landings <- joint_gb_landings[c(1,3,2,4)]
-
-gom_revenue <- SOE.data.2018[grepl("GOM Revenue 2016", SOE.data.2018$Var),]$Value
-joint_gom_revenue <- SOE.data.2018[grepl("GOM Joint Revenue 2016", SOE.data.2018$Var),]$Value
-gom_revenue <- gom_revenue[c(1,3,2,4)]
-
-gb_revenue <- SOE.data.2018[grepl("GB Revenue 2016", SOE.data.2018$Var),]$Value
-joint_gb_revenue <- SOE.data.2018[grepl("GB Joint Revenue 2016", SOE.data.2018$Var),]$Value
-joint_gom_revenue <- joint_gom_revenue[c(1,3,2,4)]
-
-df <- data.frame(Groups = c("Piscivore","Planktivore","Benthivore","Benthos"),
-                 gom_landings = gom_landings+joint_gom_landings,
-                 gb_landings = gb_landings+joint_gb_landings,
-                 
-                 gom_revenue = gom_revenue + joint_gom_revenue,
-                 gb_revenue = gb_revenue + joint_gb_revenue)
-                 
-
-names(df) <- c("Groups", "GOM Landings", "GB Landings", "GOM Revenue",
-                "GB Revenue")
-
-kable(df, booktabs = TRUE, digits=2, caption = "Proportion managed by NEFMC")
-#stargazer(df, summary = F, rownames = T, title = "Proportion of catch managed by NEFMC (2016)", header = F)
-```
-
 
