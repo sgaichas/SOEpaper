@@ -9,7 +9,7 @@ date: '`r format(Sys.Date(), "%B %d, %Y")`'
 abstract: |
   Understanding the context of ecosystem status and trends is important for making informed natural resource management decisions. However, many fishery management systems are fully occupied with decisions at the species or stock level, and busy managers are reluctant to consider extensive reports with unfamiliar information if the connection to current management decisions and objectives are unclear. Here, we describe the process used to develop streamlined ecosystem reporting to meet management needs in two US fishery management regions, New England and the Mid-Atlantic. A multi-disciplinary team was assembled to revise an initial report that had been based on a format used in another US region. First, ecosystem indicators were clearly aligned with stated fishery management objectives. Second, objectives and associated indicators relating to human well-being (e.g., seafood production) were placed first in the report, rather than last. Third, standardized visualizations were used for time series and maps. Finally, reports used transparent and reproducible production methods to meet management deadlines. Engagement with managers is ongoing to further improve the utility of the report. This approach to streamlined, audience-specific ecosystem reporting is flexible and adaptable to many different governance contexts, and can be used to provide information essential to implement ecosystem based management.  
 keywords: ecosystem approach, natural resource management, fisheries, integrated ecosystem assessment, ecosystem indicators, economic indicators, management objectives
-bibliography: SOE.bib
+bibliography: ["SOE.bib", "packages.bib"]
 output: 
   bookdown::pdf_book:
     includes:
@@ -37,6 +37,11 @@ csl: plos.csl
 load(file.path(data.dir, "SOE_data_2018.Rdata"))
 # latex figure folder
 knitr::opts_chunk$set(echo = FALSE, fig.path = './iea_figs_ne/')
+
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
 
 #The map_figs option can be set to FALSE to skip making maps on the fly (they will be missing). Or TRUE to make them. 
 map_figs <- T
@@ -502,14 +507,14 @@ As national and international policy increasingly calls for ecosystem-based mana
 * EBFM sounds hard but it doesnt have to be, here is an example of ecosystem reporting that is useful to managers and how we did it.  Initial drafts followed a format used in another region but managers wanted to know "so what". Here is how we addressed this to produce two relatively automated reports that Councils are now requesting annually. lessons learned could serve as example for other ecosystem reporting efforts.
 
 # Methods
-* build on existing efforts inside and outside the region; ESRs, SOE west coast
-* address OBJECTIVES, clearly align indicators with objectives (IEA process, WGNARS)
+* build on existing efforts inside and outside the region; ESRs @program_ecosystem_2012, SOE west coast
+* address OBJECTIVES, clearly align indicators with objectives (IEA process, WGNARS, @depiper_operationalizing_2017)
 * conceptual model links environmental drivers, ecosystem components, human activities, and objectives
 * put most manager-relevant things first: HUMAN DIMENSIONS instead of salinity, etc
 * keep it short, <25 printed pages
 * keep language non-technical, don't include references etc in report
-* publish technical methods separately for those that are interested (see [supplement](https://noaa-edab.github.io/tech-memo/); Technical methods as individual rmarkdown documents rolled up into one bookdown.)
-produce in Rmarkdown for reproducibility and ease of conversion to different reports
+* publish technical methods separately for those that are interested (see [supplement](https://noaa-edab.github.io/tech-memo/); Technical methods as individual rmarkdown documents rolled up into one bookdown [@R-bookdown].)
+* produce in Rmarkdown [@R-rmarkdown] for reproducibility and ease of conversion to different reports
 * data in standardized format with standardized plotting
 * version control on github
 * production process: first years, one lead asking for data from multiple people, inefficient. 2017: workshop to develop outline in August with managers to focus further, smaller working groups (human dimensions, protected species, etc) developing new section until December, when data were needed. Mid-January 2018 synthesis meeting, report production Feb, internal review, revision, and to initial Council review early March 2018.
