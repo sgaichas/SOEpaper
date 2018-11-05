@@ -525,10 +525,12 @@ Councils receive reports in April of each year, main message is whether there ar
 The results of this process were the full [Mid-Atlantic State of the Ecosystem 2018](http://www.mafmc.org/s/Tab04_State-of-the-Ecosystem-Apr2018.pdf) and
 [New England State of the Ecosystem 2018](https://s3.amazonaws.com/nefmc.org/2_Ecosystem-Status-Report.pdf) reports delivered in April 2018, which are posted as part of the public record on each Fishery Management Council's website. Here, we highlight key aspects and findings of the reports that arose from the multidiscplinary approach. We reproduce the leading pages of the Mid-Atlantic report as an example below, demonstrating the use of conceptual models, place-based spatial units, and alignment of ecosystem indicators with management objectives. Key messages were highlighted in **boldface**, with relevant tables and figures immediately adjacent to the text. 
 
-## SOE Report Introduction
+## Priority: summarize report purpose, structure, and synthetic results in 2-3 pages
+
+### Purpose: SOE Report Introduction
 >The purpose of this report is to provide **ecosystem-scale information for fishery managers** to consider along with existing species-scale analyses.  An overview of ecosystem relationships as represented by **a conceptual model helps place more detailed species-level management in context** by highlighting relationships between focal species groups organized by Mid Atlantic Fishery Management Council (MAFMC) Fishery Management Plan (FMP), managed human activities, environmental drivers, habitats, and key ecological links (Fig. \@ref(fig:conceptual). Here, human activities link to high level strategic management objectives. Many components of the conceptual model are represented by indicators in this report, and key paths connecting components and objectives are highlighted.
 
-## SOE Report Executive Summary
+### Structure with management objectives: SOE Report Executive Summary
 >We have organized this report using a proposed set of **ecosystem-scale objectives** derived from US legislation and current management practices (Table \@ref(tab:objcatsMAB)). We report indicators at the spatial scale of either the Mid-Atlantic Bight (MAB; Fig. \@ref(fig:map)), for Mid Atlantic states, or Northeast US coastwide where appropriate. Indicator spatial scale is noted in each section heading. 
 
 ```{r objcatsMAB, echo=FALSE, message=FALSE, warning=FALSE}
@@ -552,7 +554,8 @@ df<-df[-c(1,2) ,c("Objective Categories","Indicators Reported Here")]
 knitr::kable(
   df, booktabs = TRUE,
   caption = 'Ecosystem-level management objectives.'
-)
+) %>%
+  kable_styling(latex_options=c("hold_position")) 
 ```
 
 
@@ -575,7 +578,7 @@ The main body of the report follows the executive summary with more detail on th
 
 SOEcont <- read.csv(file.path(data.dir,"indicatortable.csv"))
 knitr::kable(SOEcont, format = "latex", booktabs = T, caption = 'Report sections, indicators, and scale of information.') %>%
-  kable_styling(font_size=10, latex_options=c("repeat_header", "scale_down")) %>%
+  kable_styling(font_size=10, latex_options=c("repeat_header", "scale_down", "hold_position")) %>%
   column_spec(1, width="3cm") %>%
   column_spec(2:3, width="7cm") %>%
   collapse_rows(columns = 1, latex_hline = "major", valign = "middle")
@@ -597,7 +600,7 @@ tabl <- "
 df<-read_delim(tabl, delim="|")
 df<-df[-c(1,2) ,c("Group","N species", "Major species in the group")]
 knitr::kable(df, booktabs = TRUE, caption = 'Feeding guilds (formatted for Mid-Atlantic report).') %>%
-  kable_styling(font_size=10, latex_options=c("repeat_header", "scale_down")) %>%
+  kable_styling(font_size=10, latex_options=c("repeat_header", "scale_down", "hold_position")) %>%
   column_spec(1, width="6cm") %>%
   column_spec(2, width="2cm") %>%
   column_spec(3, width="7.5cm") #%>%
@@ -605,11 +608,11 @@ knitr::kable(df, booktabs = TRUE, caption = 'Feeding guilds (formatted for Mid-A
 
 ```
 
-Below we give illustrative examples of SOE reporting from the main body of the report. In the first, we demonstrate how reporting of the same indicator suite was tailored for a single ecological production unit (Mid-Atlantic) and for two ecological production units within one management jurisdiction (New England). This was the first in-depth indicator discussion in each report following the executive summary.
+Below we give two illustrative examples of SOE reporting from the main body of the report illustrating the priorities for addressing "so what." In the first, we demonstrate how reporting of the same indicator suite was tailored for a single ecological production unit (Mid-Atlantic) and for two ecological production units within one management jurisdiction (New England). This was the first in-depth indicator discussion in each report following the executive summary. In the second example, we demonstrate synthesis across multiple indicators within a report section using the physical oceaographic and low trophic level indicators connecting to managed species in the Mid-Atlantic. 
 
-## Human dimensions objectives first
+## Priority: Put human dimensions objectives first
 
-### Seafood production (MAB)
+### Mid Atlantic report text: Seafood production (MAB)
 >Seafood production is a stated goal of optimal fishery management as part of the definition of “benefits to the nation” under MSA. Both commercial and recreational fishing contributes to seafood production, the latter for personal consumption, and indicators for each of these human activities track management performance against this objective. 
 >
 >The MAFMC only manages a portion of the total commercial landings that occur in the MAB region.  For example, blue crabs represent a substantial portion of category D (Benthivores) landings (Table \@ref(tab:proplandingsrevMAB)). Therefore in 2016, MAFMC accounted for 15% of the Benthivore landings and 12% of the revenue generated from those landings in the MAB.
@@ -630,7 +633,8 @@ df<-df[-c(1,2) ,c("Groups","MAB Landings", "MAB Revenue")]
 knitr::kable(
   df, booktabs = TRUE,
   caption = 'Proportion of landings and revenue derived from managed species in the Mid-Atlantic region.'
-)
+) %>%
+  kable_styling(latex_options=c("hold_position"))
 ```
 >
 >Figure \@ref(fig:seafoodlandingsMAB) shows the removals for human consumption of trophic groups including both all species landed in the MAB as well as the subset of those removals managed by the MAFMC.  Landings for managed species are all trending up in recent years, but only Benthivore landings are above the long term-mean. There is a significant decline in MAFMC-managed landings of benthos. We note that time series at the Mid-Atlantic regional scale may not include all state landings prior to 1994.
@@ -640,7 +644,7 @@ knitr::kable(
 >Recreational seafood landings (as opposed to total landings which include catch and release that are captured under other risk elements/indicators) were used to assess food use of recreationally caught fish in the Mid-Atlantic.
 
 
-### Seafood production (GOM and GB)
+### New England report text:Seafood production (GOM and GB)
 >Seafood production is a stated goal of optimal fishery management as part of the definition of “benefits to the nation” under MSA. Both commercial and recreational fishing contributes to seafood production, the latter for personal consumption, and indicators for each of these human activities track management performance against this objective.  
 >
 Commercial landings include all seafood landings in the region, including species not managed by NEFMC. For example, category D, Benthivores, includes lobsters, which are a substantial portion of the landings and drive increases in landings and revenue. In 2016, NEFSC managed stocks made up from 5%-98% of total landings by category, as detailed below (Table \@ref{tab:proptableNE}). 
@@ -689,8 +693,9 @@ Total commercial seafood landings from all species and from NEFMC managed specie
 >
 Recreational seafood landings (as opposed to total landings which include catch and release that are captured under other risk elements/indicators) were used to assess food use of recreationally caught fish. This trend is also declining (Fig. \ref{fig:reccatchNE}). 
 
-## Synthesis across indicators within a section
+## Priority: synthesis across indicators within a section
 
+This is where the ecosystem production sections go for comparison across two regions.
 
 # Discussion
 * Rising to the "so what" challenge improved ecosystem reporting in the NE US and has resulted in other analyses of use to managers (e.g. ref risk assessment, hopefully published by then). An effective annual process has evolved where contextual information is presented that can change multiple decisions if necessary (ref Zador, value of qualitative information). Flexibility and responsiveness to audience important, willing to change reporting as manager needs change.
