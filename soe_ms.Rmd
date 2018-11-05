@@ -744,6 +744,15 @@ The number of small fish relative to the biomass of larger fish of the same spec
 # References
 <div id="refs"></div>
 
+\newpage
+
+```{r, echo = FALSE, results = "asis"}
+cat("\\newgeometry{top=0.85in, left=0.5in, right=0.5in, footskip=0.75in}")
+cat("\\fancyhf{}")
+cat("\\renewcommand{\\headrulewidth}{0pt}")
+cat("\\renewcommand{\\footrule}{}")
+```
+
 # Figures
 
 ```{r conceptual, fig.cap="Mid-Atlantic Ecosystem", fig.height=6, fig.width=4, out.width='\\linewidth', fig.align='center', echo = F, message = FALSE, warning = FALSE, eval = T}
