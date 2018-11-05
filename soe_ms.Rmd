@@ -572,20 +572,12 @@ interannual variability in recent years, driven primarily by increases in prices
 >
 >**Additional indicators in this report suggest a note of caution for the aggregate productivity of fish species in the region** (fish condition declined and recovered for some species while survey based aggregate “recruitment” has declined overall). These changes in fish productivity may be linked to observed patterns in plankton communities, to changes in habitat, or both.  While there are some long-term productivity trends at the bottom of the food web in the Mid Atlantic, changes in species composition and shifts in seasonal timing may have a greater impact on upper trophic levels. Temperature is increasing in long term sea surface records as well as surface and bottom measurements from surveys. The seasonal temperature signal also shows sustained warming. **Warming waters have impacts on the ecosystem that can be complex due to differential impacts at the species level, including observed shifts in species distribution and changes in productivity as thermal habitats shift.** 
 
-The main body of the report follows the executive summary with more detail on the indicator results. The full set of report sections and includes indicators of fishery performance, human community vulnerability, fishery interactions with protected species, resource species trends, and ecosystem consitions and productivity (Table \@ref(tab:SOEcontents)). Many indicators aggregate species by similar functional groups (Table \@ref(tab:speciesgroupingsMAB)). 
-
-```{r SOEcontents, echo=FALSE, message=FALSE, warning=FALSE}
-
-SOEcont <- read.csv(file.path(data.dir,"indicatortable.csv"))
-knitr::kable(SOEcont, format = "latex", booktabs = T, caption = 'Report sections, indicators, and scale of information.') %>%
-  kable_styling(font_size=10, latex_options=c("repeat_header", "scale_down", "hold_position")) %>%
-  column_spec(1, width="3cm") %>%
-  column_spec(2:3, width="7cm") %>%
-  collapse_rows(columns = 1, latex_hline = "major", valign = "middle")
-
-```
-
-
+### Changes to reporting from the previous year, orientation to standard plots
+>
+Indicators throughout the report have been updated with the most recent data, and in some cases replaced with more management-relevant indicators based on Council feedback from the 2017 report. In particular, new sections on species-specific habitat status and trends and climate projections of thermal habitat for key species have replaced last year’s more general physical environment and climate sections. This report draws on a wider range of expertise and attempts to further link information across indicators to give an integrated overview of ecosystem status relevant to fishery management decision making.
+>
+Many metrics aggregate species by similar functional groups.  Species that comprise the functional groups are listed below. Relative to the 2017 report, these categories have been aggregated into fewer groups for simplification and clarity (Table \@ref(tab:speciesgroupingsMAB)). 
+ 
 ```{r speciesgroupingsMAB, echo=FALSE, message=FALSE, warning=FALSE}
 tabl <- "
 |Group|N species|Major species in the group|
@@ -605,6 +597,22 @@ knitr::kable(df, booktabs = TRUE, caption = 'Feeding guilds (formatted for Mid-A
   column_spec(2, width="2cm") %>%
   column_spec(3, width="7.5cm") #%>%
   #collapse_rows(columns = 1, latex_hline = "major", valign = "middle")
+
+```
+
+>
+Our assessment of indicator trends has changed this year.  In the 2017 time series plots, monotonic (but not necessarily linear) trends were assessed for both the full time series and the most recent 10 years (shaded dark grey background). Recent simulation analysis suggest that statistical significance tests are unreliable for short time series, but reliable for longer ones. Therefore, similar to 2017, we indicate significant increasing long term trends with orange lines, while significant decreasing long term trends have purple lines.  However, we no longer indicate significant trends for the most recent period but rather discuss recent/current status and trend of each indicator relative to the full time series.  Time series mean is indicated with a dashed line and the final ten years of the time series are highlighted through a grey background. 
+
+The main body of the report follows the executive summary with more detail on the indicator results. The full set of report sections and includes indicators of fishery performance, human community vulnerability, fishery interactions with protected species, resource species trends, and ecosystem conditions and productivity (Table \@ref(tab:SOEcontents)). Time series plots throughout the report use the standardized approach described in the executive summary to allow quick visual identification of significant trends, and observations within the most recent 10 years. 
+
+```{r SOEcontents, echo=FALSE, message=FALSE, warning=FALSE}
+
+SOEcont <- read.csv(file.path(data.dir,"indicatortable.csv"))
+knitr::kable(SOEcont, format = "latex", booktabs = T, caption = 'Report sections, indicators, and scale of information.') %>%
+  kable_styling(font_size=10, latex_options=c("repeat_header", "scale_down", "hold_position")) %>%
+  column_spec(1, width="3cm") %>%
+  column_spec(2:3, width="7cm") %>%
+  collapse_rows(columns = 1, latex_hline = "major", valign = "middle")
 
 ```
 
@@ -647,7 +655,7 @@ knitr::kable(
 ### New England report text: Seafood production (GOM and GB)
 >Seafood production is a stated goal of optimal fishery management as part of the definition of “benefits to the nation” under MSA. Both commercial and recreational fishing contributes to seafood production, the latter for personal consumption, and indicators for each of these human activities track management performance against this objective.  
 >
-Commercial landings include all seafood landings in the region, including species not managed by NEFMC. For example, category D, Benthivores, includes lobsters, which are a substantial portion of the landings and drive increases in landings and revenue. In 2016, NEFSC managed stocks made up from 5%-98% of total landings by category, as detailed below (Table \@ref{tab:proptableNE}). 
+Commercial landings include all seafood landings in the region, including species not managed by NEFMC. For example, category D, Benthivores, includes lobsters, which are a substantial portion of the landings and drive increases in landings and revenue. In 2016, NEFSC managed stocks made up from 5%-98% of total landings by category, as detailed below (Table \@ref(tab:proptableNE). 
 
 ```{r proptableNE, echo = F, message=FALSE, warning=FALSE}
 #Use this to create table of proportion of landings/revenue derived from NEFMC species (stargazer produces latex. Set eval = F)
@@ -718,7 +726,7 @@ There is a coherent pattern between the primary production anomaly and the copep
 >
 >### Groundfish condition (coastwide)
 >
-Fish condition is measured as the weight per length–a measure of “fatness”. This information is from NEFSC bottom trawl surveys and shows a change in condition across all species at around 2000 ()Fig. @\ref(fig:conditionfactorMAB). Between 2010-2013 many species started to have better condition, while black sea bass, goosefish and male spiny dogfish remained thinner for their length on average. This matches the trend in small-large copepods, perhaps reflecting changing nutrition across many species contributing to changes in condition. 
+Fish condition is measured as the weight per length–a measure of “fatness”. This information is from NEFSC bottom trawl surveys and shows a change in condition across all species at around 2000 (Fig. \@ref(fig:conditionfactorMAB)). Between 2010-2013 many species started to have better condition, while black sea bass, goosefish and male spiny dogfish remained thinner for their length on average. This matches the trend in small-large copepods, perhaps reflecting changing nutrition across many species contributing to changes in condition. 
 >
 >
 >### Groundfish productivity (MAB)
