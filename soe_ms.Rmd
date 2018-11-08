@@ -760,7 +760,8 @@ df <- data.frame(Groups = c("Piscivore","Planktivore","Benthivore","Benthos"),
 names(df) <- c("Groups", "GOM Landings", "GB Landings", "GOM Revenue",
                 "GB Revenue")
 
-kable(df, booktabs = TRUE, digits=2, caption = "Proportion managed by NEFMC")
+kable(df, booktabs = TRUE, digits=2, caption = "Proportion managed by NEFMC") %>%
+  kable_styling(latex_options=c("hold_position"))
 #stargazer(df, summary = F, rownames = T, title = "Proportion of catch managed by NEFMC (2016)", header = F)
 ```
 >
@@ -845,14 +846,14 @@ knitr::include_graphics(file.path(image.dir, 'SOE_MAB_ConceptMod.png'))
 ```
 \newpage
 
-```{r map, fig.cap="Mid Atlantic Bight (MAB) spatial extent", fig.height=6, fig.width=4, out.width='0.8\\linewidth', fig.align='center', echo = F, message = FALSE, warning = FALSE, eval = T}
+```{r map, fig.cap="Mid Atlantic Bight (MAB) spatial extent", fig.height=6, fig.width=4, out.width='\\linewidth', fig.align='center', echo = F, message = FALSE, warning = FALSE, eval = T}
 image_read(file.path(image.dir,"NEshelfEcoRegionsALL.png")) %>%
 image_trim()
 
 ```
 \newpage
 
-```{r KOBE, fig.cap="Summary of single species status for MAFMC stocks", fig.height=7, fig.width=7, out.width='0.65\\linewidth', fig.align='center', echo = F, message = FALSE, warning = FALSE, eval = T}
+```{r KOBE, fig.cap="Summary of single species status for MAFMC stocks", fig.height=7, fig.width=7, out.width='\\linewidth', fig.align='center', echo = F, message = FALSE, warning = FALSE, eval = T}
 #knitr::include_graphics(file.path(image.dir, 'MAFMC_joint_stocks_2017.pdf'))
 
 dat <- read.csv(file.path(data.dir, "2017assess.csv"))
