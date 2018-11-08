@@ -566,7 +566,7 @@ th_plot <- function(data, letter, z.max, y.axis = T,
 
 
 # Introduction
-As national and international policy increasingly calls for ecosystem-based management of natural resources, it is important for decision-makers to understand the current status and recent trends of key ecosystem attributes. For example, an ecosystem in a high productivity state may withstand extractive activities better than the same ecosystem in a low productivity state; and climate change may alter the productivity of an ecosystem [@brander_global_2007; @blanchard_potential_2012; @friedland_pathways_2012; @stock_reconciling_2017]. 
+As national and international policy increasingly calls for ecosystem-based management of natural resources [e.g., @sherman_global_2005; @heenan_climate-informed_2015; @ramirez-monsalve_ecosystem_2016; @smith_implementing_2017], it is important for decision-makers to understand the current status and recent trends of key ecosystem attributes. For example, an ecosystem in a high productivity state may withstand extractive activities better than the same ecosystem in a low productivity state; and climate change may alter the productivity of an ecosystem [@brander_global_2007; @blanchard_potential_2012; @friedland_pathways_2012; @stock_reconciling_2017]. 
 
 * EBFM sounds hard but it doesnt have to be, here is an example of ecosystem reporting that is useful to managers and how we did it.  Initial drafts followed a format used in another region but managers wanted to know "so what". Here is how we addressed this to produce two relatively automated reports that Councils are now requesting annually. lessons learned could serve as example for other ecosystem reporting efforts.
 
@@ -589,7 +589,7 @@ Councils receive reports in April of each year, main message is whether there ar
 The results of this process were the full [Mid-Atlantic State of the Ecosystem 2018](http://www.mafmc.org/s/Tab04_State-of-the-Ecosystem-Apr2018.pdf) and
 [New England State of the Ecosystem 2018](https://s3.amazonaws.com/nefmc.org/2_Ecosystem-Status-Report.pdf) reports delivered in April 2018, which are posted as part of the public record on each Fishery Management Council's website. Here, we highlight key aspects and findings of the reports that arose from the multidiscplinary approach. We reproduce the leading pages of the Mid-Atlantic report as an example below, demonstrating the use of conceptual models, place-based spatial units, and alignment of ecosystem indicators with management objectives. Key messages were highlighted in **boldface**, with relevant tables and figures immediately adjacent to the text. 
 
-## Priority: summarize report purpose, structure, and synthetic results in 2-3 pages
+## Priority: Summarize report purpose, structure, and synthetic results in 2-3 pages
 
 ### Purpose: SOE Report Introduction
 >The purpose of this report is to provide **ecosystem-scale information for fishery managers** to consider along with existing species-scale analyses.  An overview of ecosystem relationships as represented by **a conceptual model helps place more detailed species-level management in context** by highlighting relationships between focal species groups organized by Mid Atlantic Fishery Management Council (MAFMC) Fishery Management Plan (FMP), managed human activities, environmental drivers, habitats, and key ecological links (Fig. \@ref(fig:conceptual). Here, human activities link to high level strategic management objectives. Many components of the conceptual model are represented by indicators in this report, and key paths connecting components and objectives are highlighted.
@@ -765,13 +765,11 @@ Total commercial seafood landings from all species and from NEFMC managed specie
 >
 Recreational seafood landings (as opposed to total landings which include catch and release that are captured under other risk elements/indicators) were used to assess food use of recreationally caught fish. This trend is also declining (Fig. \ref{fig:reccatchNE}). 
 
-## Priority: synthesis across indicators within a section
+## Priority: Synthesis across indicators within a section
 
 ### Mid Atlantic report text: Ecosystem Conditions and Productivity
 >
 Productivity of the system can be influenced by many factors.  Temperature affects the behavior and physiology of marine organisms while changes in productivity and species composition at the base of the food web can influence juvenile survival. In this section we report temperature and lower trophic level  production trends and annual cycles for the most recent year.  We also look at fish productivity through recruitment and fish condition.
->
->## Observed ocean conditions
 >
 >### Long-term ocean temperature (coastwide)
 >
@@ -782,7 +780,7 @@ Sea surface temperature (SST) measurements have been collected on the Northeast 
 The Mid-Atlantic experienced above average sea surface temperatures (SSTs) during 2017. In Fig. \@ref(fig:SSTPPDCHLMAB), the long term mean SST is shown as a black line with areas representing plus and minus one standard deviation of the mean as a shade of gray. SSTs for 2017 that were above the mean are shown in red and below the mean in blue, with emphasis added when the temperature exceeded or decreased below one standard deviation of the mean. Last winter was characterized by well above average temperatures in the Mid-Atlantic that transitioned to generally moderate conditions during summer. The Bight returned to warm conditions during October and remained above average for the balance of the year.
 >
 >
->##Patterns in the lower trophic levels (MAB)
+>###Patterns in the lower trophic levels (MAB)
 >
 Chlorophyll a (CHL), an index for phytoplankton biomass, was above average in 2017, but there has been no distinct trend over the time series.   Primary production (PP) was also above average during most of 2017 throughout the MAB and has had an upward trend since 2004.  The high PP rates in the summer are likely due to increased remineralization of nutrients and regenerated production by smaller phytoplankton species.  This suggests that while overall PP may be increasing, not all of excess PP may be available to higher trophic levels. 
 >
@@ -798,14 +796,29 @@ Fish condition is measured as the weight per length–a measure of “fatness”
 The number of small fish relative to the biomass of larger fish of the same species from the NEFSC survey is a simple measure of productivity, intended to complement model-based stock assessment estimates of recruitment for commercial species (Fig. \@ref(fig:groundfishproductivity)). There is a general decrease in this indicator when aggregated across managed species in the Mid-Atlantic.
 
 # Discussion
-* Rising to the "so what" challenge improved ecosystem reporting in the NE US and has resulted in other analyses of use to managers (e.g. ref risk assessment, hopefully published by then). An effective annual process has evolved where contextual information is presented that can change multiple decisions if necessary (ref Zador, value of qualitative information). Flexibility and responsiveness to audience important, willing to change reporting as manager needs change.
+* Rising to the "so what" challenge improved ecosystem reporting in the NE US and has resulted in other analyses of use to managers (e.g. ref risk assessment, hopefully published by then). An effective annual process has evolved where contextual information is presented that can change multiple decisions if necessary (@zador_ecosystem_2016, value of qualitative information). Flexibility and responsiveness to audience important, willing to change reporting as manager needs change.
 * Focus on synthesis and indicators directly addressing management objectives key. Don't get rid of all other ecosystem indicators but report selectively from a "mothership" of ecosystem data (e.g. ESR on the web) for different audiences. The encyclopedic report is less useful for managers who have limited time and need the bottom line. Oceanographers want the salinity time series, fishery managers dont know what to do with them unless clearly connected to habitat of managed species or other objectives.
 * Put best practices/lessons learned from IEA group WGNARS [@levin_integrated_2009, @levin_guidance_2014, @depiper_operationalizing_2017] into actual practice.
 * Automation and transparency useful not just in theory but for practical report production. Rmarkdown and github workflow efficient and traceable, allows effective collaboration. (Would be great to have SOE as html for website too and point to that)
 * Next steps (in progress): web access to indicator data through ERDDAP (link), retrospective documentation of past indicators, development of new indicators. Priority given to indicator selection and evaluation, threshold analysis, synthetic methods such as DFA. Keep indicator data available and accessible for synthesis, modeling, future work.
 * MAFMC wants to see the SOE report and indicators inform their risk assessment as part of EAFM 
 * More stock specific reports in development to go to assessment working groups, see ECSA
+* Continued work with Councils and other management bodies on tailored integrated ecosystem reporting
+
+# Conculsion
 * Process flexible and can be adjusted to needs in any region/management context. Maybe EBFM isn't so hard after all.
+
+# Supporting Information
+
+**S1** [**State of the Ecosystem Technical Documentation.**](https://noaa-edab.github.io/tech-memo/) Detailed methods and references for each indicator and analysis in the State of the Ecosystem reports, with links to indicator data. 
+
+**S2** [**Mid-Atlantic State of the Ecosystem 2018.**](http://www.mafmc.org/s/Tab04_State-of-the-Ecosystem-Apr2018.pdf) Report presented to the Mid-Atlantic Fishery Management Council on 11 April 2018.
+
+**S3** [**New England State of the Ecosystem 2018.**](https://s3.amazonaws.com/nefmc.org/2_Ecosystem-Status-Report.pdf) Report presented to the New England Fishery Management Council on 19 April 2018.
+
+# Acknowledgments
+
+\nolinenumbers
 
 # References
 <div id="refs"></div>
