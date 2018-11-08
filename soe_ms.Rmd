@@ -11,6 +11,9 @@ author:
   - name: Sean Lucey
     email: Sean.Lucey@noaa.gov
     affiliation: NOAA NMFS Northeast Fisheries Science Center Woods Hole
+  - name: Patricia Clay
+    email: Patricia.Clay@noaa.gov
+    affiliation: NOAA NMFS Northeast Fisheries Science Center Silver Spring
   - name: Lisa Colburn
     email: Lisa.Colburn@noaa.gov
     affiliation: NOAA NMFS Northeast Fisheries Science Center Narragansett
@@ -65,6 +68,8 @@ author:
 address:
   - code: NOAA NMFS Northeast Fisheries Science Center Woods Hole
     address: 166 Water Street, Woods Hole, MA, 02543
+  - code: NOAA NMFS Northeast Fisheries Science Center Silver Spring
+    address: 1315 East-West Highway, Silver Spring, MD, 20910
   - code: NOAA NMFS Northeast Fisheries Science Center Narragansett
     address: 28 Tarzwell Drive, Narragansett, RI, 02882
   - code: NOAA NMFS Northeast Fisheries Science Center Princeton
