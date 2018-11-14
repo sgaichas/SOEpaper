@@ -87,10 +87,8 @@ output:
 csl: plos.csl    
 ---
 
-*add names from SOE acknowledgements: current list are SOE lead editors, SOE section/indicator/text contributors*
-*to add- indicator data contributors: Donald Anderson, Amani Bassyouni, Lisa Calvo, Heather Haas, Mike Hammil, Loren Kellogg, Kristin Kleisner, Dave Kulis, Kimberly Murray, Karl Roscher, Mark Terceiro*
-*authors or acknowledgements? Steve Traynor (conceptual model graphics), Andy Beet (tech memo section editing)*
-*affiliation: NEFSC and other places, need to sort out, USA*
+*add other authors from SOE acknowledgements? current list are SOE lead editors, SOE section/indicator/text contributors*
+
 
 
 ```{r Directory and Data Set-up, echo=F, message=F, warning=FALSE, paged.print=TRUE}
@@ -571,9 +569,9 @@ th_plot <- function(data, letter, z.max, y.axis = T,
 
 
 # Introduction
-As national and international policy increasingly calls for ecosystem-based management of natural resources [e.g., @sherman_global_2005; @heenan_climate-informed_2015; @ramirez-monsalve_ecosystem_2016; @smith_implementing_2017], it is important for decision-makers to understand the current status and recent trends of key ecosystem attributes. For example, an ecosystem in a high productivity state may withstand extractive activities better than the same ecosystem in a low productivity state; and climate change may alter the productivity of an ecosystem [@brander_global_2007; @blanchard_potential_2012; @friedland_pathways_2012; @stock_reconciling_2017]. 
+As national and international policy increasingly calls for ecosystem-based management of natural resources [e.g., @sherman_global_2005; @heenan_climate-informed_2015; @ramirez-monsalve_ecosystem_2016; @smith_implementing_2017], it is important for decision-makers to understand the current status and recent trends of key ecosystem attributes. For example, an ecosystem in a high productivity state may withstand extractive activities better than the same ecosystem in a low productivity state; and climate change may alter the productivity of an ecosystem [@brander_global_2007; @blanchard_potential_2012; @friedland_pathways_2012; @stock_reconciling_2017]. Information on ecosystem productivity has proven useful in management of economically important fisheries in Alaska, USA [@zador_ecosystem_2016], where the management system has embraced many aspects of the ecosystem approach [@witherell_ecosystem-based_2000; @livingston_framework_2005]. In addition to productivity, changes in the spatial and functional structure of ecosystems can have profound impacts on ecosystem services and natural resource management [@doney_climate_2012]. 
 
-However, direct consideration of ecosystem factors has been limited in fishery management historically [@skern-mauritzen_ecosystem_2016], although indirect consideration of ecosystem factors ocurrs at a higher rate [@marshall_inclusion_2018]. While some perceived barriers to implementation of ecosystem based management are mythical [@patrick_myths_2015], and some management systems have embraced many aspects of ecosystem approaches [@witherell_ecosystem-based_2000], more holistic ecosystem analyses are rarely used in operational fishery management.  
+However, direct consideration of ecosystem factors has been limited in fishery management historically [@skern-mauritzen_ecosystem_2016], although indirect consideration of ecosystem factors ocurrs at a higher rate [@marshall_inclusion_2018]. The perceived barriers to implementation of ecosystem based management are mythical [@patrick_myths_2015], more holistic ecosystem analyses are remain rare relative to the stock and species level analyses used to inform operational fishery management.  
 
 * EBFM sounds hard but it doesnt have to be, here is an example of ecosystem reporting that is useful to managers and how we did it.  Initial drafts followed a format used in another region but managers wanted to know "so what". Here is how we addressed this to produce two relatively automated reports that Councils are now requesting annually. lessons learned could serve as example for other ecosystem reporting efforts.
 
@@ -809,7 +807,7 @@ The number of small fish relative to the biomass of larger fish of the same spec
 * Put best practices/lessons learned from IEA group WGNARS [@levin_integrated_2009, @levin_guidance_2014, @depiper_operationalizing_2017] into actual practice.
 * Automation and transparency useful not just in theory but for practical report production. Rmarkdown and github workflow efficient and traceable, allows effective collaboration. (Would be great to have SOE as html for website too and point to that)
 * Next steps (in progress for the 2019 report): web access to indicator data through the National IEA webpage and ERDDAP (https://www.integratedecosystemassessment.noaa.gov/regions/northeast/Indicator-data); [public github repo for 2019 report](https://github.com/NOAA-EDAB/soe), including intermediate data processing [documentation](https://noaa-edab.github.io/soe/) for improved transparency and reproducibility; retrospective documentation of past indicators, development of new indicators. Priority given to indicator selection and evaluation, threshold analysis, synthetic methods such as DFA. Keep indicator data available and accessible for synthesis, modeling, future work.
-* MAFMC wants to see the SOE report and indicators inform their risk assessment as part of EAFM 
+* MAFMC wants to see the SOE report and indicators inform their risk assessment as part of EAFM, want to add management oriented indicators such as other ocean uses and regulatory complexity.
 * More stock specific reports in development to go to assessment working groups, see ECSA
 * Continued work with Councils and other management bodies on tailored integrated ecosystem reporting
 
@@ -825,6 +823,9 @@ The number of small fish relative to the biomass of larger fish of the same spec
 **S3** [**New England State of the Ecosystem 2018.**](https://s3.amazonaws.com/nefmc.org/2_Ecosystem-Status-Report.pdf) Report presented to the New England Fishery Management Council on 19 April 2018.
 
 # Acknowledgments
+*to add- indicator data contributors: Donald Anderson, Amani Bassyouni, Lisa Calvo, Heather Haas, Mike Hammil, Loren Kellogg, Kristin Kleisner, Dave Kulis, Kimberly Murray, Karl Roscher, Mark Terceiro*
+*acknowledgements: Steve Traynor (conceptual model graphics), Andy Beet (tech memo section editing)*
+*affiliation: NEFSC and other places, need to sort out, USA*
 
 \nolinenumbers
 
