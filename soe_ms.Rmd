@@ -578,19 +578,26 @@ For example, there is clear interest in integrating ecosystem considerations wit
 Our objective was to develop streamlined, relevant ecosystem reporting tailored to a particular audience: fishery managers. Efficiency is key, because reports go to two regional management bodies annually (and a third organization desires annual reporting as well). In this paper, we outline our process and key components of our revised reporting that efficiently deliver relevant ecosystem information to regional Councils; our lessons learned can readily apply to other regional ecosystem reporting efforts.
 
 # Methods
-* build on existing efforts inside and outside the region; ESRs @program_ecosystem_2012, @nefsc_northeast_2015; SOE west coast @noauthor_annual_nodate; Alaska @zador_ecosystem_2016
+Priorites included clear communication of relevance to management
+
 * address OBJECTIVES, clearly align indicators with objectives (IEA process, @levin_integrated_2009, @levin_guidance_2014, WGNARS, @depiper_operationalizing_2017)
 * conceptual model links environmental drivers, ecosystem components, human activities, and objectives @heemskerk_conceptual_2003, @zador_linking_2017, @depiper_operationalizing_2017
 * put most manager-relevant things first: HUMAN DIMENSIONS instead of salinity, etc "one of the greatest perceived needs for decision-maker and stakeholder adoption of EBFM in the MAFMC and NEFMC is more information about human dimensions, including economics, jobs, revenue, and communities [@biedron_toward_2016]"
+
+Efficiency of production, delivery, and use by Councils
+* build on existing efforts inside and outside the region; ESRs @program_ecosystem_2012, @nefsc_northeast_2015; SOE west coast @noauthor_annual_nodate; Alaska @zador_ecosystem_2016
 * keep it short, <25 printed pages
 * keep language non-technical, don't include references etc in report
-* publish technical methods separately for those that are interested (see [supplement](https://noaa-edab.github.io/tech-memo/); Technical methods as individual rmarkdown documents rolled up into one bookdown [@R-bookdown].)
+* data in standardized format with standardized plotting* publish technical methods separately for those that are interested (see [supplement](https://noaa-edab.github.io/tech-memo/); Technical methods as individual rmarkdown documents rolled up into one bookdown [@R-bookdown].)
 * produce in Rmarkdown [@R-rmarkdown] for reproducibility and ease of conversion to different reports
-* data in standardized format with standardized plotting
 * version control on github (initial repo private)
+
+Ensure synthesis across indicators
+* short lead synthesis section--"executive summary"
 * production process: first years, one lead asking for data from multiple people, inefficient. 2017: workshop to develop outline in August with managers to focus further, smaller working groups (human dimensions, protected species, etc) developing new section until December, when data were needed. Mid-January 2018 synthesis meeting, report production Feb, internal review, revision, and to initial Council review early March 2018.
 present to the Council SSC (Mid) first for initial review, turn around for full Council presentation in ~1 month responding as possible to review, responding to previous year's comments explicitly
-Councils receive reports in April of each year, main message is whether there are big changes in the ecosystem or other threats to achieving their objectives
+
+Councils receive reports in April of each year (in person presentation along with pdf report), main message is whether there are big changes in the ecosystem or other threats to achieving their objectives
 
 # Results
 The results of this process were the full [Mid-Atlantic State of the Ecosystem 2018](http://www.mafmc.org/s/Tab04_State-of-the-Ecosystem-Apr2018.pdf) and
