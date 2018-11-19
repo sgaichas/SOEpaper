@@ -787,9 +787,11 @@ kable(df, booktabs = TRUE, digits=2, caption = "Proportion managed by NEFMC") %>
 >
 Figure \ref{fig:seafoodlandingsGOM} shows the removals for human consumption both at the entire EPU level as well as those removals managed by the NEFMC. Landings of piscivores have decreased over the long term in both systems. Benthos landings show no long term trends in either system. Other groups have a decreasing landings trend in either GOM or GB.
 >
-Total commercial seafood landings from all species and from NEFMC managed species indicate total seafood production in the GOM and GB, which has declined over the long term (Fig. \ref{fig:managedlandingsNE}). 
+Total commercial seafood landings from all species and from NEFMC managed species indicate total seafood production in the GOM and GB, which has declined over the long term. 
 >
-Recreational seafood landings (as opposed to total landings which include catch and release that are captured under other risk elements/indicators) were used to assess food use of recreationally caught fish. This trend is also declining (Fig. \ref{fig:reccatchNE}). 
+Recreational seafood landings (as opposed to total landings which include catch and release that are captured under other risk elements/indicators) were used to assess food use of recreationally caught fish. This trend is also declining. 
+
+**Fig \@ref(fig:seafoodlandingsGOM). New England seafood production indicators.** New England Council managed seafood landings (red) and total commercial landings (black) A: by feeding guild in the Gulf of Maine; B: by feeding guild on Georges Bank; C: summed across guilds for Gulf of Maine (top) and Georges Bank (bottom). D: Total recreational harvest in New England
 
 ## Priority: Synthesis across indicators within a section
 
@@ -1107,28 +1109,40 @@ figureX <- fill_panel(figureX, guildlandGOM, row = 1:2, column = 1)
 guildlandGB <- capture_base_plot({
   opar <- par(mfrow = c(5, 1), mar = c(0, 0, 0, 0), oma = c(3, 3.5, 1, 1))
   
-  soe.plot(SOE.data.2018, "Time","Apex Predator Landings GB", stacked = "A",status = F,
-           endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
-           ymin = FALSE, y.lower = 0, cex.stacked = 2)
-  
-  soe.plot(SOE.data.2018, "Time", "Piscivore Landings GB", stacked = "B",status = F,
-           endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
+  soe.plot(SOE.data.2018, "Time","Apex Predator Landings GB", 
+           stacked = "Apex predators",status = F,
+           endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
+           end.start = 2007, x.start = 1964,
+           ymin = FALSE, y.lower = 0, 
+           cex.stacked = 1)
+  soe.plot(SOE.data.2018, "Time", "Piscivore Landings GB", 
+           stacked = "Piscivores",status = F,
+           endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
+           end.start = 2007, x.start = 1964,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
-           y.var2 = "Piscivore NEFMC managed species sea food GB", mean_line = T, cex.stacked = 2)
-  
-  
-  soe.plot(SOE.data.2018, "Time", "Planktivore Landings GB", stacked = "C",status = F,
-           endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
+           y.var2 = "Piscivore NEFMC managed species sea food GB", mean_line = T, 
+           cex.stacked = 1)
+  soe.plot(SOE.data.2018, "Time", "Planktivore Landings GB", 
+           stacked = "Planktivores",status = F,
+           endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
+           end.start = 2007, x.start = 1964,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
-           y.var2 ="Planktivore NEFMC managed species sea food GB", mean_line = T, cex.stacked = 2)
-  soe.plot(SOE.data.2018, "Time", "Benthivore Landings GB", stacked = "D",status = F,
-           endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
+           y.var2 ="Planktivore NEFMC managed species sea food GB", mean_line = T, 
+           cex.stacked = 1)
+  soe.plot(SOE.data.2018, "Time", "Benthivore Landings GB", 
+           stacked = "Benthivores",status = F,
+           endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
+           end.start = 2007, x.start = 1964,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
-           y.var2 = "Benthivore NEFMC managed species sea food GB", mean_line = T, cex.stacked = 2)
-  soe.plot(SOE.data.2018, "Time", "Benthos Landings GB", stacked = "E",status = F,
-           endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
+           y.var2 = "Benthivore NEFMC managed species sea food GB", mean_line = T, 
+           cex.stacked = 1)
+  soe.plot(SOE.data.2018, "Time", "Benthos Landings GB", 
+           stacked = "Benthos",status = F,
+           endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
+           end.start = 2007, x.start = 1964,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
-           y.var2 = "Benthos NEFMC managed species sea food GB", mean_line = T, cex.stacked = 2)
+           y.var2 = "Benthos NEFMC managed species sea food GB", mean_line = T, 
+           cex.stacked = 1)
   soe.stacked.axis("Year",expression("Landings, 10"^3*"metric tons"), x.line = 2, 
                    rel.x.text = 0.8, y.line=2, rel.y.text = 0.8)
 })
