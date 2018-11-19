@@ -704,7 +704,7 @@ knitr::kable(SOEcont, format = "latex", booktabs = T, caption = 'Report sections
 
 ```
 
-Below we give two illustrative examples of SOE reporting from the main body of the report illustrating the priorities for addressing "so what." In the first, we demonstrate how reporting of the same indicator suite was tailored for a single ecological production unit (Mid-Atlantic) and for two ecological production units within one management jurisdiction (New England). This was the first in-depth indicator discussion in each report following the executive summary. In the second example, we demonstrate synthesis across multiple indicators within a report section using the physical oceaographic and low trophic level indicators connecting to managed species in the Mid-Atlantic. 
+Below we give two illustrative examples of SOE reporting from the main body of the report illustrating the priorities for addressing "so what." In the first, we demonstrate how reporting of the same indicator suite was tailored for a single ecological production unit (Mid-Atlantic) and for two ecological production units within one management jurisdiction (New England). This was the first in-depth indicator discussion in each report following the executive summary. 
 
 ## Priority: Put human dimensions objectives first
 
@@ -737,7 +737,7 @@ knitr::kable(
 >
 >Total commercial seafood landings from all species and from MAFMC managed species in the MAB indicate total seafood production. Years prior to 1977 included foreign landings, so we begin the time series in 1986. Recent landings are all domestic fisheries. Looking across all regions, there is a significant recent decrease in seafood landings, indicating high risk to regional domestic seafood production. 
 >
->Recreational seafood landings (as opposed to total landings which include catch and release that are captured under other risk elements/indicators) were used to assess food use of recreationally caught fish in the Mid-Atlantic.
+>Recreational seafood landings (as opposed to total landings which include catch and release that are captured under other risk elements/indicators) were used to assess food use of recreationally caught fish in the Mid-Atlantic. This trend is also declining.
 
 **Fig \@ref(fig:seafoodlandingsMAB). Mid-Atlantic seafood production indicators.** A: Mid-Atlantic Council managed seafood landings (red) and total commercial landings (black) by feeding guild. B: Mid Atlantic Council managed seafood landings (red) and total commercial landings (black) summed across guilds. C: Total recreational harvest in the Mid Atlantic.
 
@@ -793,7 +793,10 @@ Recreational seafood landings (as opposed to total landings which include catch 
 
 **Fig \@ref(fig:seafoodlandingsGOM). New England seafood production indicators.** New England Council managed seafood landings (red) and total commercial landings (black) A: by feeding guild in the Gulf of Maine; B: by feeding guild on Georges Bank; C: summed across guilds for Gulf of Maine (top) and Georges Bank (bottom). D: Total recreational harvest in New England
 
+During the Council meetings, there were questions regarding mechanisms for declines in seafood landings (e.g. could this be the result of management? Answer: yes). This led to conversation about the need for multiple indicators; this indicates where we are with respect to a single objective, but the full suite of indicators are needed to tease out multiple factors underlying the trends.
+
 ## Priority: Synthesis across indicators within a section
+In this second example from the main body of the reports, we demonstrate synthesis across multiple indicators within a report section using the physical oceaographic and low trophic level indicators connecting to managed species in the Mid-Atlantic. The same indicators were presented using data from the Gulf of Maine and Georges Bank in the New England report, with text noting the differences and similarities between the areas (See Supplemental Information, S3).
 
 ### Mid Atlantic report text: Ecosystem Conditions and Productivity
 >
@@ -812,16 +815,16 @@ The Mid-Atlantic experienced above average sea surface temperatures (SSTs) durin
 >
 Chlorophyll a (CHL), an index for phytoplankton biomass, was above average in 2017, but there has been no distinct trend over the time series.   Primary production (PP) was also above average during most of 2017 throughout the MAB and has had an upward trend since 2004.  The high PP rates in the summer are likely due to increased remineralization of nutrients and regenerated production by smaller phytoplankton species.  This suggests that while overall PP may be increasing, not all of excess PP may be available to higher trophic levels. 
 >
-There is a coherent pattern between the primary production anomaly and the copepod size index for the MAB, with distinct peaks in production centered around 2002, 2010, and 2015, when the copepod size index was positive (Fig. \@ref(fig:MABzooplankton). The copepod size index relates the abundance anomaly of small bodied copepods to the abundance of a large bodied copepod, *Calanus finmarchicus*. Additionally, *Centropages typicus*, an important copepod in the MAB, exhibits a long-term decline in abundance, with negative anomaly observations  beginning in the early 2000’s.
+There is a coherent pattern between the primary production anomaly and the copepod size index for the MAB, with distinct peaks in production centered around 2002, 2010, and 2015, when the copepod size index was positive (Fig. \@ref(fig:MABecoprod). The copepod size index relates the abundance anomaly of small bodied copepods to the abundance of a large bodied copepod, *Calanus finmarchicus*. Additionally, *Centropages typicus*, an important copepod in the MAB, exhibits a long-term decline in abundance, with negative anomaly observations  beginning in the early 2000’s.
 >
 >### Groundfish condition (coastwide)
 >
-Fish condition is measured as the weight per length–a measure of “fatness”. This information is from NEFSC bottom trawl surveys and shows a change in condition across all species at around 2000 (Fig. \@ref(fig:conditionfactorMAB)). Between 2010-2013 many species started to have better condition, while black sea bass, goosefish and male spiny dogfish remained thinner for their length on average. This matches the trend in small-large copepods, perhaps reflecting changing nutrition across many species contributing to changes in condition. 
+Fish condition is measured as the weight per length–a measure of “fatness”. This information is from NEFSC bottom trawl surveys and shows a change in condition across all species at around 2000. Between 2010-2013 many species started to have better condition, while black sea bass, goosefish and male spiny dogfish remained thinner for their length on average. This matches the trend in small-large copepods, perhaps reflecting changing nutrition across many species contributing to changes in condition. 
 >
 >
 >### Groundfish productivity (MAB)
 >
-The number of small fish relative to the biomass of larger fish of the same species from the NEFSC survey is a simple measure of productivity, intended to complement model-based stock assessment estimates of recruitment for commercial species (Fig. \@ref(fig:groundfishproductivity)). There is a general decrease in this indicator when aggregated across managed species in the Mid-Atlantic.
+The number of small fish relative to the biomass of larger fish of the same species from the NEFSC survey is a simple measure of productivity, intended to complement model-based stock assessment estimates of recruitment for commercial species. There is a general decrease in this indicator when aggregated across managed species in the Mid-Atlantic.
 
 During each Council meeting, these indicators were shown together to further emphasize the potential linkages. In particlar, the concurrent drop in zooplankton and fish condition during the early 2000's was of interest to both Councils, and the apparent decrease in productivity across managed fish generated much discussion with the Mid-Atlantic Council. 
 
@@ -979,7 +982,7 @@ plot(MABO$Brat,MABO$Frat,xlim=x.r,ylim=y.r,xlab="B/Bmsy",ylab="F/Fmsy",pch=16,co
 
 \newpage
 
-```{r seafoodlandingsMAB, fig.cap="Mid Atlantic seafood production indicators. A: Mid-Atlantic Council managed seafood landings (red) and total commercial landings (black) by feeding guild. B: Mid Atlantic Council managed seafood landings (red) and total commercial landings (black) summed across guilds. C: Total recreational harvest in the Mid Atlantic.",echo = F, warning = F, include = T, fig.align='center', fig.keep='last'}
+```{r seafoodlandingsMAB, fig.cap="Mid Atlantic seafood production indicators. A: Mid-Atlantic Council managed seafood landings (red) and total commercial landings (black) by feeding guild. B: Mid Atlantic Council managed seafood landings (red) and total commercial landings (black) summed across guilds. C: Total recreational harvest in the Mid Atlantic.",echo = F, warning = F, include = T, fig.align='center', fig.keep='last', out.width='\\linewidth'}
 
 ## Figure dimensions
 figureX <- multi_panel_figure(
@@ -991,26 +994,26 @@ figureX <- multi_panel_figure(
 guildland <- capture_base_plot({
   opar <- par(mfrow = c(5, 1), mar = c(0, 0, 0, 0), oma = c(3, 3.5, 1, 1))
   
-  soe.plot(SOE.data.2018, "Time","Apex Predator Landings MAB", stacked = "Apex predators",status = F,
+  soe.plot(SOE.data.2018, "Time","Apex Predator Landings MAB", stacked = "Apex predators",status = F, suppressAxis = TRUE,
            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 1,end.start = 2007, x.start = 1986,
            ymin = FALSE, y.lower = 0 )
   
-  soe.plot(SOE.data.2018, "Time", "Piscivore Landings MAB", stacked = "Piscivores",status = F,
+  soe.plot(SOE.data.2018, "Time", "Piscivore Landings MAB", stacked = "Piscivores",status = F, suppressAxis = TRUE,
            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1986,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
            y.var2 = "Piscivore MAFMC managed species sea food MAB")
   
-  soe.plot(SOE.data.2018, "Time", "Planktivore Landings MAB", stacked = "Planktivores",status = F,
+  soe.plot(SOE.data.2018, "Time", "Planktivore Landings MAB", stacked = "Planktivores",status = F, suppressAxis = TRUE,
            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1986,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
            y.var2 = "Planktivore MAFMC managed species sea food MAB")
   
-  soe.plot(SOE.data.2018, "Time", "Benthivore Landings MAB", stacked = "Benthivores",status = F,
+  soe.plot(SOE.data.2018, "Time", "Benthivore Landings MAB", stacked = "Benthivores",status = F, suppressAxis = TRUE,
            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1986,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
            y.var2 = "Benthivore MAFMC managed species sea food MAB")
   
-  soe.plot(SOE.data.2018, "Time", "Benthos Landings MAB", stacked = "Benthos",status = F,
+  soe.plot(SOE.data.2018, "Time", "Benthos Landings MAB", stacked = "Benthos",status = F, suppressAxis = TRUE,
            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1986,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
            y.var2 = "Benthos MAFMC managed species sea food MAB")
@@ -1052,7 +1055,7 @@ figureX
 ```
 
 
-```{r seafoodlandingsGOM,  fig.cap = "New England seafood production indicators. New England Council managed seafood landings (red) and total commercial landings (black) A: by feeding guild in the Gulf of Maine; B: by feeding guild on Georges Bank; C: summed across guilds for Gulf of Maine (top) and Georges Bank (bottom). D: Total recreational harvest in New England.", echo = F, fig.height=7, fig.keep='last', fig.align='center',warning = F, message = F}
+```{r seafoodlandingsGOM,  fig.cap = "New England seafood production indicators. New England Council managed seafood landings (red) and total commercial landings (black) A: by feeding guild in the Gulf of Maine; B: by feeding guild on Georges Bank; C: summed across guilds for Gulf of Maine (top) and Georges Bank (bottom). D: Total recreational harvest in New England.", echo = F, fig.height=7, fig.keep='last', fig.align='center',warning = F, message = F, out.width='\\linewidth'}
 
 ## Figure dimensions
 figureX <- multi_panel_figure(
@@ -1066,33 +1069,33 @@ guildlandGOM <- capture_base_plot({
   opar <- par(mfrow = c(5, 1), mar = c(0, 0, 0, 0), oma = c(3, 3.5, 1, 1))
   
   soe.plot(SOE.data.2018, "Time","Apex Predator Landings GOM", 
-           stacked = "Apex predators",status = F,
+           stacked = "Apex predators",status = F, suppressAxis = TRUE,
            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
            end.start = 2007, x.start = 1964,
            ymin = FALSE, y.lower = 0, cex.stacked = 1)
   soe.plot(SOE.data.2018, "Time", "Piscivore Landings GOM", 
-           stacked = "Piscivores",status = F,
+           stacked = "Piscivores",status = F, suppressAxis = TRUE,
            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
            end.start = 2007, x.start = 1964,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
            y.var2 = "Piscivore NEFMC managed species sea food GOM", mean_line = T,
            cex.stacked = 1)
   soe.plot(SOE.data.2018, "Time", "Planktivore Landings GOM", 
-           stacked = "Planktivores",status = F,
+           stacked = "Planktivores",status = F, suppressAxis = TRUE,
            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
            end.start = 2007, x.start = 1964,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
            y.var2 ="Planktivore NEFMC managed species sea food GOM", mean_line = T,
            cex.stacked = 1)
   soe.plot(SOE.data.2018, "Time", "Benthivore Landings GOM", 
-           stacked = "Benthivores",status = F,
+           stacked = "Benthivores",status = F, suppressAxis = TRUE,
            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
            end.start = 2007, x.start = 1964,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
            y.var2 = "Benthivore NEFMC managed species sea food GOM", mean_line = T,
            cex.stacked = 1)
   soe.plot(SOE.data.2018, "Time", "Benthos Landings GOM", 
-           stacked = "Benthos",status = F,
+           stacked = "Benthos",status = F, suppressAxis = TRUE,
            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
            end.start = 2007, x.start = 1964,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
@@ -1110,34 +1113,34 @@ guildlandGB <- capture_base_plot({
   opar <- par(mfrow = c(5, 1), mar = c(0, 0, 0, 0), oma = c(3, 3.5, 1, 1))
   
   soe.plot(SOE.data.2018, "Time","Apex Predator Landings GB", 
-           stacked = "Apex predators",status = F,
+           stacked = "Apex predators",status = F, suppressAxis = TRUE,
            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
            end.start = 2007, x.start = 1964,
            ymin = FALSE, y.lower = 0, 
            cex.stacked = 1)
   soe.plot(SOE.data.2018, "Time", "Piscivore Landings GB", 
-           stacked = "Piscivores",status = F,
+           stacked = "Piscivores",status = F, suppressAxis = TRUE,
            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
            end.start = 2007, x.start = 1964,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
            y.var2 = "Piscivore NEFMC managed species sea food GB", mean_line = T, 
            cex.stacked = 1)
   soe.plot(SOE.data.2018, "Time", "Planktivore Landings GB", 
-           stacked = "Planktivores",status = F,
+           stacked = "Planktivores",status = F, suppressAxis = TRUE,
            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
            end.start = 2007, x.start = 1964,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
            y.var2 ="Planktivore NEFMC managed species sea food GB", mean_line = T, 
            cex.stacked = 1)
   soe.plot(SOE.data.2018, "Time", "Benthivore Landings GB", 
-           stacked = "Benthivores",status = F,
+           stacked = "Benthivores",status = F, suppressAxis = TRUE,
            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
            end.start = 2007, x.start = 1964,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
            y.var2 = "Benthivore NEFMC managed species sea food GB", mean_line = T, 
            cex.stacked = 1)
   soe.plot(SOE.data.2018, "Time", "Benthos Landings GB", 
-           stacked = "Benthos",status = F,
+           stacked = "Benthos",status = F, suppressAxis = TRUE,
            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
            end.start = 2007, x.start = 1964,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
@@ -1152,16 +1155,16 @@ figureX <- fill_panel(figureX, guildlandGB, row = 1:2, column = 2)
 
 ## Ecosystem-wide and managed species total landings
 totland <- capture_base_plot({
-  opar <- par(mfrow = c(2, 1), mar = c(0, 0, 0, 0), oma = c(3, 3.5, 1, 1))
+  opar <- par(mfrow = c(2, 1), mar = c(0, 0, 0, 0), oma = c(2.5, 3, 1, 1))
   
   soe.plot(SOE.data.2018, "Time", "Total Landings GOM", point.cex = 1, 
-           stacked = "GOM",status = F,
+           stacked = "GOM",status = F, suppressAxis = TRUE,
            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
            end.start = 2007, x.start = 1964,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
            y.var2 =  "Total managed landings GOM")
   soe.plot(SOE.data.2018, "Time", "Total Landings GB", point.cex = 1, 
-           stacked = "GB",status = F,
+           stacked = "GB",status = F, suppressAxis = TRUE,
            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
            end.start = 2007, x.start = 1964,
            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
@@ -1187,36 +1190,8 @@ figureX
 
 ```
 
-<!--
- 
-```{r managedlandingsNE, fig.cap = "Total landings (black) and total landings managed by NEFMC (red) in Gulf of Maine (A) and Georges Bank (B).", echo=F, message=FALSE, warning=FALSE , fig.asp=.5, fig.align = 'center'}
-opar <- par(mfrow = c(2, 1), mar = c(0, 0, 0, 0), oma = c(4, 6, 2, 6))
 
-soe.plot(SOE.data.2018, "Time", "Total Landings GOM", stacked = "A",status = F,
-         endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
-         ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
-         y.var2 =  "Total managed landings GOM")
-soe.plot(SOE.data.2018, "Time", "Total Landings GB", stacked = "B",status = F,
-         endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
-         ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
-         y.var2 =  "Total managed landings GB")
-soe.stacked.axis("Time",expression("Landings, 10"^3*"metric tons"), outer = T, rel.x.text = 1.2, rel.y.text = 1.2)
-```
-
-
-
-```{r reccatchNE, fig.cap = "Recreational seafood landings in New England.",echo = F, message=F, include=T, warning=F,fig.asp = 0.45, fig.align = 'center'}
-opar <- par(mar = c(4, 6, 2, 6))
-
-soe.plot(SOE.data.2018, "Time", "Recreational Seafood NE", stacked = NA, status = F, full.trend = T,
-         scale.axis = 10^6,end.start = 2007, suppressAxis = T)
-soe.stacked.axis("Time",expression("Fish caught, 10"^6*" n"), outer = F, rel.x.text = 1.2, rel.y.text = 1.2)
-
-```
-
--->
-
-```{r longtermsst, fig.cap="Long-term sea surface temperatures on the Northeast Continental Shelf",  echo=F, message=FALSE, warning=FALSE , fig.height=2.5, fig.align = 'center',fig.pos='H'}
+```{r longtermsst, fig.cap="Long-term sea surface temperatures on the Northeast Continental Shelf",  echo=F, message=FALSE, warning=FALSE , fig.height=2.5, fig.align = 'center'}
 opar <- par(mar = c(4, 6, 2, 6))
 soe.plot(SOE.data.2018, "Time", "long term sst", end.start = 2007, 
          line.forward = TRUE, point.cex = 0.8, rel.y.text = 1.1,
@@ -1226,7 +1201,7 @@ soe.plot(SOE.data.2018, "Time", "long term sst", end.start = 2007,
 ```
 
 
-```{r SSTPPDCHLMAB, fig.cap="SST (A), primary production (B), and Chl a (C) over 2017 (colored polygons) compared against long-term mean (black line) and +/- 1 standard deviation (grey polygon) in the Mid-Atlantic",echo = F, fig.show='hold', fig.align='default',warning = F, message = F,fig.pos='H',fig.height = 2.75,fig.width = 8}
+```{r SSTPPDCHLMAB, fig.cap="SST (A), primary production (B), and Chl a (C) over 2017 (colored polygons) compared against long-term mean (black line) and +/- 1 standard deviation (grey polygon) in the Mid-Atlantic",echo = F, fig.show='hold', fig.align='default',warning = F, message = F,fig.height = 2.75, fig.width = 8, out.width='\\linewidth'}
 ## SST
 par(mar = c(4, 4, 2, 1), mfrow = c(1,3))
 doy <- as.numeric(SOE.data.2018[SOE.data.2018$Var == "sst mean 2017 MAB",]$Time)
@@ -1486,7 +1461,231 @@ text(2,2.5*.95,"C", cex = 1.5)
 
 ```
 
+```{r MABecoprod, fig.cap="Small-large copepod index with primary productivity anomaly (A), \\textit{C. typicus} abundance anomaly (B), groundfish condition (C), and groundfish productivity for MAFMC managed species in the Mid-Atlantic.", echo = F, fig.keep='last', fig.align='center', warning = F, message = F, out.width='\\linewidth'}
 
+## Figure dimensions
+figureX <- multi_panel_figure(
+   columns = 2,
+   rows = 2)
+
+par(mgp=c(1.5,0.3,0))
+opar <- par(mar = c(4,4.75,2,4.75))
+mab_prim_prod <- finder(SOE.data.2018, "annual ppd ratio anomaly MAB")
+mab_copepod_anom <- finder(SOE.data.2018, "Small-Large copepod Index MAB")
+
+PPcopes <- capture_base_plot({ 
+  #par(las = 1)
+  #plot(1:5)
+  #title("One to five")
+  #small-large copepod index
+  #opar <- par(mar = c(4,4.75,2,4))
+  #mab_prim_prod <- finder(SOE.data.2018, "annual ppd ratio anomaly MAB")
+  #mab_copepod_anom <- finder(SOE.data.2018, "Small-Large copepod Index MAB")
+  #usr <- par("usr")
+  #par(mgp=c(axis.title.position, axis.label.position, axis.line.position))
+  plot(NULL,ylim = c(-1.5,1.5), pch = 16, lwd = 3,xlim = c(1998,2017),
+       cex = 1, ylab = "", las = 1, xaxt = "n", cex.axis = 0.6, xlab = "", tck=-0.01)
+  abline(h = 0, col  = "grey", lwd = 1, lty = 2) 
+  with(SOE.data.2018[SOE.data.2018$Var == mab_copepod_anom,], points(Time[22:39], Value[22:39],
+                                                                     type = "o", col = "black", ylim = c(-1.5,1.5), pch = 16, lwd = 2,las = 1))
+  #mtext(side = 2, line = 2, "Small-Lg Copepod Index", cex = 0.8)
+  #text(1998,1.4,"B",cex = 1.75)
+  
+  par(new = T)
+  
+  #primary productivity
+  with(SOE.data.2018[SOE.data.2018$Var ==  mab_prim_prod[1],], plot(Time, Value,
+                                                                    type = "o", col =  "springgreen2", ylim = c(.8,1.25), ylab = "", axes = F,log = "y",
+                                                                    yaxt = "n", pch = 16, lwd = 2, cex = 1, las = 1, xaxt = "n",xlab = ""))
+  axis(side = 4, las = 1, tck=-0.01, cex.axis = 0.6)
+  axis(side = 1, tck=-0.01, cex.axis = 0.6)
+  #mtext(side = 4, line = 2, "Mean Primary Production Ratio", cex = 0.8)
+  #mtext(side = 1, "", cex = 0.8, text = "Year",line = 1)
+  #legend("bottomright",
+  #       legend = c("Copepod Index", "Prim. Prod. Ratio"), col = c("black","springgreen2"),
+  #       bty = "n", lwd = 3)
+})
+
+## Fill the panels
+figureX <- fill_panel(figureX, PPcopes, row = 1, column = 1)
+
+Ctyp <- capture_base_plot({ 
+  #C. typicus abundance anomaly
+  opar <- par(mar = c(4,4.75,2,4))
+  soe.plot(SOE.data.2018, "Time", "Centropages typicus abundance anomaly MAB",
+           anomaly = T, x.start = 1986, x.line=1, y.line = 1, x.label = 'Year', rel.y.num = 0.6,
+           y.label = "Abundance anomaly",  rel.x.num = 0.6, rel.x.text = 0.8, rel.y.text = 0.8)
+})
+
+## Fill the panels
+figureX <- fill_panel(figureX, Ctyp, row = 1, column = 2)
+
+
+# groundfish condition
+#knitr::include_graphics(file.path(image.dir, 'MAFMC_Fish_Condition_2018.jpg'))
+
+figureX <- fill_panel(figureX, file.path(image.dir,'MAFMC_Fish_Condition_2018_crop.jpg'), scaling = "stretch", row = 2, column = 1)
+
+# groundfish productivity
+## Functions for plotting
+library(ggplot2)
+library(rpart)
+
+#### Adjust plot properties -------------------------------
+adjustAxes <- 
+  ggplot2::theme(axis.title   = element_text(size = 18),
+                 axis.text    = element_text(size = 15),
+                 plot.title   = element_text(size = 20))
+
+ggplot <- function(...) { ggplot2::ggplot(...)  + 
+    ggplot2::theme_bw() + 
+    adjustAxes}
+
+
+#### Plot stacked bar with cpts for single var ------------
+plot_stackbarcpts_single <- function(YEAR, var2bar,
+                                     x, xlab, ylab,
+                                     titl,
+                                     file_suffix,
+                                     leg_font_size = 10,
+                                     remove_leg = FALSE,
+                                     leg_ncol = 1,
+                                     wcpts = TRUE,
+                                     wdashed = TRUE,
+                                     height = 5.5,
+                                     width = 8,
+                                     filt = TRUE,
+                                     label = label,
+                                     y.text = y.text) {
+  
+  dat2bar <- data.frame(YEAR, var2bar,
+                        x)
+  if (filt == TRUE){mab_species <-  list("SUMMER FLOUNDER","SCUP","BLACK SEA BASS","BLUEFISH",
+                                         "NORTHERN SHORTFIN SQUID", "LONGFIN SQUID", "ATLANTIC MACKEREL",
+                                         "BUTTERFISH","ATLANTIC SURFCLAM", "OCEAN QUAHOG", "TILEFISH",
+                                         "BLUELINE TILEFISH","SPINY DOGFISH", "GOOSEFISH")
+  dat2plot <-
+    dat2bar %>%
+    tidyr::gather(variable, value, -YEAR, -var2bar) %>%
+    dplyr::mutate(var2bar = gsub(pattern      = "_", 
+                                 replacement  = " ", 
+                                 x            = var2bar),
+                  var2bar = gsub(pattern      = "Atl.", 
+                                 replacement  = "ATLANTIC", 
+                                 x            = var2bar),
+                  var2bar = gsub(pattern      = "Atl", 
+                                 replacement  = "ATLANTIC", 
+                                 x            = var2bar),
+                  var2bar = gsub(pattern      = "NS and combined", 
+                                 replacement  = "", 
+                                 x            = var2bar),
+                  var2bar = gsub(pattern      = "YT", 
+                                 replacement  = "Yellowtail", 
+                                 x            = var2bar),
+                  var2bar = gsub(pattern      = " GoM", 
+                                 replacement  = " GOM", 
+                                 x            = var2bar),
+                  var2bar = gsub(pattern      = " by EPU", 
+                                 replacement  = "", 
+                                 x            = var2bar)) %>%
+    filter(var2bar %in% mab_species)
+} else if (filt == FALSE){
+    dat2plot <-
+    dat2bar %>%
+    tidyr::gather(variable, value, -YEAR, -var2bar) %>%
+    dplyr::mutate(var2bar = gsub(pattern      = "_", 
+                                 replacement  = " ", 
+                                 x            = var2bar),
+                  var2bar = gsub(pattern      = "Atl.", 
+                                 replacement  = "ATLANTIC", 
+                                 x            = var2bar),
+                  var2bar = gsub(pattern      = "Atl", 
+                                 replacement  = "ATLANTIC", 
+                                 x            = var2bar),
+                  var2bar = gsub(pattern      = "NS and combined", 
+                                 replacement  = "", 
+                                 x            = var2bar),
+                  var2bar = gsub(pattern      = "YT", 
+                                 replacement  = "Yellowtail", 
+                                 x            = var2bar),
+                  var2bar = gsub(pattern      = " GoM", 
+                                 replacement  = " GOM", 
+                                 x            = var2bar),
+                  var2bar = gsub(pattern      = " by EPU", 
+                                 replacement  = "", 
+                                 x            = var2bar))
+}
+  p <-   
+    ggplot(dat2plot,
+           aes(x = YEAR)) +
+    geom_bar(data = dat2plot %>% filter(value > 0),
+             aes(y = value, fill = var2bar),
+             stat = "identity") +
+    geom_bar(data = dat2plot %>% filter(value < 0),
+             aes(y = value, fill = var2bar),
+             stat = "identity") +
+    geom_hline(size = 0.3, aes(yintercept = 0)) +
+    xlab(xlab) +
+    ylab(ylab) +
+    ggtitle(titl) +
+    guides(fill = guide_legend(ncol = leg_ncol)) +
+    theme(axis.title   = element_text(size = 16),
+          axis.text    = element_text(size = 15),
+          plot.title   = element_text(size = 20),
+          legend.text  = element_text(size = leg_font_size),
+          legend.title = element_blank()) +
+    annotate("text", label = label, x = 1980, y = y.text,size = 8, colour = "black")
+  
+  if(remove_leg) p <- p + theme(legend.position = "none")
+  
+  print(p)
+  
+  #ggsave(plot = p,
+  #       filename = "./productivity_all.eps",
+  #       width = width,
+  #       height = height)
+}
+
+fishprod <- capture_base_plot({
+  
+  par(las = 1)
+  plot(1:5)
+  title("One to five")
+  # bar_dat <-SOE.data.2018[grepl("by EPU",SOE.data.2018$Var) & SOE.data.2018$EPU == "MAB",]
+  # plot_stackbarcpts_single(YEAR = bar_dat$Time,
+  #                                      var2bar = bar_dat$Var,
+  #                                      x = bar_dat$Value,
+  #                                      titl = "",
+  #                                      xlab = "",
+  #                                      ylab = "Small fish per large fish biomass (anomaly)",
+  #                                      height = 5.5,
+  #                                      width = 9,
+  #                                      filt = TRUE,
+  #                                      label = "A",
+  #                                      y.text = 4.5)
+})
+
+# bar_dat <-SOE.data.2018[grepl("by EPU",SOE.data.2018$Var) & SOE.data.2018$EPU == "MAB",]
+# plot_stackbarcpts_single(YEAR = bar_dat$Time,
+#                          var2bar = bar_dat$Var,
+#                          x = bar_dat$Value,
+#                          titl = "",
+#                          xlab = "",
+#                          ylab = "Small fish per large fish biomass (anomaly)",
+#                          height = 5.5,
+#                          width = 9,
+#                          filt = FALSE,
+#                          label = "B",
+#                          y.text = 10)
+
+figureX <- fill_panel(figureX, fishprod, row = 2, column = 2)
+
+figureX
+
+```
+
+
+<!--
 ```{r, MABzooplankton, fig.cap="\\textit{C. typicus} abundance anomaly (A), and small-large copepod index with primary productivity anomaly (B) in the Mid-Atlantic.",echo = F, warning = F, include = T,  fig.show='hold', fig.align='default', out.width='.49\\linewidth',warning = F, message = F}
 
 
@@ -1676,4 +1875,5 @@ plot_stackbarcpts_single(YEAR = bar_dat$Time,
                          label = "B",
                          y.text = 10)
 ```
+-->
 
