@@ -831,7 +831,7 @@ Fish condition is measured as the weight per length–a measure of “fatness”
 >
 The number of small fish relative to the biomass of larger fish of the same species from the NEFSC survey is a simple measure of productivity, intended to complement model-based stock assessment estimates of recruitment for commercial species. There is a general decrease in this indicator when aggregated across managed species in the Mid-Atlantic.
 
-**Fig \@ref(fig:MABecoprod). Mid-Atlantic ecosystem productivity indicators.** Small-large copepod index with primary productivity anomaly (A), \\textit{C. typicus} abundance anomaly (B), groundfish condition (C), and groundfish productivity for MAFMC managed species in the Mid-Atlantic.
+**Fig \@ref(fig:MABecoprod). Mid-Atlantic ecosystem productivity indicators.** Small-large copepod index with primary productivity anomaly (A), \\textit{C. typicus} abundance anomaly (B), groundfish condition (C), and groundfish productivity for MAFMC managed species in the Mid-Atlantic (D).
 
 During each Council meeting, these indicators were shown together to further emphasize the potential linkages. In particlar, the concurrent drop in zooplankton and fish condition during the early 2000's was of interest to both Councils, and the apparent decrease in productivity across managed fish generated much discussion with the Mid-Atlantic Council. 
 
@@ -861,10 +861,10 @@ To continue building an efficient reporting structure, the following steps are i
 
 Efficiencies gained through improved reporting infrastructure are allowing more time scientific analysis of indicators as well. Over the coming reporting cycles, priority will be given to indicator selection and evaluation, threshold analysis, and synthetic multivariate methods such as DFA [refs]. 
 
-Finally, continued consultation with the Councils and other management bodies on tailored integrated ecosystem reporting resulted in development of new products. Automated stock specific ecosystem reports are currently in development to be further refined for stock assessment working groups: aprotype Ecosystem Context for Stock Assessment report was provided for the 2018 summer flounder assessment [ECSA](https://noaa-edab.github.io/ECSA/). This product is more interactive and intended for a scientific audience (e.g. with error bars on figures, links to methods, and data download capability), but many of the same data and analyses are used in the SOE. The aim is to develop an ecosystem reporting data ecosystem that is transparent, accessible, and adaptable to future analyses requested by managers and scientists alike.
+Finally, continued consultation with the Councils and other management bodies on tailored integrated ecosystem reporting resulted in development of new products. Automated stock specific ecosystem reports are currently in development to be further refined for stock assessment working groups: a prototype Ecosystem Context for Stock Assessment report was provided for the 2018 summer flounder assessment (see  [ECSA](https://noaa-edab.github.io/ECSA/)). This product is more interactive and intended for a scientific audience (e.g. with error bars on figures, links to methods, and data download capability), but many of the same data and analyses are used in the SOE. The aim is to develop an ecosystem reporting data ecosystem that is transparent, accessible, and adaptable to future analyses requested by managers and scientists alike.
 
 # Conclusion
-Overall, we have found that addressing the "so what" question with respect to ecosystem reporting is an ongoing, but worthwhile challenge. Flexibility and responsiveness to audience is important, and we will continue to be willing to change our reporting as manager needs change. It is possible to retain elements of ecosystem reporting frameworks such as DPSIR and ecosystem services approaches [refs] while adjusting to regional needs. Focus on synthesis and indicators directly addressing management objectives will continue to be vital. There are no plans to concentrate only on today's management relevant subset of indicators, but rather to maintain a wide range of ecosystem indicators. Tailored reports can ghen be made selectively from a "mothership" of ecosystem data (e.g. ESR on the web) for different audiences. Overall, we have developed this straightforward process to be flexible and adjustable to needs in any region/management context. Ultimately, open science principles combined with active solicitation of manager and stakeolder needs should be an effective way forward for improving the ecosystem basis of resource management.
+Overall, we have found that addressing the "so what" question with respect to ecosystem reporting is an ongoing, but worthwhile challenge. Flexibility and responsiveness to audience is important, and we will continue to be willing to change our reporting as manager needs change. It is possible to retain elements of ecosystem reporting frameworks such as DPSIR and ecosystem services approaches [refs] while adjusting to regional needs. Focus on synthesis and indicators directly addressing management objectives will continue to be vital. There are no plans to concentrate only on today's management relevant subset of indicators, but rather to maintain a wide range of ecosystem indicators. Tailored reports can then be made selectively from a "mothership" of ecosystem data (e.g. ESR on the web) for different audiences. Overall, we have developed this straightforward process to be flexible and adjustable to needs in any region/management context. Ultimately, open science principles combined with active solicitation of manager and stakeholder needs should be an effective way forward for improving the ecosystem basis of resource management.
 
 # Supporting Information
 
@@ -1485,7 +1485,7 @@ text(2,2.5*.95,"C", cex = 1.5)
 
 ```
 
-```{r MABecoprod, fig.cap="Ecosystem productivity indicators. Small-large copepod index with primary productivity anomaly (A), \\textit{C. typicus} abundance anomaly (B), groundfish condition (C), and groundfish productivity for MAFMC managed species in the Mid-Atlantic.", echo = F, fig.keep='last', fig.align='center', warning = F, message = F, out.width='\\linewidth'}
+```{r MABecoprod, fig.cap="Ecosystem productivity indicators. Small-large copepod index with primary productivity anomaly (A), \\textit{C. typicus} abundance anomaly (B), groundfish condition (C), and groundfish productivity for MAFMC managed species in the Mid-Atlantic (D).", echo = F, fig.keep='last', fig.align='center', warning = F, message = F, out.width='\\linewidth'}
 
 ## Figure dimensions
 figureX <- multi_panel_figure(
@@ -1508,7 +1508,7 @@ PPcopes <- capture_base_plot({
   #usr <- par("usr")
   #par(mgp=c(axis.title.position, axis.label.position, axis.line.position))
   plot(NULL,ylim = c(-1.5,1.5), pch = 16, lwd = 3,xlim = c(1998,2017),
-       cex = 1, ylab = "", las = 1, xaxt = "n", cex.axis = 0.6, xlab = "", tck=-0.01)
+       cex = 1, ylab = "Small-Lg Copepod Index", las = 1, xaxt = "n", cex.axis = 0.6, xlab = "", tck=-0.01, cex.lab=0.8)
   abline(h = 0, col  = "grey", lwd = 1, lty = 2) 
   with(SOE.data.2018[SOE.data.2018$Var == mab_copepod_anom,], points(Time[22:39], Value[22:39],
                                                                      type = "o", col = "black", ylim = c(-1.5,1.5), pch = 16, lwd = 2,las = 1))
@@ -1520,14 +1520,14 @@ PPcopes <- capture_base_plot({
   #primary productivity
   with(SOE.data.2018[SOE.data.2018$Var ==  mab_prim_prod[1],], plot(Time, Value,
                                                                     type = "o", col =  "springgreen2", ylim = c(.8,1.25), ylab = "", axes = F,log = "y",
-                                                                    yaxt = "n", pch = 16, lwd = 2, cex = 1, las = 1, xaxt = "n",xlab = ""))
-  axis(side = 4, las = 1, tck=-0.01, cex.axis = 0.6)
+                                                                    yaxt = "n", pch = 16, lwd = 2, cex = 1, las = 1, xaxt = "n",xlab = "Year", cex.lab=0.8))
+  axis(side = 4, las = 1, tck=-0.01, cex.axis = 0.6, col = "springgreen2", col.axis = "springgreen2")
   axis(side = 1, tck=-0.01, cex.axis = 0.6)
   #mtext(side = 4, line = 2, "Mean Primary Production Ratio", cex = 0.8)
   #mtext(side = 1, "", cex = 0.8, text = "Year",line = 1)
-  #legend("bottomright",
-  #       legend = c("Copepod Index", "Prim. Prod. Ratio"), col = c("black","springgreen2"),
-  #       bty = "n", lwd = 3)
+  legend("bottomright",
+         legend = c("Copepod Index", "PP Ratio"), col = c("black","springgreen2"),
+         bty = "n", lwd = 2, cex=0.5)
 })
 
 ## Fill the panels
@@ -1653,12 +1653,17 @@ plot_stackbarcpts_single <- function(YEAR, var2bar,
     ylab(ylab) +
     ggtitle(titl) +
     guides(fill = guide_legend(ncol = leg_ncol)) +
-    theme(axis.title   = element_text(size = 16),
-          axis.text    = element_text(size = 15),
-          plot.title   = element_text(size = 20),
+    #theme(axis.title   = element_text(size = 16),
+    #      axis.text    = element_text(size = 15),
+    #      plot.title   = element_text(size = 20),
+    #      legend.text  = element_text(size = leg_font_size),
+    #      legend.title = element_blank()) +
+    theme(axis.title   = element_text(size = 8),
+          axis.text    = element_text(size = 6),
+          plot.title   = element_text(size = 5),
           legend.text  = element_text(size = leg_font_size),
           legend.title = element_blank()) +
-    annotate("text", label = label, x = 1980, y = y.text,size = 8, colour = "black")
+    annotate("text", label = label, x = 1980, y = y.text, size = 4, colour = "black") #size = 8,
   
   if(remove_leg) p <- p + theme(legend.position = "none")
   
@@ -1670,24 +1675,22 @@ plot_stackbarcpts_single <- function(YEAR, var2bar,
   #       height = height)
 }
 
-fishprod <- capture_base_plot({
-  
-  par(las = 1)
-  plot(1:5)
-  title("One to five")
-  # bar_dat <-SOE.data.2018[grepl("by EPU",SOE.data.2018$Var) & SOE.data.2018$EPU == "MAB",]
-  # plot_stackbarcpts_single(YEAR = bar_dat$Time,
-  #                                      var2bar = bar_dat$Var,
-  #                                      x = bar_dat$Value,
-  #                                      titl = "",
-  #                                      xlab = "",
-  #                                      ylab = "Small fish per large fish biomass (anomaly)",
-  #                                      height = 5.5,
-  #                                      width = 9,
-  #                                      filt = TRUE,
-  #                                      label = "A",
-  #                                      y.text = 4.5)
-})
+
+bar_dat <-SOE.data.2018[grepl("by EPU",SOE.data.2018$Var) & SOE.data.2018$EPU == "MAB",]
+
+fishprod <-  plot_stackbarcpts_single(YEAR = bar_dat$Time,
+                                        var2bar = bar_dat$Var,
+                                        x = bar_dat$Value,
+                                        leg_font_size = 2,
+                                        titl = "",
+                                        xlab = "",
+                                        ylab = "Small fish per large fish biomass (anomaly)",
+                                        height = 5.5,
+                                        width = 9,
+                                        filt = TRUE,
+                                        label = "A",
+                                        y.text = 4.5,
+                                        remove_leg = TRUE)
 
 # bar_dat <-SOE.data.2018[grepl("by EPU",SOE.data.2018$Var) & SOE.data.2018$EPU == "MAB",]
 # plot_stackbarcpts_single(YEAR = bar_dat$Time,
