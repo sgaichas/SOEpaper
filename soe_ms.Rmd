@@ -87,7 +87,7 @@ output:
 csl: plos.csl    
 ---
 
-*add other authors from SOE acknowledgements? current list are SOE lead editors, SOE section/indicator/text contributors*
+*to add as authors: Donald Anderson (WHOI), Amani Bassyouni (VA Dept Health), Lisa Calvo (Rutgers), Heather Haas,  Loren Kellogg, Kristin Kleisner (TNC), Dave Kulis (WHOI), Kimberly Murray, Karl Roscher (MD DNR), Mark Terceiro*
 
 
 
@@ -875,8 +875,8 @@ Overall, we have found that addressing the "so what" question with respect to ec
 **S3** [**New England State of the Ecosystem 2018.**](https://s3.amazonaws.com/nefmc.org/2_Ecosystem-Status-Report.pdf) Report presented to the New England Fishery Management Council on 19 April 2018.
 
 # Acknowledgments
-We gratefully acknowledge Dr. John Boreman, chair of the MAFMC Scientific and Statistical Committee, for bluntly pointing out that initial draft ecosystem reporting lacked clear connections to management issues (and by extension, suggesting the title to this paper). Richard Seagraves, Mid-Atlantic Council staff (retired), contributed valuable insights on potential management uses of the SOE at the August 2017 workshop.  Development of ecosystem reporting in the Northeast US has been greatly facilitated and improved through the International Council for the Exploration of the Sea's Working Group on the Northwest Atlantic Regional Sea (ICES WGNARS). *to add- indicator data contributors: Donald Anderson, Amani Bassyouni, Lisa Calvo, Heather Haas, Mike Hammil, Loren Kellogg, Kristin Kleisner, Dave Kulis, Kimberly Murray, Karl Roscher, Mark Terceiro*
-*acknowledgements: Steve Traynor (conceptual model graphics), Andy Beet (tech memo section editing)*
+We gratefully acknowledge Dr. John Boreman, chair of the MAFMC Scientific and Statistical Committee, for bluntly pointing out that initial draft ecosystem reporting lacked clear connections to management issues (and by extension, suggesting the title to this paper). Richard Seagraves, Mid-Atlantic Council staff (retired), contributed valuable insights on potential management uses of the SOE at the August 2017 workshop.  Development of ecosystem reporting in the Northeast US has been greatly facilitated and improved through the International Council for the Exploration of the Sea's Working Group on the Northwest Atlantic Regional Sea (ICES WGNARS). 
+*acknowledgements: Steve Traynor (conceptual model graphics), Andy Beet (tech memo section editing), Mike Hammil (DFO gray seal consult),*
 *affiliation: NEFSC and other places, need to sort out, USA*
 
 \nolinenumbers
