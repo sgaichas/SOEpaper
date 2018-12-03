@@ -88,8 +88,50 @@ csl: plos.csl
 ---
 
 *to add as authors: Donald Anderson (WHOI), Amani Bassyouni (VA Dept Health), Lisa Calvo (Rutgers), Heather Haas,  Loren Kellogg, Kristin Kleisner (TNC), Dave Kulis (WHOI), Kimberly Murray, Karl Roscher (MD DNR), Mark Terceiro*
+<!--
+  - name: Donald Anderson
+    email: danderson@whoi.edu
+    affiliation: Woods Hole Oceanographic Institution
+  - name: Amani Bassyouni
+    email: Amani.Bassyouni@vdh.virginia.gov
+    affiliation: Virginia Department of Health
+  - name: Lisa Calvo
+    email: lcalvo@hsrl.rutgers.edu
+    affiliation: Rutgers University Haskin Shellfish Research Laboratory
+  - name: Heather Haas
+    email: Heather.Haas@noaa.gov
+    affiliation: NOAA NMFS Northeast Fisheries Science Center Woods Hole
+  - name: Loren Kellogg
+    email: Loren.Kellogg@noaa.gov
+    affiliation: NOAA NMFS Northeast Fisheries Science Center Woods Hole
+  - name: Kristin Kleisner
+    email: kristin.kleisner.work@gmail.com
+    affiliation: Environmental Defense Fund
+  - name: Dave Kulis
+    email: dkulis@whoi.edu
+    affiliation: Woods Hole Oceanographic Institution
+  - name: Kimberly Murray
+    email: Kimberly.Murray@noaa.gov
+    affiliation: NOAA NMFS Northeast Fisheries Science Center Woods Hole
+  - name: Karl Roscher
+    email: Karl.Roscher@maryland.gov
+    affiliation: Maryland Department of Natural Resources
+  - name: Mark Terceiro
+    email: Mark.Terceiro@noaa.gov
+    affiliation: NOAA NMFS Northeast Fisheries Science Center Woods Hole
 
+  - code: Woods Hole Oceanographic Institution
+    address: 266 Woods Hole Road MS# 32, Woods Hole, MA 02543
+  - code: Virginia Department of Health
+    address: 109 Governor Street, Richmond, Virginia 23219
+  - code: Rutgers University Haskin Shellfish Research Laboratory
+    address: 6959 Miller Avenue, Port Norris, NJ  08349
+  - code: Environmental Defense Fund
+    address: 18 Tremont Street, Suite 850, Boston, MA 02108
+  - code: Maryland Department of Natural Resources
+    address: 580 Taylor Ave, Annapolis MD 21401
 
+-->
 
 ```{r Directory and Data Set-up, echo=F, message=F, warning=FALSE, paged.print=TRUE}
 
