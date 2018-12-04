@@ -654,7 +654,7 @@ The executive summary outlines report purpose, structure, alignment with managem
 ### Purpose: Mid-Atlantic SOE Report Introduction
 >The purpose of this report is to provide **ecosystem-scale information for fishery managers** to consider along with existing species-scale analyses.  An overview of ecosystem relationships as represented by **a conceptual model helps place more detailed species-level management in context** by highlighting relationships between focal species groups organized by Mid Atlantic Fishery Management Council (MAFMC) Fishery Management Plan (FMP), managed human activities, environmental drivers, habitats, and key ecological links (Fig \@ref(fig:conceptual)). Here, human activities link to high level strategic management objectives. Many components of the conceptual model are represented by indicators in this report, and key paths connecting components and objectives are highlighted.
 
-**Fig \@ref(fig:conceptual). Mid-Atlantic Ecosystem.**
+**Fig \@ref(fig:conceptual). Overview of ecosystem relationships for the Mid-Atlantic Ecosystem.**  Human activities link to high level strategic management objectives (MAFMC FMP). Components are represented by indicators in this report, and key paths connecting components and objectives are highlighted.
 
 ### Structure with management objectives: Mid-Atlantic SOE Report Executive Summary
 >We have organized this report using a proposed set of **ecosystem-scale objectives** derived from US legislation and current management practices (Table \@ref(tab:objcatsMAB)). We report indicators at the spatial scale of either the Mid-Atlantic Bight (MAB; Fig \@ref(fig:map)), for Mid Atlantic states, or Northeast US coastwide where appropriate. Indicator spatial scale is noted in each section heading. 
@@ -747,7 +747,7 @@ knitr::kable(SOEcont, format = "latex", booktabs = T, caption = 'Report sections
 
 Below we give two illustrative examples of SOE reporting from the main body of the report illustrating the priorities for addressing "so what." In the first, we demonstrate how reporting of the same indicator suite was tailored for a single ecological production unit (Mid-Atlantic) and for two ecological production units within one management jurisdiction (New England). This was the first in-depth indicator discussion in each report following the executive summary. 
 
-## Priority: Increased relevance with human dimensions objectives first
+## Priority: Clear communication of relevance to management with human dimensions first
 
 ### Mid Atlantic report text: Seafood production (MAB)
 >Seafood production is a stated goal of optimal fishery management as part of the definition of “benefits to the nation” under MSA. Both commercial and recreational fishing contributes to seafood production, the latter for personal consumption, and indicators for each of these human activities track management performance against this objective. 
@@ -932,7 +932,7 @@ cat("\\renewcommand{\\footrule}{}")
 
 # Figures
 
-```{r conceptual, fig.cap="Mid-Atlantic Ecosystem", fig.height=6, fig.width=4, out.width='\\linewidth', fig.align='center', echo = F, message = FALSE, warning = FALSE, eval = T}
+```{r conceptual, fig.cap="Overview of ecosystem relationships for the Mid-Atlantic Ecosystem. Human activities link to high level strategic management objectives (MAFMC FMP). Components are represented by indicators in this report, and key paths connecting components and objectives are highlighted.", fig.height=6, fig.width=4, out.width='\\linewidth', fig.align='center', echo = F, message = FALSE, warning = FALSE, eval = T}
 knitr::include_graphics(file.path(image.dir, 'SOE_MAB_ConceptMod.png'))
 
 ```
