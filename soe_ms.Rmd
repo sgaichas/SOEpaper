@@ -62,33 +62,6 @@ author:
   - name: Mark Wuenschel
     email: Mark.Wuenschel@noaa.gov
     affiliation: NOAA NMFS Northeast Fisheries Science Center Woods Hole
-  - name: Scott Large
-    email: Scott.Large@noaa.gov
-    affiliation: NOAA NMFS Northeast Fisheries Science Center Woods Hole
-address:
-  - code: NOAA NMFS Northeast Fisheries Science Center Woods Hole
-    address: 166 Water Street, Woods Hole, MA, 02543
-  - code: NOAA NMFS Northeast Fisheries Science Center Silver Spring
-    address: 1315 East-West Highway, Silver Spring, MD, 20910
-  - code: NOAA NMFS Northeast Fisheries Science Center Narragansett
-    address: 28 Tarzwell Drive, Narragansett, RI, 02882
-  - code: NOAA NMFS Northeast Fisheries Science Center Princeton
-    address: 201 Forrestal Road, Princeton, NJ, 08540
-date: '`r format(Sys.Date(), "%B %d, %Y")`'
-abstract: |
-  Understanding the context of ecosystem status and trends is important for making informed natural resource management decisions. However, many fishery management systems are fully occupied with decisions at the species or stock level, and busy managers are reluctant to consider extensive reports with unfamiliar information if the connection to current management decisions and objectives are unclear. Here, we describe the process used to develop streamlined ecosystem reporting to meet management needs in two US fishery management regions, New England and the Mid-Atlantic. A multi-disciplinary team was assembled to revise an initial report that had been based on a format used in another US region. First, ecosystem indicators were clearly aligned with stated fishery management objectives. Second, objectives and associated indicators relating to human well-being (e.g., seafood production) were placed first in the report, rather than last. Third, brief nontechnical text explained indicator relevance and connections between indicators, and standardized visualizations were used for time series and maps to streamline communication. Finally, reports used transparent and reproducible production methods to meet management deadlines. Engagement with managers is ongoing to further improve the utility of the report. This approach to streamlined, audience-specific ecosystem reporting is flexible and adaptable to many different governance contexts, and can be used to provide information essential to implement ecosystem based management.  
-keywords: ecosystem approach, natural resource management, fisheries, integrated ecosystem assessment, ecosystem indicators, economic indicators, management objectives
-bibliography: ["SOE.bib", "packages.bib"]
-output: 
-  bookdown::pdf_book:
-    includes:
-      in_header: riskassess-preamble-latex.tex
-    base_format: rticles::plos_article
-csl: plos.csl    
----
-
-*to add as authors: Donald Anderson (WHOI), Amani Bassyouni (VA Dept Health), Lisa Calvo (Rutgers), Heather Haas,  Loren Kellogg, Kristin Kleisner (TNC), Dave Kulis (WHOI), Kimberly Murray, Karl Roscher (MD DNR), Mark Terceiro*
-<!--
   - name: Donald Anderson
     email: danderson@whoi.edu
     affiliation: Woods Hole Oceanographic Institution
@@ -119,19 +92,41 @@ csl: plos.csl
   - name: Mark Terceiro
     email: Mark.Terceiro@noaa.gov
     affiliation: NOAA NMFS Northeast Fisheries Science Center Woods Hole
-
+  - name: Scott Large
+    email: Scott.Large@noaa.gov
+    affiliation: NOAA NMFS Northeast Fisheries Science Center Woods Hole
+address:
+  - code: NOAA NMFS Northeast Fisheries Science Center Woods Hole
+    address: 166 Water Street, Woods Hole, MA, 02543
+  - code: NOAA NMFS Northeast Fisheries Science Center Silver Spring
+    address: 1315 East-West Highway, Silver Spring, MD, 20910
+  - code: NOAA NMFS Northeast Fisheries Science Center Narragansett
+    address: 28 Tarzwell Drive, Narragansett, RI, 02882
+  - code: NOAA NMFS Northeast Fisheries Science Center Princeton
+    address: 201 Forrestal Road, Princeton, NJ, 08540
   - code: Woods Hole Oceanographic Institution
-    address: 266 Woods Hole Road MS# 32, Woods Hole, MA 02543
+    address: 266 Woods Hole Road, MS 32, Woods Hole, MA, 02543
   - code: Virginia Department of Health
-    address: 109 Governor Street, Richmond, Virginia 23219
+    address: 109 Governor Street, Richmond, Virginia, 23219
   - code: Rutgers University Haskin Shellfish Research Laboratory
-    address: 6959 Miller Avenue, Port Norris, NJ  08349
+    address: 6959 Miller Avenue, Port Norris, NJ, 08349
   - code: Environmental Defense Fund
-    address: 18 Tremont Street, Suite 850, Boston, MA 02108
+    address: 18 Tremont Street, Suite 850, Boston, MA, 02108
   - code: Maryland Department of Natural Resources
-    address: 580 Taylor Ave, Annapolis MD 21401
+    address: 580 Taylor Ave, Annapolis MD, 21401
 
--->
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+abstract: |
+  Understanding the context of ecosystem status and trends is important for making informed natural resource management decisions. However, many fishery management systems are fully occupied with decisions at the species or stock level, and busy managers are reluctant to consider extensive reports with unfamiliar information if the connection to current management decisions and objectives are unclear. Here, we describe the process used to develop streamlined ecosystem reporting to meet management needs in two US fishery management regions, New England and the Mid-Atlantic. A multi-disciplinary team was assembled to revise an initial report that had been based on a format used in another US region. First, ecosystem indicators were clearly aligned with stated fishery management objectives. Second, objectives and associated indicators relating to human well-being (e.g., seafood production) were placed first in the report, rather than last. Third, brief nontechnical text explained indicator relevance and connections between indicators, and standardized visualizations were used for time series and maps to streamline communication. Finally, reports used transparent and reproducible production methods to meet management deadlines. Engagement with managers is ongoing to further improve the utility of the report. This approach to streamlined, audience-specific ecosystem reporting is flexible and adaptable to many different governance contexts, and can be used to provide information essential to implement ecosystem based management.  
+keywords: ecosystem approach, natural resource management, fisheries, integrated ecosystem assessment, ecosystem indicators, economic indicators, management objectives
+bibliography: ["SOE.bib", "packages.bib"]
+output: 
+  bookdown::pdf_book:
+    includes:
+      in_header: riskassess-preamble-latex.tex
+    base_format: rticles::plos_article
+csl: plos.csl    
+---
 
 ```{r Directory and Data Set-up, echo=F, message=F, warning=FALSE, paged.print=TRUE}
 
@@ -917,9 +912,7 @@ Overall, we have found that addressing the "so what" question with respect to ec
 **S3** [**New England State of the Ecosystem 2018.**](https://s3.amazonaws.com/nefmc.org/2_Ecosystem-Status-Report.pdf) Report presented to the New England Fishery Management Council on 19 April 2018.
 
 # Acknowledgments
-We gratefully acknowledge Dr. John Boreman, chair of the MAFMC Scientific and Statistical Committee, for bluntly pointing out that initial draft ecosystem reporting lacked clear connections to management issues (and by extension, suggesting the title to this paper). Richard Seagraves, Mid-Atlantic Council staff (retired), contributed valuable insights on potential management uses of the SOE at the August 2017 workshop.  Development of ecosystem reporting in the Northeast US has been greatly facilitated and improved through the International Council for the Exploration of the Sea's Working Group on the Northwest Atlantic Regional Sea (ICES WGNARS). 
-*acknowledgements: Steve Traynor (conceptual model graphics), Andy Beet (tech memo section editing), Mike Hammil (DFO gray seal consult),*
-*affiliation: NEFSC and other places, need to sort out, USA*
+We gratefully acknowledge Dr. John Boreman, chair of the MAFMC Scientific and Statistical Committee, for bluntly pointing out that initial draft ecosystem reporting lacked clear connections to management issues (and by extension, suggesting the title to this paper). Richard Seagraves, Mid-Atlantic Council staff (retired), contributed valuable insights on potential management uses of the SOE at the August 2017 workshop. We are grateful to Steve Traynor for developing the conceptual model graphics used in 2018, to Andrew Beet (Integrated Statistics and NEFSC) for editing the online technical methods, and to Mike Hammil (Department of Fisheries and Oceans, Canada) for background information on gray seals. Development of ecosystem reporting in the Northeast US has been greatly facilitated and improved through the International Council for the Exploration of the Sea's Working Group on the Northwest Atlantic Regional Sea (ICES WGNARS). 
 
 \nolinenumbers
 
