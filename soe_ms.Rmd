@@ -3,117 +3,119 @@ title: "State of the Ecosystem: So What? Improving ecosystem reporting for fishe
 author:
   - name: Sarah K. Gaichas
     email: Sarah.Gaichas@noaa.gov
-    affiliation: NOAA NMFS Northeast Fisheries Science Center Woods Hole
+    affiliation: NEFSCWH
     corresponding: Sarah.Gaichas@noaa.gov
   - name: Sean Hardison
     email: Sean.Hardison@noaa.gov
-    affiliation: NOAA NMFS Northeast Fisheries Science Center Woods Hole
+    affiliation: [IS,NEFSCWH]
   - name: Sean Lucey
     email: Sean.Lucey@noaa.gov
-    affiliation: NOAA NMFS Northeast Fisheries Science Center Woods Hole
+    affiliation: NEFSCWH
   - name: Patricia Clay
     email: Patricia.Clay@noaa.gov
-    affiliation: NOAA NMFS Northeast Fisheries Science Center Silver Spring
+    affiliation: NEFSCSS
   - name: Lisa Colburn
     email: Lisa.Colburn@noaa.gov
-    affiliation: NOAA NMFS Northeast Fisheries Science Center Narragansett
+    affiliation: NEFSCRI
   - name: Geret DePiper
     email: Geret.DePiper@noaa.gov
-    affiliation: NOAA NMFS Northeast Fisheries Science Center Woods Hole
+    affiliation: NEFSCWH
   - name: Deb Duarte
     email: Deborah.Duarte@noaa.gov
-    affiliation: NOAA NMFS Northeast Fisheries Science Center Woods Hole
+    affiliation: NEFSCWH
   - name: Michael Fogarty
     email: Michael.Fogarty@noaa.gov
-    affiliation: NOAA NMFS Northeast Fisheries Science Center Woods Hole
+    affiliation: NEFSCWH
   - name: Kevin Friedland
     email: Kevin.Friedland@noaa.gov
-    affiliation: NOAA NMFS Northeast Fisheries Science Center Narragansett
+    affiliation: NEFSCRI
   - name: Robert Gamble
     email: Robert.Gamble@noaa.gov
-    affiliation: NOAA NMFS Northeast Fisheries Science Center Woods Hole
+    affiliation: NEFSCWH
   - name: Kimberly Hyde
     email: Kimberly.Hyde@noaa.gov
-    affiliation: NOAA NMFS Northeast Fisheries Science Center Narragansett
+    affiliation: NEFSCRI
   - name: Chris Melrose
     email: Christopher.Melrose@noaa.gov
-    affiliation: NOAA NMFS Northeast Fisheries Science Center Narragansett
+    affiliation: NEFSCRI
   - name: Ryan Morse
     email: Ryan.Morse@noaa.gov
-    affiliation: NOAA NMFS Northeast Fisheries Science Center Narragansett
+    affiliation: [IS,NEFSCRI]
   - name: Chris Orphanides
     email: Chris.Orphanides@noaa.gov
-    affiliation: NOAA NMFS Northeast Fisheries Science Center Woods Hole
+    affiliation: NEFSCWH
   - name: Charles Perretti
     email: Charles.Perretti@noaa.gov
-    affiliation: NOAA NMFS Northeast Fisheries Science Center Woods Hole
+    affiliation: [IS,NEFSCWH]
   - name: Vincent Saba
     email: Vincent.Saba@noaa.gov
-    affiliation: NOAA NMFS Northeast Fisheries Science Center Princeton
+    affiliation: NEFSCNJ
   - name: Laurel Smith
     email: Laurel.Smith@noaa.gov
-    affiliation: NOAA NMFS Northeast Fisheries Science Center Woods Hole
+    affiliation: NEFSCWH
   - name: John Walden
     email: John.Walden@noaa.gov
-    affiliation: NOAA NMFS Northeast Fisheries Science Center Woods Hole
+    affiliation: NEFSCWH
   - name: Harvey Walsh
     email: Harvey.Walsh@noaa.gov
-    affiliation: NOAA NMFS Northeast Fisheries Science Center Narragansett
+    affiliation: NEFSCRI
   - name: Mark Wuenschel
     email: Mark.Wuenschel@noaa.gov
-    affiliation: NOAA NMFS Northeast Fisheries Science Center Woods Hole
+    affiliation: NEFSCWH
   - name: Donald Anderson
     email: danderson@whoi.edu
-    affiliation: Woods Hole Oceanographic Institution
+    affiliation: WHOI
   - name: Amani Bassyouni
     email: Amani.Bassyouni@vdh.virginia.gov
-    affiliation: Virginia Department of Health
+    affiliation: VDH
   - name: Lisa Calvo
     email: lcalvo@hsrl.rutgers.edu
-    affiliation: Rutgers University Haskin Shellfish Research Laboratory
+    affiliation: RU
   - name: Heather Haas
     email: Heather.Haas@noaa.gov
-    affiliation: NOAA NMFS Northeast Fisheries Science Center Woods Hole
+    affiliation: NEFSCWH
   - name: Loren Kellogg
     email: Loren.Kellogg@noaa.gov
-    affiliation: NOAA NMFS Northeast Fisheries Science Center Woods Hole
+    affiliation: NEFSCWH
   - name: Kristin Kleisner
     email: kristin.kleisner.work@gmail.com
-    affiliation: Environmental Defense Fund
+    affiliation: EDF
   - name: Dave Kulis
     email: dkulis@whoi.edu
-    affiliation: Woods Hole Oceanographic Institution
+    affiliation: WHOI
   - name: Kimberly Murray
     email: Kimberly.Murray@noaa.gov
-    affiliation: NOAA NMFS Northeast Fisheries Science Center Woods Hole
+    affiliation: NEFSCWH
   - name: Karl Roscher
     email: Karl.Roscher@maryland.gov
-    affiliation: Maryland Department of Natural Resources
+    affiliation: MDDNR
   - name: Mark Terceiro
     email: Mark.Terceiro@noaa.gov
-    affiliation: NOAA NMFS Northeast Fisheries Science Center Woods Hole
+    affiliation: NEFSCWH
   - name: Scott Large
     email: Scott.Large@noaa.gov
-    affiliation: NOAA NMFS Northeast Fisheries Science Center Woods Hole
+    affiliation: NEFSCWH
 address:
-  - code: NOAA NMFS Northeast Fisheries Science Center Woods Hole
-    address: 166 Water Street, Woods Hole, MA, 02543
-  - code: NOAA NMFS Northeast Fisheries Science Center Silver Spring
-    address: 1315 East-West Highway, Silver Spring, MD, 20910
-  - code: NOAA NMFS Northeast Fisheries Science Center Narragansett
-    address: 28 Tarzwell Drive, Narragansett, RI, 02882
-  - code: NOAA NMFS Northeast Fisheries Science Center Princeton
-    address: 201 Forrestal Road, Princeton, NJ, 08540
-  - code: Woods Hole Oceanographic Institution
-    address: 266 Woods Hole Road, MS 32, Woods Hole, MA, 02543
-  - code: Virginia Department of Health
-    address: 109 Governor Street, Richmond, Virginia, 23219
-  - code: Rutgers University Haskin Shellfish Research Laboratory
-    address: 6959 Miller Avenue, Port Norris, NJ, 08349
-  - code: Environmental Defense Fund
-    address: 18 Tremont Street, Suite 850, Boston, MA, 02108
-  - code: Maryland Department of Natural Resources
-    address: 580 Taylor Ave, Annapolis MD, 21401
+  - code: NEFSCWH
+    address: NOAA NMFS Northeast Fisheries Science Center, Woods Hole, MA, USA
+  - code: IS
+    address: Integrated Statistics, Woods Hole, MA, USA
+  - code: NEFSCSS
+    address: NOAA NMFS Northeast Fisheries Science Center, Silver Spring, MD, USA
+  - code: NEFSCRI
+    address: NOAA NMFS Northeast Fisheries Science Center, Narragansett, RI, USA
+  - code: NEFSCNJ
+    address: NOAA NMFS Northeast Fisheries Science Center, Princeton, NJ, USA
+  - code: WHOI
+    address: Woods Hole Oceanographic Institution, Woods Hole, MA, USA
+  - code: VDH
+    address: Virginia Department of Health, 1Richmond, VA, USA
+  - code: RU
+    address: Rutgers University Haskin Shellfish Research Laboratory, Port Norris, NJ, USA
+  - code: EDF
+    address: Environmental Defense Fund, Boston, MA, USA
+  - code: MDDNR
+    address: Maryland Department of Natural Resources, Annapolis, MD, USA
 
 date: '`r format(Sys.Date(), "%B %d, %Y")`'
 abstract: |
