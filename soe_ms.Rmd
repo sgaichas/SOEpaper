@@ -11,15 +11,15 @@ author:
   - name: Sean Lucey
     email: Sean.Lucey@noaa.gov
     affiliation: NEFSCWH
+  - name: Geret DePiper
+    email: Geret.DePiper@noaa.gov
+    affiliation: NEFSCWH
   - name: Patricia Clay
     email: Patricia.Clay@noaa.gov
     affiliation: NEFSCSS
   - name: Lisa Colburn
     email: Lisa.Colburn@noaa.gov
     affiliation: NEFSCRI
-  - name: Geret DePiper
-    email: Geret.DePiper@noaa.gov
-    affiliation: NEFSCWH
   - name: Deb Duarte
     email: Deborah.Duarte@noaa.gov
     affiliation: NEFSCWH
@@ -106,7 +106,7 @@ address:
   - code: WHOI
     address: Woods Hole Oceanographic Institution, Woods Hole, MA, USA
   - code: VDH
-    address: Virginia Department of Health, 1Richmond, VA, USA
+    address: Virginia Department of Health, Richmond, VA, USA
   - code: RU
     address: Rutgers University Haskin Shellfish Research Laboratory, Port Norris, NJ, USA
   - code: EDF
