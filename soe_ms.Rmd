@@ -14,10 +14,10 @@ author:
   - name: Geret DePiper
     email: Geret.DePiper@noaa.gov
     affiliation: NEFSCWH
-  - name: Patricia Clay
+  - name: Patricia M. Clay
     email: Patricia.Clay@noaa.gov
     affiliation: NEFSCSS
-  - name: Lisa Colburn
+  - name: Lisa L. Colburn
     email: Lisa.Colburn@noaa.gov
     affiliation: NEFSCRI
   - name: Deb Duarte
