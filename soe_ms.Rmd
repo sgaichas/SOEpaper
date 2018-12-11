@@ -159,7 +159,7 @@ library(maps);library(mapdata);library(raster)
 library(grid);library(stringr);library(png)
 library(ncdf4);library(marmap); library(magick);
 library(knitr); library(readr); library(kableExtra);
-library(multipanelfigure)
+library(multipanelfigure); library(rerddap)
 
 
 #get map data and set constants
@@ -628,10 +628,10 @@ Individual indicators are necessarily linked to individual ecosystem attributes 
 
 The simple structural approach was to include a short lead synthesis section in the report. This "executive summary" aimed to summarize across all objectives and associated indicators in the first 2-3 pages of the report, highlighting key messages similar to "report cards" produced in other regions [@zador_ecosystem_2016]. The purpose of the summary is to link indicator trends where possible between human dimensions, managed species, and ecological/environmental drivers.
 
-To achieve the goal of succinct synthesis, the report production process was changed. Due to resource limitations, initial reports (2015-2016) were developed by a single scientist from existing indicators [@program_ecosystem_2012, @nefsc_northeast_2015] with requests for updated data from multiple contributors. This process made synthesis difficult, and underutilized the knowledge and experience of contributors. A team of 3 leads worked on the 2017 report, which improved report structure, but synthesis remained difficult. Planning for the 2018 reports began in August 2017 with a workshop to develop a new report outline. Participants in the workshop included scientists (anthropologists, economists, physical and biological oceanographers, habitat specialists, food web ecologists, population biologists, protected species experts, and modelers) along with fishery managers. These diverse experts discussed the report outline as a full group but also self-organized into smaller interim working groups (human dimensions, protected species, resource species, habiat, and ecosystem productivity) to develop new indicator suites within the report sections until December 2017, when data were needed. A synthesis workshop with the full group was held in Mid-January 2018 to review subgroup results and  begin to develop synthesis within and across report sections. The full report was produced, internally reviewed, and revised during February 2018, with initial Council (Scientific and Statistical Committee, SSC) review early March 2018. Based on this initial scientific review, the report was revised again (including a section with Council/SSC comments and responses). During revision, experts were called on as necessary to respond to Council comments. 
+To achieve the goal of succinct synthesis, the report production process was changed. Due to resource limitations, initial reports (2015-2016) were developed by a single scientist from existing indicators [@program_ecosystem_2012, @nefsc_northeast_2015] with requests for updated data from multiple contributors. This process made synthesis difficult, and underutilized the knowledge and experience of contributors. A team of 3 leads worked on the 2017 report, which improved report structure, but synthesis remained difficult. Planning for the 2018 reports began in August 2017 with a workshop to develop a new report outline. Participants in the workshop included scientists (anthropologists, economists, physical and biological oceanographers, habitat specialists, food web ecologists, population biologists, protected species experts, and modelers) along with fishery managers. These diverse experts discussed the report outline as a full group but also self-organized into smaller interim working groups (human dimensions, protected species, resource species, habiat, and ecosystem productivity) to develop new indicator suites within the report sections until December 2017, when data were needed. A synthesis workshop with the full group was held in Mid-January 2018 to review subgroup results and  begin to develop synthesis within and across report sections. The full report was produced, internally reviewed, and revised during February 2018, with initial review by the Mid-Atlantic Council's Scientific and Statistical Committee (SSC), in early March 2018. (Each U.S. fishery management Council has its own SSC to provide scientific advice for management.) Based on this initial scientific review, the report was revised again (including a section with Council/SSC comments and responses). During revision, experts were called on as necessary to respond to comments from each Council. 
 
 ## Priority: Efficient production for multiple management jurisdictions
-To provide reports within Council management timeframes, the process described above also needed to be efficient. To achieve this, we first built on existing efforts inside and outside the region, including the previously published comprehensive Northeast US Ecosystem Status Reports (ESRs, [@program_ecosystem_2012, @nefsc_northeast_2015]), management and economimc performance reports [@clay_measuring_2014], and social indicators [@colburn_social_2012; @jepson_development_2013; @colburn_indicators_2016]; the US California Current State of the Ecosystem (SOE) report [@noauthor_annual_nodate] which served as our initial report template; and the US Alaska annual Ecosystem Considerations report [@zador_ecosystem_2016]. The experience with gathering, documenting, and visualizing indicators across all of these reports was critical to efficient development of our fishery management Council-targeted SOE report.
+To provide reports within each Council's management timeframes, the process described above also needed to be efficient. To achieve this, we first built on existing efforts inside and outside the region, including the previously published comprehensive Northeast US Ecosystem Status Reports (ESRs, [@program_ecosystem_2012, @nefsc_northeast_2015]), management and economic performance reports [@clay_measuring_2014], and social indicators [@colburn_social_2012; @jepson_development_2013; @colburn_indicators_2016]; the US California Current State of the Ecosystem (SOE) report [@noauthor_annual_nodate] which served as our initial report template; and the US Alaska annual Ecosystem Considerations report [@zador_ecosystem_2016]. The experience with gathering, documenting, and visualizing indicators across all of these reports was critical to efficient development of our fishery management Council-targeted SOE report.
 
 Other aspects of efficient reporting followed many from the California Current [@noauthor_annual_nodate], including limiting report length to fewer than 25 printed pages, using non-technical language, and including indicator data in a standardized format with standardized plotting throughout the report. In addition, we included a specific response to SSC and previous Council comments section as noted above to track progress on Council requests.
 
@@ -639,7 +639,7 @@ While technical descriptions and scientific references were not included in the 
 
 We produced the SOE report in Rmarkdown [@R-rmarkdown] for reproducibility and ease of conversion between the similarly structured reports with different data sources for the two regional Councils. Report source documents for the 2017 and 2018 reports were version controlled in a private github repository (due to concerns with data confidentiality). Components of these documents producing figures were reproduced, along with the details of data sources, extraction, and analysis (including example code) in the online SOE technical methods. Each indicator is described using an individual rmarkdown document, with all indicator source documents rolled up into one bookdown [@R-bookdown] and published using github pages.
 
-Final State of the Ecosystem reports were presented to the full Councils at their April meetings in 2018. Councils received their reports as both an in person presentation along with pdf report in advance of the meeting. The main message of each presentation is whether there are big changes in the ecosystem or other threats to achieving Council management objectives. 
+Final State of the Ecosystem reports were presented to the full Councils at their April meetings in 2018. Councils received their reports as both an in person presentation along with a pdf report in advance of the meeting. The main message of each presentation is whether there are big changes in the ecosystem or other threats to achieving Council management objectives. The presentation also provides an opportunity for Council discussion of further information that may be provided to enhance decision-making. 
 
 # Results
 The results of this process were the full [Mid-Atlantic State of the Ecosystem 2018](http://www.mafmc.org/s/Tab04_State-of-the-Ecosystem-Apr2018.pdf) and
@@ -704,18 +704,27 @@ Indicators throughout the report have been updated with the most recent data, an
 Many metrics aggregate species by similar functional groups.  Species that comprise the functional groups are listed below. Relative to the 2017 report, these categories have been aggregated into fewer groups for simplification and clarity (Table \@ref(tab:speciesgroupingsMAB)). 
  
 ```{r speciesgroupingsMAB, echo=FALSE, message=FALSE, warning=FALSE}
-tabl <- "
-|Group|N species|Major species in the group|
-|:------------------|:-------|:--------------------------------------------|
-| A: **Apex predator** (Highest trophic level)   |  4  | shark (Unc.), swordfish, yellowfin and bluefin tuna |
-| B: **Piscivore** (Eat fish)                    |  23 | spiny dogfish, summer flounder, bluefish, striped bass, weakfish, monkfish, winter and thorny skates, silver and offshore hake, Atlantic cod and halibut, fourspot flounder |
-| C: **Planktivore** (Eat plankton)              |  16 | Atlantic and blueback herring, alewife, shad, menhaden, cusk, Atlantic mackerel, butterfish, blackbelly rosefish, sculpins, lumpfish, northern searobin, northern sand lance, northern shortfin and longfin squid |
-| D: **Benthivore** (Eat bottom dwellers)       |  25 | black sea bass, scup, tilefish, tautog, cunner, blue crab, red crab, lobster, ocean pout, haddock, yellowtail, winter, and witch flounders, barndoor skate, American plaice, other crabs|
-| E: **Benthos**  (Filter feeders)               |  9  |  scallops, surfclam, quahog, mussels, whelks, conchs, sand dollars and urchins |
-"
-#cat(tabl) # output the table in a format good for HTML/PDF/docx conversion
-df<-read_delim(tabl, delim="|")
-df<-df[-c(1,2) ,c("Group","N species", "Major species in the group")]
+# tabl <- "
+# |Group|N species|Major species in the group|
+# |:------------------|:-------|:--------------------------------------------|
+# | A: **Apex predator** (Highest trophic level)   |  4  | shark (Unc.), swordfish, yellowfin and bluefin tuna |
+# | B: **Piscivore** (Eat fish)                    |  23 | spiny dogfish, summer flounder, bluefish, striped bass, weakfish, monkfish, winter and thorny skates, silver and offshore hake, Atlantic cod and halibut, fourspot flounder |
+# | C: **Planktivore** (Eat plankton)              |  16 | Atlantic and blueback herring, alewife, shad, menhaden, cusk, Atlantic mackerel, butterfish, blackbelly rosefish, sculpins, lumpfish, northern searobin, northern sand lance, northern shortfin and longfin squid |
+# | D: **Benthivore** (Eat bottom dwellers)       |  25 | black sea bass, scup, tilefish, tautog, cunner, blue crab, red crab, lobster, ocean pout, haddock, yellowtail, winter, and witch flounders, barndoor skate, American plaice, other crabs|
+# | E: **Benthos**  (Filter feeders)               |  9  |  scallops, surfclam, quahog, mussels, whelks, conchs, sand dollars and urchins |
+# "
+# #cat(tabl) # output the table in a format good for HTML/PDF/docx conversion
+# df<-read_delim(tabl, delim="|")
+# df<-df[-c(1,2) ,c("Group","N species", "Major species in the group")]
+
+#read the table from ERDDAP instead and format to clarify which species are managed by whom
+
+#Identify the ERDDAP server where data are stored
+comet <- 'http://comet.nefsc.noaa.gov/erddap/'
+df <- tabledap('species_groupings_V2', url = comet,
+               fields = c('SOE_18', 'COMNAME', 'Fed_Managed'))#, 
+               #'SOE_18!="Other"', distinct = TRUE) #pull data 
+
 knitr::kable(df, booktabs = TRUE, caption = 'Feeding guilds (formatted for Mid-Atlantic report).') %>%
   kable_styling(font_size=10, latex_options=c("repeat_header", "scale_down", "hold_position")) %>%
   column_spec(1, width="6cm") %>%
