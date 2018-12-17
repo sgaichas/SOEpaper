@@ -953,7 +953,8 @@ cat("\\renewcommand{\\footrule}{}")
 # Figures
 
 ```{r conceptual, fig.cap="Overview of ecosystem relationships for the Mid-Atlantic Ecosystem. Human activities link to high level strategic management objectives (MAFMC FMP). Components are represented by indicators in this report, and key paths connecting components and objectives are highlighted.", fig.height=6, fig.width=4, out.width='\\linewidth', fig.align='center', echo = F, message = FALSE, warning = FALSE, eval = T}
-knitr::include_graphics(file.path(image.dir, 'SOE_MAB_ConceptMod.png'))
+#knitr::include_graphics(file.path(image.dir, 'SOE_MAB_ConceptMod.png'))
+knitr::include_graphics(file.path(image.dir, 'MAB_conmod_overview.jpg'))
 
 ```
 \newpage
