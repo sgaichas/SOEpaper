@@ -688,7 +688,9 @@ knitr::kable(
 **Fig \@ref(fig:KOBE). Summary of single species status for MAFMC stocks.** 
 
 ## Priority: Synthesis across ecosystem indicators in executive summary
->**Performance against human dimensions objectives is mixed, with declines in seafood production and recreational opportunities but stabilization of fleet numbers and revenue diversity.**  Revenue has seen substantial interannual variability in recent years, driven primarily by increases in prices of benthos (i.e. scallops & clams). Total volume of landings have decreased since at least 2010, with seafood production by both commercial and recreational fisheries declining overall. This corresponds to a stark decrease in recreational fishing effort and participation since 2008, although the number of commercial fleets, and the diversity of revenue generated from those fleets, have been relatively stable in the last few years. The diversity of species revenue, measured at the individual permit level, has also been relatively stable over the past 10 years. However, many communities in the Mid-Atlantic Bight (MAB) that are highly engaged and/or reliant on commercial fishing are socially vulnerable, and **5 of the 6 largest commercial fishing ports in the MAB (in terms of revenue) are heavily dependent on benthic species which are in turn highly vulnerable to climate change.**
+>**Performance against human dimensions objectives is mixed, with declines in seafood production and recreational opportunities but stabilization of fleet numbers and revenue diversity.**  Revenue has seen substantial interannual variability in recent years, driven primarily by increases in prices of benthos (i.e. scallops & clams). Total volume of landings have decreased since at least 2010, with seafood production by both commercial and recreational fisheries declining overall. This corresponds to a stark decrease in recreational fishing effort and participation since 2008, although the number of commercial fleets, and the diversity of revenue generated from those fleets, have been relatively stable in the last few years. The diversity of species revenue, measured at the individual permit level, has also been relatively stable over the past 10 years. However, many communities in the Mid-Atlantic Bight (MAB) that are highly engaged and/or reliant on commercial fishing are socially vulnerable, and **5 of the 6 largest commercial fishing ports in the MAB (in terms of revenue) are heavily dependent on benthic species which are in turn highly vulnerable to climate change (Fig \@ref(fig.sppvul).**
+
+**Fig \@ref(fig.sppvul). Climate-vulnerable fisheries landings in key Mid-Atlantic fishing ports.**
 >
 >**Fisheries are currently meeting objectives with respect to bycatch reduction for most protected species, but climate and ecosystem changes may upset this balance.** Fisheries interactions with harbor porpoise have decreased due to management measures, but climate driven distribution changes for sea turtles may lead to future fishery interactions and potential regulations. In addition, the most endangered species in the system (North Atlantic right whale) may be declining over the most recent few years after a slow but steady increase. **Ecosystem conditions combined with changing distributions and entanglement in fishing gear may be contributing to the decline and observed unusual mortality event for right whales in 2017.**
 >
@@ -1057,6 +1059,12 @@ plot(MABO$Brat,MABO$Frat,xlim=x.r,ylim=y.r,xlab="B/Bmsy",ylab="F/Fmsy",pch=16,co
 #if(saveplots) savePlot("NEFMC_Joint_stocks.png", type='png')
 #if(saveplots) dev.off()
 
+```
+
+\newpage
+
+```{r sppvul, fig.cap="Climate-vulnerable fisheries landings in key Mid-Atlantic fishing ports.", echo = F, fig.align='center', eval = T, out.width='\\linewidth'}
+knitr::include_graphics(file.path(image.dir, 'Sp_vulnerability_MAB.jpg'))
 ```
 
 \newpage
