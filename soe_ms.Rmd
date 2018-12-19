@@ -714,15 +714,17 @@ knitr::kable(
 # #cat(tabl) # output the table in a format good for HTML/PDF/docx conversion
 # df<-read_delim(tabl, delim="|")
 # df<-df[-c(1,2) ,c("Group","N species", "Major species in the group")]
-
+ERDDAP = TRUE
 #read the table from ERDDAP instead and format to clarify which species are managed by whom
-
-#Identify the ERDDAP server where data are stored
-comet <- 'http://comet.nefsc.noaa.gov/erddap/'
-df <- tabledap('species_groupings_V2', url = comet,
-               fields = c('SOE_18', 'COMNAME', 'Fed_Managed')) 
+if(ERDDAP){
+  #Identify the ERDDAP server where data are stored
+  comet <- 'http://comet.nefsc.noaa.gov/erddap/'
+  df <- tabledap('species_groupings_V2', url = comet,
+                 fields = c('SOE_18', 'COMNAME', 'Fed_Managed')) 
   #'SOE_18!="Other"', distinct = TRUE) doesn't work, do next
-df <- df %>%
+  write_csv(df, file.path(data.dir, "aggsp.csv"))
+}
+df <- read_csv(file.path(data.dir, "aggsp.csv") , col_names = TRUE) %>%
   filter(SOE_18 != "Other") %>%
   distinct() %>%
   group_by(SOE_18, Fed_Managed) %>%
