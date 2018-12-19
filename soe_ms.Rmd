@@ -135,6 +135,8 @@ load(file.path(data.dir, "SOE_data_2018.Rdata"))
 # latex figure folder
 knitr::opts_chunk$set(echo = FALSE, fig.path = './iea_figs_ne/')
 
+ERDDAP = FALSE  # change to TRUE to update the aggregate species list directly from ERRDAP, currently not working on NEFSC network
+
 # automatically create a bib database for R packages
 knitr::write_bib(c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown'
@@ -714,7 +716,7 @@ knitr::kable(
 # #cat(tabl) # output the table in a format good for HTML/PDF/docx conversion
 # df<-read_delim(tabl, delim="|")
 # df<-df[-c(1,2) ,c("Group","N species", "Major species in the group")]
-ERDDAP = TRUE
+
 #read the table from ERDDAP instead and format to clarify which species are managed by whom
 if(ERDDAP){
   #Identify the ERDDAP server where data are stored
