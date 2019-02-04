@@ -672,7 +672,7 @@ tabl <- "
     df, booktabs = TRUE,
     caption = 'Ecosystem-level management objectives.'
   ) %>%
-    kable_styling(latex_options=c("hold_position", "center")) 
+    kable_styling(latex_options=c("hold_position")) 
 ```
 
 >**Fig \@ref(fig:map). Mid-Atlantic Bight (MAB) spatial extent.** Geographic units for Georges Bank (GB) and Gulf of Maine (GOM) are also indicated.
@@ -854,7 +854,7 @@ kable(df, booktabs = TRUE, digits=2, caption = "Proportion managed by NEFMC") %>
 During the Council meetings, there were questions regarding mechanisms for declines in seafood landings (e.g. could this be the result of management? Answer: yes). This led to conversation about the need for multiple indicators; while a single data stream indicates where we are with respect to a single objective, the full suite of indicators are needed to tease out multiple factors underlying the trends.
 
 ## Priority: Synthesis across indicators within a section
-In this second example from the main body of the reports, we demonstrate synthesis across multiple indicators within a report section; connecting the physical oceaographic and low trophic level indicators to managed species in the Mid-Atlantic. The same indicators were presented using data from the Gulf of Maine and Georges Bank in the New England report, with text noting the differences and similarities between the areas (see Supporting Information, S3).
+In this second example from the main body of the reports, we demonstrate synthesis across multiple indicators within a report section; connecting the physical oceaographic and low trophic level indicators to managed species in the Mid-Atlantic. The same indicators were presented using data from the Gulf of Maine and Georges Bank in the New England report, with text noting the differences and similarities between the areas (see [Supporting Information, S3](https://s3.amazonaws.com/nefmc.org/2_Ecosystem-Status-Report.pdf)).
 
 ### Mid-Atlantic report text: Ecosystem Conditions and Productivity
 >
