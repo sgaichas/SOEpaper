@@ -641,12 +641,12 @@ The results of this process, the full [Mid-Atlantic State of the Ecosystem 2018]
 [New England State of the Ecosystem 2018](https://s3.amazonaws.com/nefmc.org/2_Ecosystem-Status-Report.pdf), were finalized in April 2018. These reports are now posted as part of the public record on each of the respective Council's websites (See Supporting Information S2 and S3). We excerpt portions from each report (italicized in blocks below, minimally edited for clarity) to illustrate how the key priorities outlined above were addressed. Clear communication of relevance to management was established in the opening pages of each report, using a conceptual model and an overview of objectives linked to indicators. This executive summary also emphasized synthesis of the messages across all indicators in the report. In the main body of the report, details are provided in support of the executive summary. Placing human dimensions objectives and indicators first in the report further emphasized the report's relevance to managers. We illustrate this by reproducing the first indicator and comparing presentation across the two reports. Finally, we illustrate further synthesis across individual indicators using the Mid-Atlantic report section on ecosystem productivity. Section titles below reflect priorities and the purpose of each report section.
 
 ## Priority: Clear communication of relevance to management
-The executive summary outlines the report purpose, structure, alignment with management objectives, and synthetic results in 2-3 pages. Here, we highlight key aspects and findings of the reports that arose from the multidisciplinary approach. We excerpt most sections from the leading pages of the Mid-Atlantic report as an example below, demonstrating the use of conceptual models, place-based spatial units, and alignment of ecosystem indicators with management objectives as noted in each subsection header. Direct quotes from the reports are block indented and italicised below, but appeared in normal font in the actual report, with key report messages highlighted in **boldface**.
+The executive summary outlines the report purpose, structure, alignment with management objectives, and synthetic results in 2-3 pages. Here, we highlight key aspects and findings of the reports that arose from the multidisciplinary approach. We excerpt most sections from the leading pages of the Mid-Atlantic report as an example below, demonstrating the use of conceptual models, place-based spatial units, and alignment of ecosystem indicators with management objectives as noted in each subsection header. Exceprts from the reports are block indented and italicised below, but appeared in normal font in the actual report, with key report messages highlighted in **boldface**. Tables exerpted directly from the reports are block indented, except where noted below. Figure captions have been expanded for this paper (and are not italicized), and some separate report figures have been consolidated into multipanel figures for this paper. 
 
 ### Purpose: Mid-Atlantic SOE Report Introduction
 >*The purpose of this report is to provide **ecosystem-scale information for fishery managers** to consider along with existing species-scale analyses.  An overview of ecosystem relationships as represented by **a conceptual model helps place more detailed species-level management in context** by highlighting relationships between focal species groups organized by Mid-Atlantic Fishery Management Council (MAFMC) Fishery Management Plan (FMP), managed human activities, environmental drivers, habitats, and key ecological links (Fig \@ref(fig:conceptual)). Here, human activities link to high level strategic management objectives. Many components of the conceptual model are represented by indicators in this report, and key paths connecting components and objectives are highlighted.*
 
-**Fig \@ref(fig:conceptual). Overview of ecosystem relationships for the Mid-Atlantic Ecosystem.**  Human activities link to high level strategic management objectives (MAFMC FMP). Components are represented by indicators in this report, and key paths connecting components and objectives are highlighted.
+>**Fig \@ref(fig:conceptual). Overview of ecosystem relationships for the Mid-Atlantic Ecosystem.**  Human activities link to high level strategic management objectives (MAFMC FMP). Components are represented by indicators in this report, and key paths connecting components and objectives are highlighted.
 
 ### Structure with management objectives: Mid-Atlantic SOE Report Executive Summary
 >*We have organized this report using a proposed set of **ecosystem-scale objectives** derived from US legislation and current management practices (Table \@ref(tab:objcatsMAB)). We report indicators at the spatial scale of either the Mid-Atlantic Bight (MAB; Fig \@ref(fig:map)), for Mid-Atlantic states, or Northeast US coastwide where appropriate. Indicator spatial scale is noted in each section heading.* 
@@ -654,39 +654,38 @@ The executive summary outlines the report purpose, structure, alignment with man
 ```{r objcatsMAB, echo=FALSE, message=FALSE, warning=FALSE}
 tabl <- "
 |Objective Categories|Indicators Reported Here|
-|:-------------------------|:----------------------------------------------------------|
-| Seafood production       | Landings by feeding guild, mariculture                    |
-| Profits                  | Revenue by feeding guild                                  |
-| Recreation               | Number of anglers and trips; recreational catch           |
-| Stability                | Diversity indices (fishery and species)                   |
-| Social-Cultural          | Commercial and recreational reliance; social vulnerability|
-| Biomass                  | Biomass or abundance by feeding guild from surveys        |
-| Productivity             | Condition and recruitment of MAFMC managed species        |
-| Trophic structure        | Relative biomass of feeding guilds, primary productivity  |
-| Habitat                  | Thermal habitat projections, estimated habitat occurrence |
-"
-#cat(tabl) # output the table in a format good for HTML/PDF/docx conversion
+|:--------------------|:----------------------------------------------|
+| Seafood production  | Landings by feeding guild, mariculture        |
+| Profits             | Revenue by feeding guild                      |
+| Recreation          | Number of anglers and trips; recreational catch|
+| Stability           | Diversity indices (fishery and species)        |
+| Social-Cultural     | Commercial and recreational reliance; social vulnerability|
+| Biomass             | Biomass or abundance by feeding guild from surveys |
+| Productivity        | Condition and recruitment of MAFMC managed species |
+| Trophic structure   | Relative biomass of feeding guilds, primary productivity  |
+| Habitat             | Thermal habitat projections, estimated habitat occurrence |"
+  #cat(tabl) # output the table in a format good for HTML/PDF/docx conversion
 
-df<-read_delim(tabl, delim="|")
-df<-df[-c(1,2) ,c("Objective Categories","Indicators Reported Here")]
-knitr::kable(
-  df, booktabs = TRUE,
-  caption = 'Ecosystem-level management objectives.'
-) %>%
-  kable_styling(latex_options=c("hold_position")) 
+  df<-read_delim(tabl, delim="|")
+  df<-df[-c(1,2) ,c("Objective Categories","Indicators Reported Here")]
+  knitr::kable(
+    df, booktabs = TRUE,
+    caption = 'Ecosystem-level management objectives.'
+  ) %>%
+    kable_styling(latex_options=c("hold_position", "center")) 
 ```
 
-**Fig \@ref(fig:map). Mid-Atlantic Bight (MAB) spatial extent.** Geographic units for Georges Bank (GB) and Gulf of Maine (GOM) are also indicated.
+>**Fig \@ref(fig:map). Mid-Atlantic Bight (MAB) spatial extent.** Geographic units for Georges Bank (GB) and Gulf of Maine (GOM) are also indicated.
 
 ### Synthesis of single species status in executive summary
 >**_We also report single-species status relative to established objectives and reference points_**. *The Mid-Atlantic Council (MAFMC) is meeting objectives at the managed species (stockwide) level for fishing mortality (F) rates for 8 of 15 stocks and biomass (B) levels for 11 of 15 stocks relative to established reference points (Fig \@ref(fig:KOBE)). The exceptions include high F rates for summer flounder and Atlantic mackerel, low B status for Atlantic mackerel, and likely high F rates for blueline tilefish. Three stocks (Illex squid, Northern and Southern monkfish) have unknown status for both F and B, blueline tilefish for B, and longfin squid have unknown F status.*
 
-**Fig \@ref(fig:KOBE). Summary of single species status for Mid-Atlantic Fishery Management Council (MAFMC) and jointly managed (Joint) stocks.** Dashed lines indicate thresholds for fishing mortality rate relative to the limit (F/Fmsy = 1) and for biomass relative to the minimum (B/Bmsy=0.5). The dotted line indicates the biomass target (B/Bmsy = 1). Status is based on the most recent published stock assessment or linked assessment update for each stock (2017 unless otherwise noted): Mackerel [@nefsc_64th_2018], 2016 Fluke ( [summer flounder](http://www.mafmc.org/s/Summer_flounder_2015_Assess_Update.pdf)), [Dogfish](http://www.mafmc.org/s/2017-Status-Report-for-spiny-dogfish.pdf), [Tilefish](http://www.mafmc.org/s/Golden_Tile_Assessment_Update2017-POPDY.pdf), 2015 Bluefish [@nefsc_60th_2015], [Butterfish](http://www.mafmc.org/s/Butterfish-2017-Stock-Assessment-Update.pdf), Ocean quahog [@nefsc_63rd_2017], [Scup](http://www.mafmc.org/s/5Scup_2017_Assesssment_Update.pdf), Black sea bass [@nefsc_62nd_2017], Surfclam [@nefsc_61st_2017], [Longfin squid](http://www.mafmc.org/s/Doryteuthis_update_April_2017.pdf), [Illex squid](http://www.mafmc.org/s/Illex-illecebrosus_data_update_report_for_2017_MAFMC_SSC_ABC.pdf), Northern and Southern Monkfish [@richards_2016_2016].
+>**Fig \@ref(fig:KOBE). Summary of single species status for Mid-Atlantic Fishery Management Council (MAFMC) and jointly managed (Joint) stocks.** Dashed lines indicate thresholds for fishing mortality rate relative to the limit (F/Fmsy = 1) and for biomass relative to the minimum (B/Bmsy=0.5). The dotted line indicates the biomass target (B/Bmsy = 1). Status is based on the most recent published stock assessment or linked assessment update for each stock (2017 unless otherwise noted): Mackerel [@nefsc_64th_2018], 2016 Fluke ( [summer flounder](http://www.mafmc.org/s/Summer_flounder_2015_Assess_Update.pdf)), [Dogfish](http://www.mafmc.org/s/2017-Status-Report-for-spiny-dogfish.pdf), [Tilefish](http://www.mafmc.org/s/Golden_Tile_Assessment_Update2017-POPDY.pdf), 2015 Bluefish [@nefsc_60th_2015], [Butterfish](http://www.mafmc.org/s/Butterfish-2017-Stock-Assessment-Update.pdf), Ocean quahog [@nefsc_63rd_2017], [Scup](http://www.mafmc.org/s/5Scup_2017_Assesssment_Update.pdf), Black sea bass [@nefsc_62nd_2017], Surfclam [@nefsc_61st_2017], [Longfin squid](http://www.mafmc.org/s/Doryteuthis_update_April_2017.pdf), [Illex squid](http://www.mafmc.org/s/Illex-illecebrosus_data_update_report_for_2017_MAFMC_SSC_ABC.pdf), Northern and Southern Monkfish [@richards_2016_2016].
 
 ## Priority: Synthesis across ecosystem indicators in executive summary
 >**_Performance against human dimensions objectives is mixed, with declines in seafood production and recreational opportunities but stabilization of fleet numbers and revenue diversity._**  *Revenue has seen substantial interannual variability in recent years, driven primarily by increases in prices of benthos (i.e. scallops & clams). Total volume of landings have decreased since at least 2010, with seafood production by both commercial and recreational fisheries declining overall. This corresponds to a stark decrease in recreational fishing effort and participation since 2008, although the number of commercial fleets, and the diversity of revenue generated from those fleets, have been relatively stable in the last few years. The diversity of species revenue, measured at the individual permit level, has also been relatively stable over the past 10 years. However, many communities in the Mid-Atlantic Bight (MAB) that are highly engaged and/or reliant on commercial fishing are socially vulnerable, and **5 of the 6 largest commercial fishing ports in the MAB (in terms of revenue) are heavily dependent on benthic species which are in turn highly vulnerable to climate change (Fig \@ref(fig:sppvul)).** *
 
-**Fig \@ref(fig:sppvul). Climate-vulnerable fisheries landings in key Mid-Atlantic fishing ports.**
+>**Fig \@ref(fig:sppvul). Climate-vulnerable fisheries landings in key Mid-Atlantic fishing ports.**
 
 >**_Fisheries are currently meeting objectives with respect to bycatch reduction for some protected species, but climate and ecosystem changes may upset this balance._** *Fisheries interactions with harbor porpoise have decreased due to management measures, but climate driven distribution changes for sea turtles may lead to future fishery interactions and potential regulations. In addition, the most endangered species in the system (North Atlantic right whale) has been in decline since 2010, after a slow, erratic increase in abundance in the two previous decades. The decline is due primarily to entanglement in fishing gear and vessel strikes. Even when North Atlantic right whales were increasing, their recovery was jeopardized by chronically high levels of anthropogenic mortality.  Recently, as right whale prey (Calanus) distribution has changed, right whales have changed their distribution as well, putting at least some whales into an area with a high density of fishing gear that is particularly dangerous for them.*
 
@@ -698,7 +697,7 @@ knitr::kable(
 >
 *Indicators throughout the report have been updated with the most recent data, and in some cases replaced with more management-relevant indicators based on Council feedback from the 2017 report. In particular, new sections on species-specific habitat status and trends and climate projections of thermal habitat for key species have replaced last year’s more general physical environment and climate sections. This report draws on a wider range of expertise and attempts to further link information across indicators to give an integrated overview of ecosystem status relevant to fishery management decision making.*
 >
-*Many metrics aggregate species by similar functional groups.  Species that comprise the functional groups are listed below. Relative to the 2017 report, these categories have been aggregated into fewer groups for simplification and clarity (Table \@ref(tab:speciesgroupingsMAB)).* 
+*Many metrics aggregate species by similar functional groups.  Species that comprise the functional groups are listed below. Relative to the 2017 report, these categories have been aggregated into fewer groups for simplification and clarity (Table \@ref(tab:speciesgroupingsMAB)*, generalized for this paper).
  
 ```{r speciesgroupingsMAB, echo=FALSE, message=FALSE, warning=FALSE}
 # tabl <- "
@@ -798,7 +797,7 @@ knitr::kable(
 >
 >*Recreational seafood landings (as opposed to total landings which include catch and release that are captured under other risk elements/indicators) were used to assess food use of recreationally caught fish in the Mid-Atlantic. This trend is also declining.*
 
-**Fig \@ref(fig:seafoodlandingsMAB). Mid-Atlantic seafood production indicators.**  Mid-Atlantic Council-managed seafood landings (red) and total commercial landings (black) A: by feeding guild, and B: summed across guilds. C: Total recreational harvest in the Mid-Atlantic. Light orange trendlines indicate significant long term increases, and violet trendlines indicate significant long term decreases. 
+>**Fig \@ref(fig:seafoodlandingsMAB). Mid-Atlantic seafood production indicators.**  Mid-Atlantic Council-managed seafood landings (red) and total commercial landings (black) A: by feeding guild, and B: summed across guilds. C: Total recreational harvest in the Mid-Atlantic. Light orange trendlines indicate significant long term increases, and violet trendlines indicate significant long term decreases. 
 
 ### New England report text: Seafood production (GOM and GB)
 >*Seafood production is a stated goal of optimal fishery management as part of the definition of “benefits to the nation” under MSA. Both commercial and recreational fishing contributes to seafood production, the latter for personal consumption, and indicators for each of these human activities track management performance against this objective.*  
@@ -850,7 +849,7 @@ kable(df, booktabs = TRUE, digits=2, caption = "Proportion managed by NEFMC") %>
 >
 *Recreational seafood landings (as opposed to total landings which include catch and release that are captured under other risk elements/indicators) were used to assess food use of recreationally caught fish. This trend is also declining.* 
 
-**Fig \@ref(fig:seafoodlandingsGOM). New England seafood production indicators.** New England Council-managed seafood landings (red) and total commercial landings (black) A: by feeding guild in the Gulf of Maine; B: by feeding guild on Georges Bank; C: summed across guilds for Gulf of Maine (top) and Georges Bank (bottom). D: Total recreational harvest in New England. Violet trendlines indicate significant long term decreases. 
+>**Fig \@ref(fig:seafoodlandingsGOM). New England seafood production indicators.** New England Council-managed seafood landings (red) and total commercial landings (black) A: by feeding guild in the Gulf of Maine; B: by feeding guild on Georges Bank; C: summed across guilds for Gulf of Maine (top) and Georges Bank (bottom). D: Total recreational harvest in New England. Violet trendlines indicate significant long term decreases. 
 
 During the Council meetings, there were questions regarding mechanisms for declines in seafood landings (e.g. could this be the result of management? Answer: yes). This led to conversation about the need for multiple indicators; while a single data stream indicates where we are with respect to a single objective, the full suite of indicators are needed to tease out multiple factors underlying the trends.
 
@@ -865,13 +864,13 @@ In this second example from the main body of the reports, we demonstrate synthes
 >
 *Sea surface temperature (SST) measurements have been collected on the Northeast Continental Shelf since the mid-1800s (Fig \@ref(fig:longtermsst)). The highest mean annual temperature in this time series was recorded in 2012, as the ecosystem warmed above the levels last seen in the late 1940s. The 2017 datum is the sixth highest temperature in the time series. The positive trend over the full time series (1856-2016) is significant, and the qualitative trend over the most recent decade of the time series appears even greater.*
 
-**Fig \@ref(fig:longtermsst). Long-term sea surface temperatures on the Northeast Continental Shelf.** The light orange trendline indicates a significant long term increase.
+>**Fig \@ref(fig:longtermsst). Long-term sea surface temperatures on the Northeast Continental Shelf.** The light orange trendline indicates a significant long term increase.
 
 >### *Annual cycles (2017) in ocean temperature and primary production (MAB)*
 >
 *The Mid-Atlantic experienced above average sea surface temperatures (SSTs) during 2017. In Fig \@ref(fig:SSTPPDCHLMAB), the long term mean SST is shown as a black line with areas representing plus and minus one standard deviation of the mean as a shade of gray. SSTs for 2017 that were above the mean are shown in red and below the mean in blue, with emphasis added when the temperature exceeded or decreased below one standard deviation of the mean. Last winter was characterized by well above average temperatures in the Mid-Atlantic that transitioned to generally moderate conditions during summer. The Bight returned to warm conditions during October and remained above average for the balance of the year.*
 
-**Fig \@ref(fig:SSTPPDCHLMAB). 2017 Mid-Atlantic temperature and production cycles.** Sea Surface Temperature (SST; A), primary production (B), and Chlorophyll a (Chl a; C) over 2017 (colored polygons) compared against long-term mean (black line) and +/- 1 standard deviation (s.d., grey polygon) in the Mid-Atlantic. Red and dark green polygons respectively indicate 2017 temperature or primary production in excess of 1 s.d. above the long term mean, while orange and light green respectively indicate temperature and primary production/Chl a above the long term mean but within 1 s.d. Similarly, light blue polygons for all three indicate values below the long term mean but within 1 s.d. Only one observation in dark blue was more than 1 s.d. below the long term mean.
+>**Fig \@ref(fig:SSTPPDCHLMAB). 2017 Mid-Atlantic temperature and production cycles.** Sea Surface Temperature (SST; A), primary production (B), and Chlorophyll a (Chl a; C) over 2017 (colored polygons) compared against long-term mean (black line) and +/- 1 standard deviation (s.d., grey polygon) in the Mid-Atlantic. Red and dark green polygons respectively indicate 2017 temperature or primary production in excess of 1 s.d. above the long term mean, while orange and light green respectively indicate temperature and primary production/Chl a above the long term mean but within 1 s.d. Similarly, light blue polygons for all three indicate values below the long term mean but within 1 s.d. Only one observation in dark blue was more than 1 s.d. below the long term mean.
 
 >###*Patterns in the lower trophic levels (MAB)*
 >
@@ -888,7 +887,7 @@ In this second example from the main body of the reports, we demonstrate synthes
 >
 *The number of small fish relative to the biomass of larger fish of the same species from the NEFSC survey is a simple measure of productivity, intended to complement model-based stock assessment estimates of recruitment for commercial species. There is a general decrease in this indicator when aggregated across managed species in the Mid-Atlantic.*
 
-**Fig \@ref(fig:MABecoprod). Mid-Atlantic ecosystem productivity indicators.** Small-large copepod index with primary productivity anomaly (A); *C. typicus* abundance anomaly, where the violet trendline indicates a significant long term decrease (B); groundfish condition in fall, where dark shades indicate better condition and light shades poorer condition (C); and groundfish productivity for MAFMC managed species in the Mid-Atlantic: the average of spring and fall anomalies of recruit abundance per spawner biomass. Colors indicate anomalies for individual species: summer flounder, scup, black sea bass, and bluefish (D).
+>**Fig \@ref(fig:MABecoprod). Mid-Atlantic ecosystem productivity indicators.** Small-large copepod index with primary productivity anomaly (A); *C. typicus* abundance anomaly, where the violet trendline indicates a significant long term decrease (B); groundfish condition in fall, where dark shades indicate better condition and light shades poorer condition (C); and groundfish productivity for MAFMC managed species in the Mid-Atlantic: the average of spring and fall anomalies of recruit abundance per spawner biomass. Colors indicate anomalies for individual species: summer flounder, scup, black sea bass, and bluefish (D).
 
 During each Council meeting, these indicators were shown together to further emphasize the potential linkages. In particlar, the concurrent drop in zooplankton and fish condition during the early 2000's was of interest to both Councils, and the apparent decrease in productivity across managed fish generated much discussion with the Mid-Atlantic Council. 
 
