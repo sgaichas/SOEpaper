@@ -651,7 +651,7 @@ The executive summary outlines the report purpose, structure, alignment with man
 ### Structure with management objectives: Mid-Atlantic SOE Report Executive Summary
 >*We have organized this report using a proposed set of **ecosystem-scale objectives** derived from US legislation and current management practices (Table \@ref(tab:objcatsMAB)). We report indicators at the spatial scale of either the Mid-Atlantic Bight (MAB; Fig \@ref(fig:map)), for Mid-Atlantic states, or Northeast US coastwide where appropriate. Indicator spatial scale is noted in each section heading.* 
 
-```{r objcatsMAB, echo=FALSE, message=FALSE, warning=FALSE}
+```{r objcatsMAB, echo=FALSE, message=FALSE, warning=FALSE, results='asis'}
 tabl <- "
 |Objective Categories|Indicators Reported Here|
 |:--------------------|:----------------------------------------------|
@@ -672,7 +672,7 @@ tabl <- "
     df, booktabs = TRUE,
     caption = 'Ecosystem-level management objectives.'
   ) %>%
-    kable_styling(latex_options=c("hold_position")) 
+    kable_styling(font_size =8, latex_options=c("hold_position", "right")) 
 ```
 
 >**Fig \@ref(fig:map). Mid-Atlantic Bight (MAB) spatial extent.** Geographic units for Georges Bank (GB) and Gulf of Maine (GOM) are also indicated.
@@ -839,7 +839,7 @@ names(df) <- c("Groups", "GOM Landings", "GB Landings", "GOM Revenue",
                 "GB Revenue")
 
 kable(df, booktabs = TRUE, digits=2, caption = "Proportion managed by NEFMC") %>%
-  kable_styling(latex_options=c("hold_position"))
+  kable_styling(font_size =8, latex_options=c("hold_position"))
 #stargazer(df, summary = F, rownames = T, title = "Proportion of catch managed by NEFMC (2016)", header = F)
 ```
 >
