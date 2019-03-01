@@ -21,7 +21,7 @@ author:
     email: Lisa.Colburn@noaa.gov
     affiliation: NEFSCRI
   - name: Deb Duarte
-    email: Deborah.Duarte@noaa.gov
+    email: Debra.Duarte@noaa.gov
     affiliation: NEFSCWH
   - name: Michael J. Fogarty
     email: Michael.Fogarty@noaa.gov
@@ -36,7 +36,7 @@ author:
     email: Kimberly.Hyde@noaa.gov
     affiliation: NEFSCRI
   - name: D. Christopher Melrose
-    email: Christopher.Melrose@noaa.gov
+    email: Chris.Melrose@noaa.gov
     affiliation: NEFSCRI
   - name: Ryan E. Morse
     email: Ryan.Morse@noaa.gov
