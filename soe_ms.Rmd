@@ -5,13 +5,13 @@ author:
     email: Sarah.Gaichas@noaa.gov
     affiliation: NEFSCWH
     corresponding: Sarah.Gaichas@noaa.gov
-  - name: Sean Hardison
+  - name: Sean B. Hardison
     email: Sean.Hardison@noaa.gov
     affiliation: [IS,NEFSCWH]
-  - name: Sean Lucey
+  - name: Sean M. Lucey
     email: Sean.Lucey@noaa.gov
     affiliation: NEFSCWH
-  - name: Geret DePiper
+  - name: Geret S. DePiper
     email: Geret.DePiper@noaa.gov
     affiliation: NEFSCWH
   - name: Patricia M. Clay
@@ -65,18 +65,12 @@ author:
   - name: Donald Anderson
     email: danderson@whoi.edu
     affiliation: WHOI
-  - name: Amani Bassyouni
-    email: Amani.Bassyouni@vdh.virginia.gov
-    affiliation: VDH
   - name: Loren Kellogg
     email: Loren.Kellogg@noaa.gov
     affiliation: [IS,NEFSCWH]
-  - name: Kristin Kleisner
+  - name: Kristin M. Kleisner
     email: kristin.kleisner.work@gmail.com
     affiliation: EDF
-  - name: Karl Roscher
-    email: Karl.Roscher@maryland.gov
-    affiliation: MDDNR
   - name: Scott Large
     email: Scott.Large@noaa.gov
     affiliation: NEFSCWH
@@ -93,12 +87,8 @@ address:
     address: NOAA NMFS Northeast Fisheries Science Center, Geophysical Fluid Dynamics Laboratory, Princeton University, Princeton, NJ, USA
   - code: WHOI
     address: Woods Hole Oceanographic Institution, Woods Hole, MA, USA
-  - code: VDH
-    address: Virginia Department of Health, Richmond, VA, USA
   - code: EDF
     address: Environmental Defense Fund, Boston, MA, USA
-  - code: MDDNR
-    address: Maryland Department of Natural Resources, Annapolis, MD, USA
 
 date: '`r format(Sys.Date(), "%B %d, %Y")`'
 abstract: |
