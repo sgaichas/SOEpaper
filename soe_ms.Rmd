@@ -20,7 +20,7 @@ author:
   - name: Lisa L. Colburn
     email: Lisa.Colburn@noaa.gov
     affiliation: NEFSCRI
-  - name: Deb Duarte
+  - name: Debra Duarte
     email: Debra.Duarte@noaa.gov
     affiliation: NEFSCWH
   - name: Michael J. Fogarty
