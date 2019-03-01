@@ -65,7 +65,7 @@ author:
   - name: Donald M. Anderson
     email: danderson@whoi.edu
     affiliation: WHOI
-  - name: Loren Kellogg
+  - name: Loren L. Kellogg
     email: Loren.Kellogg@noaa.gov
     affiliation: [IS,NEFSCWH]
   - name: Kristin M. Kleisner
