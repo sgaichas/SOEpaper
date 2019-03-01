@@ -23,46 +23,46 @@ author:
   - name: Deb Duarte
     email: Deborah.Duarte@noaa.gov
     affiliation: NEFSCWH
-  - name: Michael Fogarty
+  - name: Michael J. Fogarty
     email: Michael.Fogarty@noaa.gov
     affiliation: NEFSCWH
-  - name: Kevin Friedland
+  - name: Kevin D. Friedland
     email: Kevin.Friedland@noaa.gov
     affiliation: NEFSCRI
-  - name: Robert Gamble
+  - name: Robert J. Gamble
     email: Robert.Gamble@noaa.gov
     affiliation: NEFSCWH
-  - name: Kimberly Hyde
+  - name: Kimberly J. W. Hyde
     email: Kimberly.Hyde@noaa.gov
     affiliation: NEFSCRI
-  - name: Chris Melrose
+  - name: D. Christopher Melrose
     email: Christopher.Melrose@noaa.gov
     affiliation: NEFSCRI
-  - name: Ryan Morse
+  - name: Ryan E. Morse
     email: Ryan.Morse@noaa.gov
     affiliation: [IS,NEFSCRI]
-  - name: Chris Orphanides
+  - name: Chris D. Orphanides
     email: Chris.Orphanides@noaa.gov
     affiliation: NEFSCRI
-  - name: Charles Perretti
+  - name: Charles T. Perretti
     email: Charles.Perretti@noaa.gov
     affiliation: [IS,NEFSCWH]
-  - name: Vincent Saba
+  - name: Vincent S. Saba
     email: Vincent.Saba@noaa.gov
     affiliation: NEFSCNJ
-  - name: Laurel Smith
+  - name: Laurel A. Smith
     email: Laurel.Smith@noaa.gov
     affiliation: NEFSCWH
-  - name: John Walden
+  - name: John B. Walden
     email: John.Walden@noaa.gov
     affiliation: NEFSCWH
-  - name: Harvey Walsh
+  - name: Harvey J. Walsh
     email: Harvey.Walsh@noaa.gov
     affiliation: NEFSCRI
-  - name: Mark Wuenschel
+  - name: Mark J. Wuenschel
     email: Mark.Wuenschel@noaa.gov
     affiliation: NEFSCWH
-  - name: Donald Anderson
+  - name: Donald M. Anderson
     email: danderson@whoi.edu
     affiliation: WHOI
   - name: Loren Kellogg
@@ -71,7 +71,7 @@ author:
   - name: Kristin M. Kleisner
     email: kristin.kleisner.work@gmail.com
     affiliation: EDF
-  - name: Scott Large
+  - name: Scott I. Large
     email: Scott.Large@noaa.gov
     affiliation: NEFSCWH
 address:
