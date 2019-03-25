@@ -14,22 +14,16 @@ author:
     zip: 02543
     country: USA
   - name: Sean B. Hardison
-    email: Sean.Hardison@noaa.gov
     affiliation: [IS,NEFSCWH]
   - name: Sean M. Lucey
-    email: Sean.Lucey@noaa.gov
     affiliation: NEFSCWH
   - name: Geret S. DePiper
-    email: Geret.DePiper@noaa.gov
     affiliation: NEFSCWH
   - name: Patricia M. Clay
-    email: Patricia.Clay@noaa.gov
     affiliation: NEFSCSS
   - name: Lisa L. Colburn
-    email: Lisa.Colburn@noaa.gov
     affiliation: NEFSCRI
   - name: Debra Duarte
-    email: Debra.Duarte@noaa.gov
     affiliation: NEFSCWH
   - name: Michael J. Fogarty
     email: Michael.Fogarty@noaa.gov
