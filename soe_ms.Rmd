@@ -1,10 +1,18 @@
 ---
 title: "State of the Ecosystem: So What? Improving ecosystem reporting for fisheries managers in the Northeast US"
+runtitle: "Improving ecosystem reporting"
+documentclass: frontiersSCNS  # or frontiersHLTH, or frontiersFPHY
 author:
   - name: Sarah K. Gaichas
-    email: Sarah.Gaichas@noaa.gov
-    affiliation: NEFSCWH
-    corresponding: Sarah.Gaichas@noaa.gov
+    affiliation: '1'
+    etal: Gaichas # First author's last name. 
+    email: Sarah.Gaichas@noaa.gov # Indicates corresponding Author
+    institution: Woods Hole Laboratory, NOAA NMFS Northeast Fisheries Science Center
+    street: 166 Water Street
+    city: Woods Hole
+    state: MA # only USA, Australia, Canada
+    zip: 02543
+    country: USA
   - name: Sean Hardison
     email: Sean.Hardison@noaa.gov
     affiliation: [IS,NEFSCWH]
@@ -83,6 +91,25 @@ author:
   - name: Scott Large
     email: Scott.Large@noaa.gov
     affiliation: NEFSCWH
+affiliation:
+  - id: '1'
+    department: Woods Hole Laboratory
+    institution: NOAA NMFS Northeast Fisheries Science Center
+    city: Woods Hole
+    state: MA # only USA, Australia, Canada
+    country: USA
+  - id: '2' 
+    department: Department X
+    institution: Institution X
+    city: City X
+    state: State XX # only USA, Australia, Canada
+    country: Country X
+  - id: '3' 
+    department: Department X
+    institution: Institution X
+    city: City X
+    state: State XX # only USA, Australia, Canada
+    country: Country X
 address:
   - code: NEFSCWH
     address: NOAA NMFS Northeast Fisheries Science Center, Woods Hole, MA, USA
@@ -114,8 +141,8 @@ output:
   bookdown::pdf_book:
     includes:
       in_header: riskassess-preamble-latex.tex
-    base_format: rticles::plos_article
-csl: plos.csl    
+    base_format: rticles::frontiers_article
+csl: frontiers.csl    
 ---
 
 ```{r Directory and Data Set-up, echo=F, message=F, warning=FALSE, paged.print=TRUE}
