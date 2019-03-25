@@ -26,7 +26,7 @@ author:
   - name: Debra Duarte
     affiliation: '1'
   - name: Michael J. Fogarty
-     affiliation: '1'
+    affiliation: '1'
   - name: Kevin D. Friedland
     affiliation: NEFSCRI
   - name: Robert J. Gamble
@@ -100,18 +100,19 @@ affiliation:
     city: Boston
     state: MA # only USA, Australia, Canada
     country: USA
-date: '`r format(Sys.Date(), "%B %d, %Y")`'
-abstract: |
-  Understanding the context of ecosystem status and trends is important for making informed natural resource management decisions. However, many fishery management systems are fully occupied with decisions at the species or stock level, and busy managers are reluctant to consider extensive reports with unfamiliar information if the connections to current management decisions and objectives are unclear. Here, we describe the process used to develop streamlined ecosystem reporting to meet management needs in two US fishery management regions, New England and the Mid-Atlantic. A multi-disciplinary team was assembled to revise an initial report that had been based on a format used in another US region. First, ecosystem indicators were clearly aligned with stated fishery management objectives. Second, objectives and associated indicators relating to human well-being (e.g., seafood production) were placed first in the report, rather than last. Third, brief nontechnical text explained indicator relevance and connections between indicators, and standardized visualizations were used for time series and maps to streamline communication. Finally, reports used transparent and reproducible production methods to meet management deadlines. Engagement with managers is ongoing to further improve the utility of the report. This approach to streamlined, audience-specific ecosystem reporting is flexible and adaptable to many different governance contexts, and can be used to provide information essential to implement ecosystem based management.  
-keywords: ecosystem approach, natural resource management, fisheries, integrated ecosystem assessment, ecosystem indicators, economic indicators, management objectives
+output: rticles::frontiers_article
+csl: frontiers.csl  
 bibliography: ["SOE.bib", "packages.bib"]
-output: 
-  bookdown::pdf_book:
-    includes:
-      in_header: riskassess-preamble-latex.tex
-    base_format: rticles::frontiers_article
-csl: frontiers.csl    
 ---
+
+\begin{abstract}
+
+Understanding the context of ecosystem status and trends is important for making informed natural resource management decisions. However, many fishery management systems are fully occupied with decisions at the species or stock level, and busy managers are reluctant to consider extensive reports with unfamiliar information if the connections to current management decisions and objectives are unclear. Here, we describe the process used to develop streamlined ecosystem reporting to meet management needs in two US fishery management regions, New England and the Mid-Atlantic. A multi-disciplinary team was assembled to revise an initial report that had been based on a format used in another US region. First, ecosystem indicators were clearly aligned with stated fishery management objectives. Second, objectives and associated indicators relating to human well-being (e.g., seafood production) were placed first in the report, rather than last. Third, brief nontechnical text explained indicator relevance and connections between indicators, and standardized visualizations were used for time series and maps to streamline communication. Finally, reports used transparent and reproducible production methods to meet management deadlines. Engagement with managers is ongoing to further improve the utility of the report. This approach to streamlined, audience-specific ecosystem reporting is flexible and adaptable to many different governance contexts, and can be used to provide information essential to implement ecosystem based management.  
+
+\tiny
+ \keyFont{ \section{Keywords:} ecosystem approach, natural resource management, fisheries, integrated ecosystem assessment, ecosystem indicators, economic indicators, management objectives } 
+
+\end{abstract}
 
 ```{r Directory and Data Set-up, echo=F, message=F, warning=FALSE, paged.print=TRUE}
 
@@ -654,7 +655,7 @@ tabl <- "
 | Profits             | Revenue by feeding guild                      |
 | Recreation          | Number of anglers and trips; recreational catch|
 | Stability           | Diversity indices (fishery and species)        |
-| Social-Cultural     | Commercial and recreational reliance; social vulnerability|
+| Social-Cultural     | Commercial and recreational reliance, social vulnerability |
 | Biomass             | Biomass or abundance by feeding guild from surveys |
 | Productivity        | Condition and recruitment of MAFMC managed species |
 | Trophic structure   | Relative biomass of feeding guilds, primary productivity  |
