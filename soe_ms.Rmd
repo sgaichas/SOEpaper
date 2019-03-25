@@ -100,7 +100,10 @@ affiliation:
     city: Boston
     state: MA # only USA, Australia, Canada
     country: USA
-output: rticles::frontiers_article
+output:
+  rticles::frontiers_article:
+    includes:
+      in_header: riskassess-preamble-latex.tex
 csl: frontiers.csl  
 bibliography: ["SOE.bib", "packages.bib"]
 ---
@@ -647,7 +650,7 @@ The executive summary outlines the report purpose, structure, alignment with man
 ### Structure with management objectives: Mid-Atlantic SOE Report Executive Summary
 >*We have organized this report using a proposed set of **ecosystem-scale objectives** derived from US legislation and current management practices (Table \@ref(tab:objcatsMAB)). We report indicators at the spatial scale of either the Mid-Atlantic Bight (MAB; Fig \@ref(fig:map)), for Mid-Atlantic states, or Northeast US coastwide where appropriate. Indicator spatial scale is noted in each section heading.* 
 
-```{r objcatsMAB, echo=FALSE, message=FALSE, warning=FALSE, results='asis'}
+```{r objcatsMAB, echo=FALSE, message=FALSE, warning=FALSE}
 tabl <- "
 |Objective Categories|Indicators Reported Here|
 |:--------------------|:----------------------------------------------|
@@ -655,11 +658,11 @@ tabl <- "
 | Profits             | Revenue by feeding guild                      |
 | Recreation          | Number of anglers and trips; recreational catch|
 | Stability           | Diversity indices (fishery and species)        |
-| Social-Cultural     | Commercial and recreational reliance, social vulnerability |
-| Biomass             | Biomass or abundance by feeding guild from surveys |
-| Productivity        | Condition and recruitment of MAFMC managed species |
-| Trophic structure   | Relative biomass of feeding guilds, primary productivity  |
-| Habitat             | Thermal habitat projections, estimated habitat occurrence |"
+| Social-Cultural     | Commercial and recreational reliance, social vulnerability|
+| Biomass             | Biomass or abundance by feeding guild from surveys|
+| Productivity        | Condition and recruitment of MAFMC managed species|
+| Trophic structure   | Relative biomass of feeding guilds, primary productivity|
+| Habitat             | Thermal habitat projections, estimated habitat occurrence|"
   #cat(tabl) # output the table in a format good for HTML/PDF/docx conversion
 
   df<-read_delim(tabl, delim="|")
@@ -937,10 +940,10 @@ We gratefully acknowledge Dr. John Boreman, chair of the MAFMC Scientific and St
 \newpage
 
 ```{r, echo = FALSE, results = "asis"}
-cat("\\newgeometry{top=0.85in, left=0.5in, right=0.5in, footskip=0.75in}")
-cat("\\fancyhf{}")
-cat("\\renewcommand{\\headrulewidth}{0pt}")
-cat("\\renewcommand{\\footrule}{}")
+#cat("\\newgeometry{top=0.85in, left=0.5in, right=0.5in, footskip=0.75in}")
+#cat("\\fancyhf{}")
+#cat("\\renewcommand{\\headrulewidth}{0pt}")
+#cat("\\renewcommand{\\footrule}{}")
 ```
 
 # Figures
