@@ -14,68 +14,51 @@ author:
     zip: 02543
     country: USA
   - name: Sean B. Hardison
-    affiliation: [IS,NEFSCWH]
+    affiliation: '2,1'
   - name: Sean M. Lucey
-    affiliation: NEFSCWH
+    affiliation: '1'
   - name: Geret S. DePiper
-    affiliation: NEFSCWH
+    affiliation: '1'
   - name: Patricia M. Clay
-    affiliation: NEFSCSS
+    affiliation: '3'
   - name: Lisa L. Colburn
     affiliation: NEFSCRI
   - name: Debra Duarte
-    affiliation: NEFSCWH
+    affiliation: '1'
   - name: Michael J. Fogarty
-    email: Michael.Fogarty@noaa.gov
-    affiliation: NEFSCWH
+     affiliation: '1'
   - name: Kevin D. Friedland
-    email: Kevin.Friedland@noaa.gov
     affiliation: NEFSCRI
   - name: Robert J. Gamble
-    email: Robert.Gamble@noaa.gov
-    affiliation: NEFSCWH
+    affiliation: '1'
   - name: Kimberly J. W. Hyde
-    email: Kimberly.Hyde@noaa.gov
-    affiliation: NEFSCRI
+    affiliation: '4'
   - name: D. Christopher Melrose
-    email: Chris.Melrose@noaa.gov
-    affiliation: NEFSCRI
+    affiliation: '4'
   - name: Ryan E. Morse
-    email: Ryan.Morse@noaa.gov
-    affiliation: [IS,NEFSCRI]
+    affiliation: '2,4'
   - name: Chris D. Orphanides
-    email: Chris.Orphanides@noaa.gov
-    affiliation: NEFSCRI
+    affiliation: '4'
   - name: Charles T. Perretti
-    email: Charles.Perretti@noaa.gov
-    affiliation: [IS,NEFSCWH]
+    affiliation: '2,1'
   - name: Vincent S. Saba
-    email: Vincent.Saba@noaa.gov
-    affiliation: NEFSCNJ
+    affiliation: '5'
   - name: Laurel A. Smith
-    email: Laurel.Smith@noaa.gov
-    affiliation: NEFSCWH
+    affiliation: '1'
   - name: John B. Walden
-    email: John.Walden@noaa.gov
-    affiliation: NEFSCWH
+    affiliation: '1'
   - name: Harvey J. Walsh
-    email: Harvey.Walsh@noaa.gov
-    affiliation: NEFSCRI
+    affiliation: '4'
   - name: Mark J. Wuenschel
-    email: Mark.Wuenschel@noaa.gov
-    affiliation: NEFSCWH
+    affiliation: '1'
   - name: Donald M. Anderson
-    email: danderson@whoi.edu
-    affiliation: WHOI
+    affiliation: '6'
   - name: Loren L. Kellogg
-    email: Loren.Kellogg@noaa.gov
-    affiliation: [IS,NEFSCWH]
+    affiliation: '2,1'
   - name: Kristin M. Kleisner
-    email: kristin.kleisner.work@gmail.com
-    affiliation: EDF
+    affiliation: '7'
   - name: Scott I. Large
-    email: Scott.Large@noaa.gov
-    affiliation: NEFSCWH
+    affiliation: '1'
 affiliation:
   - id: '1'
     department: Woods Hole Laboratory
@@ -84,33 +67,39 @@ affiliation:
     state: MA # only USA, Australia, Canada
     country: USA
   - id: '2' 
-    department: Department X
-    institution: Institution X
-    city: City X
-    state: State XX # only USA, Australia, Canada
-    country: Country X
+    institution: Integrated Statistics
+    city: Woods Hole
+    state: MA # only USA, Australia, Canada
+    country: USA
   - id: '3' 
-    department: Department X
-    institution: Institution X
-    city: City X
-    state: State XX # only USA, Australia, Canada
-    country: Country X
-address:
-  - code: NEFSCWH
-    address: NOAA NMFS Northeast Fisheries Science Center, Woods Hole, MA, USA
-  - code: IS
-    address: Integrated Statistics, Woods Hole, MA, USA
-  - code: NEFSCSS
-    address: NOAA NMFS Northeast Fisheries Science Center, Silver Spring, MD, USA
-  - code: NEFSCRI
-    address: NOAA NMFS Northeast Fisheries Science Center, Narragansett, RI, USA
-  - code: NEFSCNJ
-    address: NOAA NMFS Northeast Fisheries Science Center, Geophysical Fluid Dynamics Laboratory, Princeton University, Princeton, NJ, USA
-  - code: WHOI
-    address: Woods Hole Oceanographic Institution, Woods Hole, MA, USA
-  - code: EDF
-    address: Environmental Defense Fund, Boston, MA, USA
-
+    department: NOAA NMFS Headquarters
+    institution: NOAA NMFS Northeast Fisheries Science Center
+    city: Silver Spring
+    state: MD # only USA, Australia, Canada
+    country: USA
+  - id: '4' 
+    department: Narragansett Laboratory
+    institution: NOAA NMFS Northeast Fisheries Science Center
+    city: Narragansett
+    state: RI # only USA, Australia, Canada
+    country: USA
+  - id: '5' 
+    department: Geophysical Fluid Dynamics Laboratory, Princeton University
+    institution: NOAA NMFS Northeast Fisheries Science Center
+    city: Princeton
+    state: NJ # only USA, Australia, Canada
+    country: USA
+  - id: '6' 
+    department: Biology
+    institution: Woods Hole Oceanographic Institution
+    city: Woods Hole
+    state: MA # only USA, Australia, Canada
+    country: USA
+  - id: '7' 
+    institution: Environmental Defense Fund
+    city: Boston
+    state: MA # only USA, Australia, Canada
+    country: USA
 date: '`r format(Sys.Date(), "%B %d, %Y")`'
 abstract: |
   Understanding the context of ecosystem status and trends is important for making informed natural resource management decisions. However, many fishery management systems are fully occupied with decisions at the species or stock level, and busy managers are reluctant to consider extensive reports with unfamiliar information if the connections to current management decisions and objectives are unclear. Here, we describe the process used to develop streamlined ecosystem reporting to meet management needs in two US fishery management regions, New England and the Mid-Atlantic. A multi-disciplinary team was assembled to revise an initial report that had been based on a format used in another US region. First, ecosystem indicators were clearly aligned with stated fishery management objectives. Second, objectives and associated indicators relating to human well-being (e.g., seafood production) were placed first in the report, rather than last. Third, brief nontechnical text explained indicator relevance and connections between indicators, and standardized visualizations were used for time series and maps to streamline communication. Finally, reports used transparent and reproducible production methods to meet management deadlines. Engagement with managers is ongoing to further improve the utility of the report. This approach to streamlined, audience-specific ecosystem reporting is flexible and adaptable to many different governance contexts, and can be used to provide information essential to implement ecosystem based management.  
