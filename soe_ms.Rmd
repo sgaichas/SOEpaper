@@ -803,7 +803,7 @@ tabl <- "
     df, booktabs = TRUE,
     caption = 'Ecosystem-level management objectives.'
   ) %>%
-    kable_styling(font_size =8, latex_options=c("hold_position", "right")) 
+    kable_styling(latex_options=c("hold_position", "right")) 
 ```
 
 \newpage
@@ -926,7 +926,7 @@ names(df) <- c("Groups", "GOM Landings", "GB Landings", "GOM Revenue",
                 "GB Revenue")
 
 kable(df, booktabs = TRUE, digits=2, caption = "Proportion managed by NEFMC") %>%
-  kable_styling(font_size =8, latex_options=c("hold_position"))
+  kable_styling(latex_options=c("hold_position"))
 #stargazer(df, summary = F, rownames = T, title = "Proportion of catch managed by NEFMC (2016)", header = F)
 ```
 
