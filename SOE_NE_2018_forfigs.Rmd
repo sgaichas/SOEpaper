@@ -729,25 +729,25 @@ Figure \ref{landings} shows the removals for human consumption both at the entir
 ## Gulf of Maine cosystem-wide and managed species total landings
 opar <- par(mfrow = c(5, 1), mar = c(0, 0, 0, 0), oma = c(4, 6.5, 2, 6))
 
-soe.plot(SOE.data.2018, "Time","Apex Predator Landings GOM", stacked = "A",status = F,
+soe.plot(SOE.data.2018, "Time","Apex Predator Landings GOM", stacked = "Apex predators",status = F,
          endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
          ymin = FALSE, y.lower = 0, cex.stacked = 2)
 
-soe.plot(SOE.data.2018, "Time", "Piscivore Landings GOM", stacked = "B",status = F,
+soe.plot(SOE.data.2018, "Time", "Piscivore Landings GOM", stacked = "Piscivores",status = F,
          endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
          ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
          y.var2 = "Piscivore NEFMC managed species sea food GOM", mean_line = T, cex.stacked = 2)
 
 
-soe.plot(SOE.data.2018, "Time", "Planktivore Landings GOM", stacked = "C",status = F,
+soe.plot(SOE.data.2018, "Time", "Planktivore Landings GOM", stacked = "Planktivores",status = F,
          endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
          ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
          y.var2 ="Planktivore NEFMC managed species sea food GOM", mean_line = T, cex.stacked = 2)
-soe.plot(SOE.data.2018, "Time", "Benthivore Landings GOM", stacked = "D",status = F,
+soe.plot(SOE.data.2018, "Time", "Benthivore Landings GOM", stacked = "Benthivores",status = F,
          endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
          ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
          y.var2 = "Benthivore NEFMC managed species sea food GOM", mean_line = T, cex.stacked = 2)
-soe.plot(SOE.data.2018, "Time", "Benthos Landings GOM", stacked = "E",status = F,
+soe.plot(SOE.data.2018, "Time", "Benthos Landings GOM", stacked = "Benthos",status = F,
          endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
          ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
          y.var2 = "Benthos NEFMC managed species sea food GOM", mean_line = T, cex.stacked = 2)
@@ -756,25 +756,25 @@ soe.stacked.axis("Time",expression("Landings, 10"^3*"metric tons"), outer = T)
 ## Goerges Bank ecosystem-wide and managed species total landings
 opar <- par(mfrow = c(5, 1), mar = c(0, 0, 0, 0), oma = c(4, 6.5, 2, 6))
 
-soe.plot(SOE.data.2018, "Time","Apex Predator Landings GB", stacked = "A",status = F,
+soe.plot(SOE.data.2018, "Time","Apex Predator Landings GB", stacked = "Apex predators",status = F,
          endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
          ymin = FALSE, y.lower = 0, cex.stacked = 2)
 
-soe.plot(SOE.data.2018, "Time", "Piscivore Landings GB", stacked = "B",status = F,
+soe.plot(SOE.data.2018, "Time", "Piscivore Landings GB", stacked = "Piscivores",status = F,
          endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
          ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
          y.var2 = "Piscivore NEFMC managed species sea food GB", mean_line = T, cex.stacked = 2)
 
 
-soe.plot(SOE.data.2018, "Time", "Planktivore Landings GB", stacked = "C",status = F,
+soe.plot(SOE.data.2018, "Time", "Planktivore Landings GB", stacked = "Planktivores",status = F,
          endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
          ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
          y.var2 ="Planktivore NEFMC managed species sea food GB", mean_line = T, cex.stacked = 2)
-soe.plot(SOE.data.2018, "Time", "Benthivore Landings GB", stacked = "D",status = F,
+soe.plot(SOE.data.2018, "Time", "Benthivore Landings GB", stacked = "Benthivores",status = F,
          endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
          ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
          y.var2 = "Benthivore NEFMC managed species sea food GB", mean_line = T, cex.stacked = 2)
-soe.plot(SOE.data.2018, "Time", "Benthos Landings GB", stacked = "E",status = F,
+soe.plot(SOE.data.2018, "Time", "Benthos Landings GB", stacked = "Benthos",status = F,
          endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
          ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
          y.var2 = "Benthos NEFMC managed species sea food GB", mean_line = T, cex.stacked = 2)
@@ -787,11 +787,11 @@ Total commercial seafood landings from all species and from NEFMC managed specie
 ```{r managed_landings_NE , fig.cap = "Total landings (black) and total landings managed by NEFMC (red) in Gulf of Maine (A) and Georges Bank (B).", echo=F, message=FALSE, warning=FALSE , fig.asp=.5, fig.align = 'center'}
 opar <- par(mfrow = c(2, 1), mar = c(0, 0, 0, 0), oma = c(4, 6, 2, 6))
 
-soe.plot(SOE.data.2018, "Time", "Total Landings GOM", stacked = "A",status = F,
+soe.plot(SOE.data.2018, "Time", "Total Landings GOM", stacked = "GOM",status = F,
          endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
          ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
          y.var2 =  "Total managed landings GOM")
-soe.plot(SOE.data.2018, "Time", "Total Landings GB", stacked = "B",status = F,
+soe.plot(SOE.data.2018, "Time", "Total Landings GB", stacked = "GB",status = F,
          endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1964,
          ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
          y.var2 =  "Total managed landings GB")
@@ -2149,7 +2149,7 @@ There are coherent patterns between the primary production anomaly and the copep
 The copepod size index relates the abundance anomaly of small bodied copepods to the abundance of a large bodied copepod, *Calanus finmarchicus*. The small copepods are most important during the autumn while *Calanus finmarchicus* dominates early in the year following the spring phytoplankton bloom. *Pseudocalanus* spp., an important copepod genus linked to early stage survival of cod and haddock, exhibits a long-term decline in abundance on GB as well as low abundance from 2002-2014 in the GOM (Fig. \ref{calabund}). In the GOM, *Calanus* abundance was at or below average between 2009-2014, and the most recent data for 2015 show an above average abundance level. On GB, *Calanus* abundance has been below average since 2008. *Calanus* are the principal prey of North Atlantic right whales; reductions in *Calanus* populations potentially impact the most vulnerable protected species in our region as well as key forage fish that feed on them, with implications throughout the food web.
 
 
-```{r, NE zooplankton, fig.cap="Small-large copepod index with primary productivity anomaly in Gulf of Maine (A) and Georges Bank (B).\\label{ppcope}",echo = F, warning = F, include = T,  fig.show='hold', fig.align='default', warning = F, message = F, out.width='.49\\linewidth'}
+```{r, NE_zooplankton, fig.cap="Small-large copepod index with primary productivity anomaly in Gulf of Maine (A) and Georges Bank (B).\\label{ppcope}",echo = F, warning = F, include = T,  fig.show='hold', fig.align='default', warning = F, message = F, out.width='.49\\linewidth'}
 
 opar <- par(mfrow = c(2, 1), mar = c(0, 0, 0, 0), oma = c(3.5, 5, 2, 4))
 ###### Gulf of Maine #####
@@ -2164,7 +2164,7 @@ abline(h = 0, col  = "grey", lwd = 3, lty = 2)
 with(SOE.data.2018[SOE.data.2018$Var == GOM_copepod_anom,], points(Time[22:39], Value[22:39],
        type = "o", col = "black", ylim = c(-1.5,1.5), pch = 16, lwd = 3,las = 1))
 mtext(side = 2, line = 3, "Small-Lg Copepod Index", cex = 1)
-text(1998,1.4,"A",cex = 1.2)
+text(1998,1.4,"GOM",cex = 1.2)
 par(new = T)
 
 #primary productivity
@@ -2192,7 +2192,7 @@ abline(h = 0, col  = "grey", lwd = 3, lty = 2)
 with(SOE.data.2018[SOE.data.2018$Var == GB_copepod_anom,], points(Time[22:39], Value[22:39],
        type = "o", col = "black", ylim = c(-1.5,1.5), pch = 16, lwd = 3,las = 1))
 mtext(side = 2, line = 3, "Small-Lg Copepod Index", cex = 1)
-text(1998,1.4,"B",cex = 1.2)
+text(1998,1.4,"GB",cex = 1.2)
 par(new = T)
 
 #primary productivity
@@ -2213,20 +2213,20 @@ legend("bottomright",
 opar <- par(mfrow = c(2, 1), mar = c(0, 0, 0, 0), oma = c(3.5, 5, 2, 4))
 
 
-soe.plot(SOE.data.2018, "Time", "Pseudocalanus spp. abundance anomaly GOM", stacked = "A",
+soe.plot(SOE.data.2018, "Time", "Pseudocalanus spp. abundance anomaly GOM", stacked = "GOM Pseudo.",
          rel.y.num = 1.1,line.forward = T, cex.stacked = 1.5,end.start = 2006,
          anomaly = T)
-soe.plot(SOE.data.2018, "Time", "Calanus finmarchicus abundance anomaly GOM", stacked = "B",
+soe.plot(SOE.data.2018, "Time", "Calanus finmarchicus abundance anomaly GOM", stacked = "GOM Cal. fin.",
          rel.y.num = 1.1, line.forward = T,cex.stacked = 1.5,end.start = 2006,
          anomaly = T)
 soe.stacked.axis("Year", "Abundance anomaly")
 
 opar <- par(mfrow = c(2, 1), mar = c(0, 0, 0, 0), oma = c(3.5, 5, 2, 4))
 
-soe.plot(SOE.data.2018, "Time", "Pseudocalanus spp. abundance anomaly GB", stacked = "C",
+soe.plot(SOE.data.2018, "Time", "Pseudocalanus spp. abundance anomaly GB", stacked = "GB Pseudo",
          rel.y.num = 1.1,line.forward = T, cex.stacked = 1.5,end.start = 2006,
          anomaly = T, suppressAxis = T)
-soe.plot(SOE.data.2018, "Time", "Calanus finmarchicus abundance anomaly GB", stacked = "D",
+soe.plot(SOE.data.2018, "Time", "Calanus finmarchicus abundance anomaly GB", stacked = "GB Cal. fin.",
          rel.y.num = 1.1, line.forward = T,cex.stacked = 1.5,end.start = 2006,
          anomaly = T)
 soe.stacked.axis("Year", "Abundance anomaly")
@@ -2245,7 +2245,7 @@ knitr::include_graphics(file.path(image.dir, 'NEFMC_Fish_Condition_2018.jpg'))
 
 The amount of small fish relative to larger fish of the same species from the NEFSC surey is a simple measure of productivity, intended to complement model-based stock assessment estimates of recruitment for commercial species. There are no clear long term trends in this indicator when aggregated across all species in the Gulf of Maine and Georges Bank.
 
-```{r groundfish productivity, fig.cap="Groundfish productivity (A: NEFMC managed species, B: Commercial Species in New England)", echo = F, out.width='9.2cm', out.height='9.2cm', fig.show='hold', fig.align = 'center',fig.pos='H'}
+```{r GOM_groundfish_productivity, fig.cap="Groundfish productivity (A: NEFMC managed species, B: Commercial Species in New England)", echo = F, out.width='9.2cm', out.height='9.2cm', fig.show='hold', fig.align = 'center',fig.pos='H'}
 ## Functions for plotting
 library(ggplot2)
 library(rpart)
@@ -2372,7 +2372,7 @@ plot_stackbarcpts_single(YEAR = bar_dat$Time,
                          height = 5.5,
                          width = 9,
                          filt = TRUE,
-                         label = "A",
+                         label = "",
                          y.text = 10)
 
 bar_dat <-SOE.data.2018[grepl("by EPU",SOE.data.2018$Var) & SOE.data.2018$EPU == "GOM",]
