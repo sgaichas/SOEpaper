@@ -39,7 +39,7 @@ load(file.path(data.dir, "SOE_data_2018.Rdata"))
 knitr::opts_chunk$set(echo = FALSE, fig.path = './iea_figs_ne/')
 
 #The map_figs option can be set to FALSE to skip making maps on the fly (they will be missing). Or TRUE to make them. 
-map_figs <- T
+map_figs <- F
 
 ```
 
@@ -688,31 +688,31 @@ cat(tabl) # output the table in a format good for HTML/PDF/docx conversion
 
 Figure \ref{landings} shows the removals for human consumption of trophic groups including both all species landed in the MAB as well as the subset of those removals managed by the MAFMC.  Landings for managed species are all trending up in recent years, but only Benthivore landings are above the long term-mean. There is a significant decline in MAFMC-managed landings of benthos. We note that time series at the Mid-Atlantic regional scale may not include all state landings prior to 1994. 
 
-```{r seafood_landings_MAB, fig.cap="MAFMC seafood specific landings (red) and total commericial landings (black). A: Apex predators, B: Piscivore, C: Planktivore, D: Benthivore, E: Benthos \\label{landings}",echo = F, warning = F, include = T, fig.asp=0.78, fig.align='center',fig.pos='H', out.width='0.7\\linewidth'}
+```{r guild_landings_MAB, fig.cap="MAFMC seafood specific landings (red) and total commericial landings (black). A: Apex predators, B: Piscivore, C: Planktivore, D: Benthivore, E: Benthos \\label{landings}",echo = F, warning = F, include = T, fig.asp=0.78, fig.align='center',fig.pos='H', out.width='0.7\\linewidth'}
 
 ## Ecosystem-wide and managed species total landings
 opar <- par(mfrow = c(5, 1), mar = c(0, 0, 0, 0), oma = c(4, 6.5, 2, 6))
 
-soe.plot(SOE.data.2018, "Time","Apex Predator Landings MAB", stacked = "A",status = F,
+soe.plot(SOE.data.2018, "Time","Apex Predator Landings MAB", stacked = "Apex Predator",status = F,
          endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 1,end.start = 2007, x.start = 1986,
          ymin = FALSE, y.lower = 0 )
 
-soe.plot(SOE.data.2018, "Time", "Piscivore Landings MAB", stacked = "B",status = F,
+soe.plot(SOE.data.2018, "Time", "Piscivore Landings MAB", stacked = "Piscivores",status = F,
          endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1986,
          ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
          y.var2 = "Piscivore MAFMC managed species sea food MAB")
 
-soe.plot(SOE.data.2018, "Time", "Planktivore Landings MAB", stacked = "C",status = F,
+soe.plot(SOE.data.2018, "Time", "Planktivore Landings MAB", stacked = "Planktivores",status = F,
          endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1986,
          ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
          y.var2 = "Planktivore MAFMC managed species sea food MAB")
 
-soe.plot(SOE.data.2018, "Time", "Benthivore Landings MAB", stacked = "D",status = F,
+soe.plot(SOE.data.2018, "Time", "Benthivore Landings MAB", stacked = "Benthivores",status = F,
          endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1986,
          ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
          y.var2 = "Benthivore MAFMC managed species sea food MAB")
 
-soe.plot(SOE.data.2018, "Time", "Benthos Landings MAB", stacked = "E",status = F,
+soe.plot(SOE.data.2018, "Time", "Benthos Landings MAB", stacked = "Benthos",status = F,
          endshade = T, rel.y.num = 1.1, full.trend = T, scale.axis = 10^3,end.start = 2007, x.start = 1986,
          ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
          y.var2 = "Benthos MAFMC managed species sea food MAB")
@@ -724,7 +724,7 @@ soe.stacked.axis("Year", expression("Landings, 10"^3*"metric tons"), x.line = 2.
 Total commercial seafood landings from all species and from MAFMC managed species in teh MAB indicate total seafood production. Years prior to 1977 included foreign landings, so we begin the time series in 1986. Recent landings are all domestic fisheries. Looking across all regions, there is a significant recent decrease in seafood landings, indicating high risk to regional domestic seafood production. 
 
 
-```{r managed_landings , fig.cap="Total commercial seafood landings (black), MAFMC managed seafood landings (red)", echo=F, message=FALSE, warning=FALSE , fig.asp=0.35, fig.align = 'center',fig.pos='H'}
+```{r managed_landings_MAB, fig.cap="Total commercial seafood landings (black), MAFMC managed seafood landings (red)", echo=F, message=FALSE, warning=FALSE , fig.asp=0.35, fig.align = 'center',fig.pos='H'}
 
 opar <- par(mar = c(4, 6, 2, 6))
 
