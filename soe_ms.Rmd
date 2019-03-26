@@ -700,7 +700,7 @@ Below we give two examples of SOE reporting from the main body of the report ill
 During the Council meetings, there were questions regarding mechanisms for declines in seafood landings (e.g. could this be the result of management? Answer: yes). This led to conversation about the need for multiple indicators; while a single data stream indicates where we are with respect to a single objective, the full suite of indicators are needed to tease out multiple factors underlying the trends.
 
 ## Priority: Synthesis across indicators within a section
-In this second example from the main body of the reports, we demonstrate synthesis across multiple indicators within a report section; connecting the physical oceaographic and low trophic level indicators to managed species in New England. The same indicators were presented using data from the Mid-Atlantic in the Mid-Atlantic report, with text noting the differences and similarities between the areas (see [Supporting Information, S2](http://www.mafmc.org/s/Tab04_State-of-the-Ecosystem-Apr2018.pdf)).
+In this second example from the main body of the reports, we demonstrate synthesis across multiple indicators within a report section; connecting the physical oceaographic and low trophic level indicators to managed species in New England. The same indicators were presented using data from the Mid-Atlantic in the Mid-Atlantic report (see [Supplementary Data, S2](http://www.mafmc.org/s/Tab04_State-of-the-Ecosystem-Apr2018.pdf)).
 
 ### New England report text: Ecosystem Conditions and Productivity
 >
@@ -951,7 +951,7 @@ kable(df, booktabs = TRUE, digits=2, caption = "Proportion managed by NEFMC") %>
 
 # Figures
 
-```{r conceptual, fig.cap="Overview of ecosystem relationships for the Mid-Atlantic Ecosystem. Human activities link to high level strategic management objectives (MAFMC FMP). Components are represented by indicators in this report, and key paths connecting components and objectives are highlighted.", fig.height=6, fig.width=4, out.width='\\linewidth', fig.align='center', echo = F, message = FALSE, warning = FALSE, eval = T}
+```{r conceptual, fig.cap="Overview of ecosystem relationships for the New England Ecosystem. Human activities link to high level strategic management objectives (NEFMC FMP). Components are represented by indicators in this report, and key paths connecting components and objectives are highlighted.", fig.height=6, fig.width=4, out.width='\\linewidth', fig.align='center', echo = F, message = FALSE, warning = FALSE, eval = T}
 #knitr::include_graphics(file.path(image.dir, 'SOE_MAB_ConceptMod.png'))
 #knitr::include_graphics(file.path(image.dir, 'MAB_conmod_overview.jpg'))
 knitr::include_graphics(file.path(image.dir, 'ne_conceptual_model.pdf'))
