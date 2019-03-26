@@ -4,14 +4,14 @@ author: "Northeast Fisheries Science Center"
 date: '`r format(Sys.Date(), "%B %d, %Y")`'
 graphics: yes
 output:
-  html_document:
-    toc: yes
   pdf_document:
     includes:
       in_header: preamble-latex.tex
     keep_tex: yes
     pandoc_args: --latex-engine=xelatex
     toc: no
+  html_document:
+    toc: yes
 fontsize: 11pt
 header-includes: 
 - \usepackage{float}
