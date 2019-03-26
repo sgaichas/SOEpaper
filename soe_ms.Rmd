@@ -1062,7 +1062,7 @@ plot(NEBO$Brat,NEBO$Frat,xlim=x.r,ylim=y.r,xlab="B/Bmsy",ylab="F/Fmsy",pch=16,co
 
 ```
 
-Mackerel [@nefsc_64th_2018], , [Dogfish](http://www.mafmc.org/s/2017-Status-Report-for-spiny-dogfish.pdf), , 2015 Bluefish [@nefsc_60th_2015], , Ocean quahog [@nefsc_63rd_2017], , Black sea bass [@nefsc_62nd_2017], Surfclam [@nefsc_61st_2017], , Northern and Southern Monkfish [@richards_2016_2016].
+All groundfish stocks [@nefsc_operational_2017], [red and silver hake stocks](http://s3.amazonaws.com/nefmc.org/Document-2-SAFE-Report-for-Fishing-Year-2016.pdf), [all skate stocks](http://s3.amazonaws.com/nefmc.org/4_NEFSC_SkateMemo_July_2017.pdf), [Dogfish](http://www.mafmc.org/s/2017-Status-Report-for-spiny-dogfish.pdf),  Northern and Southern Monkfish [@richards_2016_2016], 2015 Atlantic herring [@deroba_atlantic_2015], 2014 Sea scallops [@nefsc_59th_2014].
 
 \newpage
 
