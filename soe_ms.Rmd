@@ -1152,131 +1152,138 @@ figureX <- multi_panel_figure(
    columns = 2,
    rows = 3)
 
-#fig.height = 5.5,
-## Gulf of Maine cosystem-wide and managed species total landings
-#A: Apex predators, B: Piscivore, C: Planktivore, D: Benthivore, E: Benthos.
-guildlandGOM <- capture_base_plot({
-  opar <- par(mfrow = c(5, 1), mar = c(0, 0, 0, 0), oma = c(3, 3.5, 1, 1))
-  
-  soe.plot(SOE.data.2018, "Time","Apex Predator Landings GOM", 
-           stacked = "Apex predators",status = F, suppressAxis = TRUE,
-           endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
-           end.start = 2007, x.start = 1964,
-           ymin = FALSE, y.lower = 0, cex.stacked = 1)
-  soe.plot(SOE.data.2018, "Time", "Piscivore Landings GOM", 
-           stacked = "Piscivores",status = F, suppressAxis = TRUE,
-           endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
-           end.start = 2007, x.start = 1964,
-           ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
-           y.var2 = "Piscivore NEFMC managed species sea food GOM", mean_line = T,
-           cex.stacked = 1)
-  soe.plot(SOE.data.2018, "Time", "Planktivore Landings GOM", 
-           stacked = "Planktivores",status = F, suppressAxis = TRUE,
-           endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
-           end.start = 2007, x.start = 1964,
-           ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
-           y.var2 ="Planktivore NEFMC managed species sea food GOM", mean_line = T,
-           cex.stacked = 1)
-  soe.plot(SOE.data.2018, "Time", "Benthivore Landings GOM", 
-           stacked = "Benthivores",status = F, suppressAxis = TRUE,
-           endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
-           end.start = 2007, x.start = 1964,
-           ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
-           y.var2 = "Benthivore NEFMC managed species sea food GOM", mean_line = T,
-           cex.stacked = 1)
-  soe.plot(SOE.data.2018, "Time", "Benthos Landings GOM", 
-           stacked = "Benthos",status = F, suppressAxis = TRUE,
-           endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
-           end.start = 2007, x.start = 1964,
-           ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
-           y.var2 = "Benthos NEFMC managed species sea food GOM", mean_line = T,
-           cex.stacked = 1)
-  soe.stacked.axis("Year",expression("Landings, 10"^3*"metric tons"), x.line = 2, 
-                   rel.x.text = 0.8, y.line=2, rel.y.text = 0.8)
-})
-
-## Fill the panels
-figureX <- fill_panel(figureX, guildlandGOM, row = 1:2, column = 1)
-
-## Georges Bank ecosystem-wide and managed species total landings
-guildlandGB <- capture_base_plot({
-  opar <- par(mfrow = c(5, 1), mar = c(0, 0, 0, 0), oma = c(3, 3.5, 1, 1))
-  
-  soe.plot(SOE.data.2018, "Time","Apex Predator Landings GB", 
-           stacked = "Apex predators",status = F, suppressAxis = TRUE,
-           endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
-           end.start = 2007, x.start = 1964,
-           ymin = FALSE, y.lower = 0, 
-           cex.stacked = 1)
-  soe.plot(SOE.data.2018, "Time", "Piscivore Landings GB", 
-           stacked = "Piscivores",status = F, suppressAxis = TRUE,
-           endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
-           end.start = 2007, x.start = 1964,
-           ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
-           y.var2 = "Piscivore NEFMC managed species sea food GB", mean_line = T, 
-           cex.stacked = 1)
-  soe.plot(SOE.data.2018, "Time", "Planktivore Landings GB", 
-           stacked = "Planktivores",status = F, suppressAxis = TRUE,
-           endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
-           end.start = 2007, x.start = 1964,
-           ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
-           y.var2 ="Planktivore NEFMC managed species sea food GB", mean_line = T, 
-           cex.stacked = 1)
-  soe.plot(SOE.data.2018, "Time", "Benthivore Landings GB", 
-           stacked = "Benthivores",status = F, suppressAxis = TRUE,
-           endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
-           end.start = 2007, x.start = 1964,
-           ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
-           y.var2 = "Benthivore NEFMC managed species sea food GB", mean_line = T, 
-           cex.stacked = 1)
-  soe.plot(SOE.data.2018, "Time", "Benthos Landings GB", 
-           stacked = "Benthos",status = F, suppressAxis = TRUE,
-           endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
-           end.start = 2007, x.start = 1964,
-           ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
-           y.var2 = "Benthos NEFMC managed species sea food GB", mean_line = T, 
-           cex.stacked = 1)
-  soe.stacked.axis("Year",expression("Landings, 10"^3*"metric tons"), x.line = 2, 
-                   rel.x.text = 0.8, y.line=2, rel.y.text = 0.8)
-})
-
-## Fill the panels
-figureX <- fill_panel(figureX, guildlandGB, row = 1:2, column = 2)
-
-## Ecosystem-wide and managed species total landings
-totland <- capture_base_plot({
-  opar <- par(mfrow = c(2, 1), mar = c(0, 0, 0, 0), oma = c(2.5, 3, 1, 1))
-  
-  soe.plot(SOE.data.2018, "Time", "Total Landings GOM", point.cex = 1, 
-           stacked = "GOM",status = F, suppressAxis = TRUE,
-           endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
-           end.start = 2007, x.start = 1964,
-           ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
-           y.var2 =  "Total managed landings GOM")
-  soe.plot(SOE.data.2018, "Time", "Total Landings GB", point.cex = 1, 
-           stacked = "GB",status = F, suppressAxis = TRUE,
-           endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
-           end.start = 2007, x.start = 1964,
-           ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
-           y.var2 =  "Total managed landings GB")
-  soe.stacked.axis("Year",expression("Landings, 10"^3*"metric tons"), x.line = 2, 
-                   rel.x.text = 0.8, y.line=2, rel.y.text = 0.8)
-})
-
-figureX <- fill_panel(figureX, totland, row = 3, column = 1)
-
-## Recreational landings
-recland <-capture_base_plot({
-  #opar <- par(mar = c (0, 0, 0, 0), oma = c(3, 3.5, 1, 1))
-  soe.plot(SOE.data.2018, "Time", "Recreational Seafood NE", point.cex = 1, scale.axis = 10^6,
-           end.start = 2008, x.label = 'Year', rel.y.text = 0.8, rel.y.num = 0.6, y.line = 2,
-           rel.x.text = 0.8, rel.x.num = 0.6, x.line = 2,
-           y.label = expression("Fish caught, 10"^6 *" n"))
-})
-
-figureX <- fill_panel(figureX, recland, row = 3, column = 2)
+figureX <- fill_panel(figureX, file.path(image.dir,'seafood_landings_GOM-1.pdf'), scaling = "fit", row = 1:2, column = 1)
+figureX <- fill_panel(figureX, file.path(image.dir,'seafood_landings_GOM-2.pdf'), scaling = "fit",   row = 1:2, column = 2)
+figureX <- fill_panel(figureX, file.path(image.dir,'managed_landings_NE-1.pdf'), scaling = "fit",   row = 3, column = 1)
+figureX <- fill_panel(figureX, file.path(image.dir,'rec_catch_NE-1.pdf'), scaling = "fit",   row = 3, column = 2)
 
 figureX
+
+# #fig.height = 5.5,
+# ## Gulf of Maine cosystem-wide and managed species total landings
+# #A: Apex predators, B: Piscivore, C: Planktivore, D: Benthivore, E: Benthos.
+# guildlandGOM <- capture_base_plot({
+#   opar <- par(mfrow = c(5, 1), mar = c(0, 0, 0, 0), oma = c(3, 3.5, 1, 1))
+#   
+#   soe.plot(SOE.data.2018, "Time","Apex Predator Landings GOM", 
+#            stacked = "Apex predators",status = F, suppressAxis = TRUE,
+#            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
+#            end.start = 2007, x.start = 1964,
+#            ymin = FALSE, y.lower = 0, cex.stacked = 1)
+#   soe.plot(SOE.data.2018, "Time", "Piscivore Landings GOM", 
+#            stacked = "Piscivores",status = F, suppressAxis = TRUE,
+#            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
+#            end.start = 2007, x.start = 1964,
+#            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
+#            y.var2 = "Piscivore NEFMC managed species sea food GOM", mean_line = T,
+#            cex.stacked = 1)
+#   soe.plot(SOE.data.2018, "Time", "Planktivore Landings GOM", 
+#            stacked = "Planktivores",status = F, suppressAxis = TRUE,
+#            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
+#            end.start = 2007, x.start = 1964,
+#            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
+#            y.var2 ="Planktivore NEFMC managed species sea food GOM", mean_line = T,
+#            cex.stacked = 1)
+#   soe.plot(SOE.data.2018, "Time", "Benthivore Landings GOM", 
+#            stacked = "Benthivores",status = F, suppressAxis = TRUE,
+#            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
+#            end.start = 2007, x.start = 1964,
+#            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
+#            y.var2 = "Benthivore NEFMC managed species sea food GOM", mean_line = T,
+#            cex.stacked = 1)
+#   soe.plot(SOE.data.2018, "Time", "Benthos Landings GOM", 
+#            stacked = "Benthos",status = F, suppressAxis = TRUE,
+#            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
+#            end.start = 2007, x.start = 1964,
+#            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
+#            y.var2 = "Benthos NEFMC managed species sea food GOM", mean_line = T,
+#            cex.stacked = 1)
+#   soe.stacked.axis("Year",expression("Landings, 10"^3*"metric tons"), x.line = 2, 
+#                    rel.x.text = 0.8, y.line=2, rel.y.text = 0.8)
+# })
+# 
+# ## Fill the panels
+# figureX <- fill_panel(figureX, guildlandGOM, row = 1:2, column = 1)
+# 
+# ## Georges Bank ecosystem-wide and managed species total landings
+# guildlandGB <- capture_base_plot({
+#   opar <- par(mfrow = c(5, 1), mar = c(0, 0, 0, 0), oma = c(3, 3.5, 1, 1))
+#   
+#   soe.plot(SOE.data.2018, "Time","Apex Predator Landings GB", 
+#            stacked = "Apex predators",status = F, suppressAxis = TRUE,
+#            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
+#            end.start = 2007, x.start = 1964,
+#            ymin = FALSE, y.lower = 0, 
+#            cex.stacked = 1)
+#   soe.plot(SOE.data.2018, "Time", "Piscivore Landings GB", 
+#            stacked = "Piscivores",status = F, suppressAxis = TRUE,
+#            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
+#            end.start = 2007, x.start = 1964,
+#            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
+#            y.var2 = "Piscivore NEFMC managed species sea food GB", mean_line = T, 
+#            cex.stacked = 1)
+#   soe.plot(SOE.data.2018, "Time", "Planktivore Landings GB", 
+#            stacked = "Planktivores",status = F, suppressAxis = TRUE,
+#            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
+#            end.start = 2007, x.start = 1964,
+#            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
+#            y.var2 ="Planktivore NEFMC managed species sea food GB", mean_line = T, 
+#            cex.stacked = 1)
+#   soe.plot(SOE.data.2018, "Time", "Benthivore Landings GB", 
+#            stacked = "Benthivores",status = F, suppressAxis = TRUE,
+#            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
+#            end.start = 2007, x.start = 1964,
+#            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
+#            y.var2 = "Benthivore NEFMC managed species sea food GB", mean_line = T, 
+#            cex.stacked = 1)
+#   soe.plot(SOE.data.2018, "Time", "Benthos Landings GB", 
+#            stacked = "Benthos",status = F, suppressAxis = TRUE,
+#            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
+#            end.start = 2007, x.start = 1964,
+#            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
+#            y.var2 = "Benthos NEFMC managed species sea food GB", mean_line = T, 
+#            cex.stacked = 1)
+#   soe.stacked.axis("Year",expression("Landings, 10"^3*"metric tons"), x.line = 2, 
+#                    rel.x.text = 0.8, y.line=2, rel.y.text = 0.8)
+# })
+# 
+# ## Fill the panels
+# figureX <- fill_panel(figureX, guildlandGB, row = 1:2, column = 2)
+# 
+# ## Ecosystem-wide and managed species total landings
+# totland <- capture_base_plot({
+#   opar <- par(mfrow = c(2, 1), mar = c(0, 0, 0, 0), oma = c(2.5, 3, 1, 1))
+#   
+#   soe.plot(SOE.data.2018, "Time", "Total Landings GOM", point.cex = 1, 
+#            stacked = "GOM",status = F, suppressAxis = TRUE,
+#            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
+#            end.start = 2007, x.start = 1964,
+#            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
+#            y.var2 =  "Total managed landings GOM")
+#   soe.plot(SOE.data.2018, "Time", "Total Landings GB", point.cex = 1, 
+#            stacked = "GB",status = F, suppressAxis = TRUE,
+#            endshade = T, rel.y.num = 0.6, full.trend = T, scale.axis = 10^3,
+#            end.start = 2007, x.start = 1964,
+#            ymin = FALSE, y.lower = 0 , extra = TRUE, x.var2 = "Time", 
+#            y.var2 =  "Total managed landings GB")
+#   soe.stacked.axis("Year",expression("Landings, 10"^3*"metric tons"), x.line = 2, 
+#                    rel.x.text = 0.8, y.line=2, rel.y.text = 0.8)
+# })
+# 
+# figureX <- fill_panel(figureX, totland, row = 3, column = 1)
+# 
+# ## Recreational landings
+# recland <-capture_base_plot({
+#   #opar <- par(mar = c (0, 0, 0, 0), oma = c(3, 3.5, 1, 1))
+#   soe.plot(SOE.data.2018, "Time", "Recreational Seafood NE", point.cex = 1, scale.axis = 10^6,
+#            end.start = 2008, x.label = 'Year', rel.y.text = 0.8, rel.y.num = 0.6, y.line = 2,
+#            rel.x.text = 0.8, rel.x.num = 0.6, x.line = 2,
+#            y.label = expression("Fish caught, 10"^6 *" n"))
+# })
+# 
+# figureX <- fill_panel(figureX, recland, row = 3, column = 2)
+# 
+# figureX
 
 ```
 
@@ -1816,17 +1823,17 @@ figureX <- multi_panel_figure(
    columns = 2,
    rows = 4)
 
-figureX <- fill_panel(figureX, file.path(image.dir,'NE zooplankton-1.pdf'), scaling = "fit",  row = 1, column = 1)
+figureX <- fill_panel(figureX, file.path(image.dir,'NE_zooplankton-1.pdf'), scaling = "fit",  row = 1, column = 1)
 
-figureX <- fill_panel(figureX, file.path(image.dir,'NE zooplankton-2.pdf'), scaling = "fit", row = 2, column = 1)
+figureX <- fill_panel(figureX, file.path(image.dir,'NE_zooplankton-2.pdf'), scaling = "fit", row = 1, column = 2)
 
-figureX <- fill_panel(figureX, file.path(image.dir,'GOM_GB zooplankton-1.pdf'), scaling = "fit", row = 1, column = 2)
+figureX <- fill_panel(figureX, file.path(image.dir,'GOM_GB zooplankton-1.pdf'), scaling = "fit", row = 2, column = 1)
 
 figureX <- fill_panel(figureX, file.path(image.dir,'GOM_GB zooplankton-2.pdf'), scaling = "fit", row = 2, column = 2)
 
 figureX <- fill_panel(figureX, file.path(image.dir,'NEFMC_Fish_Condition_2018.jpg'), scaling = "stretch", row = 3:4, column = 1)
 
-figureX <- fill_panel(figureX, file.path(image.dir,'groundfish productivity-1.pdf'), scaling = "stretch", row = 3:4, column = 2)
+figureX <- fill_panel(figureX, file.path(image.dir,'GOM_groundfish_productivity-1.pdf'), scaling = "stretch", row = 3:4, column = 2)
 
 figureX
 
