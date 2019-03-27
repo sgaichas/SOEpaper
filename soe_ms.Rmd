@@ -1825,19 +1825,19 @@ text(2,2.5*.95,"F", cex = 1.5)
 ## Figure dimensions
 figureX <- multi_panel_figure(
    columns = 2,
-   rows = 4)
+   rows = 5)
 
 figureX <- fill_panel(figureX, file.path(image.dir,'NE_zooplankton-1.pdf'), scaling = "fit",  row = 1, column = 1)
 
 figureX <- fill_panel(figureX, file.path(image.dir,'NE_zooplankton-2.pdf'), scaling = "fit", row = 1, column = 2)
 
-figureX <- fill_panel(figureX, file.path(image.dir,'GOM_GB zooplankton-1.pdf'), scaling = "fit", row = 2, column = 1)
+figureX <- fill_panel(figureX, file.path(image.dir,'GOM_GB zooplankton-1.pdf'), scaling = "fit", row = 2:3, column = 1)
 
-figureX <- fill_panel(figureX, file.path(image.dir,'GOM_GB zooplankton-2.pdf'), scaling = "fit", row = 2, column = 2)
+figureX <- fill_panel(figureX, file.path(image.dir,'GOM_GB zooplankton-2.pdf'), scaling = "fit", row = 2:3, column = 2)
 
-figureX <- fill_panel(figureX, file.path(image.dir,'NEFMC_Fish_Condition_2018.jpg'), scaling = "stretch", row = 3:4, column = 1)
+figureX <- fill_panel(figureX, file.path(image.dir,'NEFMC_Fish_Condition_2018.jpg'), scaling = "stretch", row = 4:5, column = 1)
 
-figureX <- fill_panel(figureX, file.path(image.dir,'GOM_groundfish_productivity-1.pdf'), scaling = "stretch", row = 3:4, column = 2)
+figureX <- fill_panel(figureX, file.path(image.dir,'GOM_groundfish_productivity-1.pdf'), scaling = "stretch", row = 4:5, column = 2)
 
 figureX
 
