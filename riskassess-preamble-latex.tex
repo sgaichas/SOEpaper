@@ -20,6 +20,9 @@
 } {
     \endorigfigure
 }
+\usepackage{letltxmacro}
+\LetLtxMacro{\oldhypertarget}{\hypertarget}
+\renewcommand{\hypertarget}[2]{\leavevmode\oldhypertarget{#1}{#2}}
 %\newcommand{\beginsupplement}{%
 %        \setcounter{table}{0}
 %        \renewcommand{\thetable}{S\arabic{table}}%
