@@ -1,110 +1,74 @@
 ---
-title: "State of the Ecosystem: So What? Improving ecosystem reporting for fisheries managers in the Northeast US"
+title: "State of the Ecosystem: So What? Improving ecosystem reporting for fisheries managers"
 runtitle: "Improving ecosystem reporting"
-documentclass: frontiersSCNS  # or frontiersHLTH, or frontiersFPHY
+documentclass: ouparticle  #article frontiersSCNS
 author:
-  - name: Sarah K. Gaichas
-    affiliation: '1'
-    etal: Gaichas # First author's last name. 
-    email: Sarah.Gaichas@noaa.gov # Indicates corresponding Author
-    institution: Woods Hole Laboratory, NOAA NMFS Northeast Fisheries Science Center
-    street: 166 Water Street
-    city: Woods Hole
-    state: MA # only USA, Australia, Canada
-    zip: 02543
-    country: USA
+  - Sarah K. Gaichas:
+      institute: one
+      email: Sarah.Gaichas@noaa.gov # Indicates corresponding Author
+      correspondence: true
   - name: Sean B. Hardison
-    affiliation: '2,1'
+    institute: [two, one]
   - name: Sean M. Lucey
-    affiliation: '1'
+    institute: one
   - name: Geret S. DePiper
-    affiliation: '1'
+    institute: one
   - name: Patricia M. Clay
-    affiliation: '3'
+    institute: three
   - name: Lisa L. Colburn
-    affiliation: '4'
+    institute: four
   - name: Debra Duarte
-    affiliation: '1'
+    institute: one
   - name: Michael J. Fogarty
-    affiliation: '1'
+    institute: one
   - name: Kevin D. Friedland
-    affiliation: '4'
+    institute: four
   - name: Robert J. Gamble
-    affiliation: '1'
+    institute: one
   - name: Kimberly J. W. Hyde
-    affiliation: '4'
+    institute: four
   - name: D. Christopher Melrose
-    affiliation: '4'
+    institute: four
   - name: Ryan E. Morse
-    affiliation: '2,4'
+    institute: [two, four]
   - name: Chris D. Orphanides
-    affiliation: '4'
+    institute: four
   - name: Charles T. Perretti
-    affiliation: '2,1'
+    institute: [two, one]
   - name: Vincent S. Saba
-    affiliation: '5'
+    institute: five
   - name: Laurel A. Smith
-    affiliation: '1'
+    institute: one
   - name: John B. Walden
-    affiliation: '1'
+    institute: one
   - name: Harvey J. Walsh
-    affiliation: '4'
+    institute: four
   - name: Mark J. Wuenschel
-    affiliation: '1'
+    institute: one
   - name: Donald M. Anderson
-    affiliation: '6'
+    institute: six
   - name: Loren L. Kellogg
-    affiliation: '2,1'
+    institute: [two, one]
   - name: Kristin M. Kleisner
-    affiliation: '7'
+    institute: seven
   - name: Scott I. Large
-    affiliation: '1'
-affiliation:
-  - id: '1'
-    department: Woods Hole Laboratory
-    institution: NOAA NMFS Northeast Fisheries Science Center
-    city: Woods Hole
-    state: MA # only USA, Australia, Canada
-    country: USA
-  - id: '2' 
-    institution: Integrated Statistics
-    city: Woods Hole
-    state: MA # only USA, Australia, Canada
-    country: USA
-  - id: '3' 
-    department: Social Sciences Branch c/o Headquarters
-    institution: NOAA NMFS Northeast Fisheries Science Center
-    city: Silver Spring
-    state: MD # only USA, Australia, Canada
-    country: USA
-  - id: '4' 
-    department: Narragansett Laboratory
-    institution: NOAA NMFS Northeast Fisheries Science Center
-    city: Narragansett
-    state: RI # only USA, Australia, Canada
-    country: USA
-  - id: '5' 
-    department: Geophysical Fluid Dynamics Laboratory, Princeton University
-    institution: NOAA NMFS Northeast Fisheries Science Center
-    city: Princeton
-    state: NJ # only USA, Australia, Canada
-    country: USA
-  - id: '6' 
-    department: Biology
-    institution: Woods Hole Oceanographic Institution
-    city: Woods Hole
-    state: MA # only USA, Australia, Canada
-    country: USA
-  - id: '7' 
-    institution: Environmental Defense Fund
-    city: Boston
-    state: MA # only USA, Australia, Canada
-    country: USA
+    institute: one
+institute:
+  - one: Woods Hole Laboratory, NOAA NMFS Northeast Fisheries Science Center, Woods Hole, MA, USA
+  - two: Integrated Statistics, Woods Hole, MA, USA
+  - three: Social Sciences Branch c/o Headquarters, NOAA NMFS Northeast Fisheries Science Center, Silver Spring, MD, USA
+  - four: Narragansett Laboratory, NOAA NMFS Northeast Fisheries Science Center, Narragansett, RI, USA
+  - five: Geophysical Fluid Dynamics Laboratory, Princeton University, NOAA NMFS Northeast Fisheries Science Center, Princeton, NJ, USA
+  - six: Biology Department, Woods Hole Oceanographic Institution, Woods Hole, MA, USA
+  - seven: Environmental Defense Fund, Boston, MA, USA
 output:
-  rticles::frontiers_article:
+  rmarkdown::pdf_document:
     includes:
       in_header: riskassess-preamble-latex.tex
-csl: frontiers.csl  
+    pandoc_args:
+      - '--lua-filter=scholarly-metadata.lua'
+      - '--lua-filter=author-info-blocks.lua'
+csl: ices-journal-of-marine-science.csl  
 bibliography: ["SOE.bib", "packages.bib"]
 ---
 
@@ -112,8 +76,7 @@ bibliography: ["SOE.bib", "packages.bib"]
 
 Understanding the context of ecosystem status and trends is important for making informed natural resource management decisions. However, many fishery management systems are fully occupied with decisions at the species or stock level, and busy managers are reluctant to consider extensive reports with unfamiliar information if the connections to current management decisions and objectives are unclear. Here, we describe the process used to develop streamlined ecosystem reporting to meet management needs in two US fishery management regions, New England and the Mid-Atlantic. A multi-disciplinary team was assembled to revise an initial report that had been based on a format used in another US region. First, ecosystem indicators were clearly aligned with stated fishery management objectives. Second, objectives and associated indicators relating to human well-being (e.g., seafood production) were placed first in the report, rather than last. Third, brief nontechnical text explained indicator relevance and connections between indicators, and standardized visualizations were used for time series and maps to streamline communication. Finally, reports used transparent and reproducible production methods to meet management deadlines. Engagement with managers is ongoing to further improve the utility of the report. This approach to streamlined, audience-specific ecosystem reporting is flexible and adaptable to many different governance contexts, and can be used to provide information essential for implementation of ecosystem based management.  
 
-\tiny
- \keyFont{ \section{Keywords:} ecosystem approach, natural resource management, fisheries, integrated ecosystem assessment, ecosystem indicators, economic indicators, management objectives } 
+\section{Keywords:} ecosystem approach, natural resource management, fisheries, integrated ecosystem assessment, ecosystem indicators, economic indicators, management objectives 
 
 \end{abstract}
 
