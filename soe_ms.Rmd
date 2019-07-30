@@ -1,7 +1,7 @@
 ---
 title: "State of the Ecosystem: So What? Improving ecosystem reporting for fisheries managers"
 runtitle: "Improving ecosystem reporting"
-documentclass: ouparticle  #article frontiersSCNS
+documentclass: ouparticle 
 author:
   - Sarah K. Gaichas:
       institute: one
@@ -65,6 +65,7 @@ csl: ices-journal-of-marine-science.csl
 bibliography: ["SOE.bib", "packages.bib"]
 output:
   rmarkdown::pdf_document:
+    keep_tex: true
     includes:
       in_header: riskassess-preamble-latex.tex
     pandoc_args:
@@ -74,7 +75,8 @@ output:
 
 \begin{abstract}
 
-Understanding the context of ecosystem status and trends is important for making informed natural resource management decisions. However, many fishery management systems are fully occupied with decisions at the species or stock level, and busy managers are reluctant to consider extensive reports with unfamiliar information if the connections to current management decisions and objectives are unclear. Here, we describe the process used to develop streamlined ecosystem reporting to meet management needs in two US fishery management regions, New England and the Mid-Atlantic. A multi-disciplinary team was assembled to revise an initial report that had been based on a format used in another US region. First, ecosystem indicators were clearly aligned with stated fishery management objectives. Second, objectives and associated indicators relating to human well-being (e.g., seafood production) were placed first in the report, rather than last. Third, brief nontechnical text explained indicator relevance and connections between indicators, and standardized visualizations were used for time series and maps to streamline communication. Finally, reports used transparent and reproducible production methods to meet management deadlines. Engagement with managers is ongoing to further improve the utility of the report. This approach to streamlined, audience-specific ecosystem reporting is flexible and adaptable to many different governance contexts, and can be used to provide information essential for implementation of ecosystem based management.  
+\section{Abstract}
+Understanding the context of ecosystem status and trends is important for making informed natural resource management decisions. However, many fishery management systems are fully occupied with decisions at the species or stock level, and busy managers are reluctant to consider extensive reports with unfamiliar information if the connections to current management decisions and objectives are unclear. Here, we describe the process used to develop streamlined ecosystem reporting to meet management needs in two Northeast US fishery management regions. A multi-disciplinary team was assembled to revise an initial report. First, ecosystem indicators were clearly aligned with stated fishery management objectives. Second, objectives and associated indicators relating to human well-being (e.g., seafood production) were placed first in the report, rather than last. Third, brief nontechnical text explained indicator relevance and connections between indicators, and standardized visualizations were used for time series and maps to streamline communication. Finally, reports used transparent and reproducible production methods to meet management deadlines. Engagement with managers is ongoing to further improve the utility of the report. This approach to streamlined, audience-specific ecosystem reporting is flexible and adaptable to many different governance contexts, and can be used to provide information essential for implementation of ecosystem based management.  
 
 \section{Keywords:} ecosystem approach, natural resource management, fisheries, integrated ecosystem assessment, ecosystem indicators, economic indicators, management objectives 
 
