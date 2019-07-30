@@ -5,54 +5,54 @@ documentclass: ouparticle  #article frontiersSCNS
 author:
   - Sarah K. Gaichas:
       institute: one
-      email: Sarah.Gaichas@noaa.gov # Indicates corresponding Author
+      email: 'Sarah.Gaichas@noaa.gov' 
       correspondence: true
-  - name: Sean B. Hardison
-    institute: [two, one]
-  - name: Sean M. Lucey
-    institute: one
-  - name: Geret S. DePiper
-    institute: one
-  - name: Patricia M. Clay
-    institute: three
-  - name: Lisa L. Colburn
-    institute: four
-  - name: Debra Duarte
-    institute: one
-  - name: Michael J. Fogarty
-    institute: one
-  - name: Kevin D. Friedland
-    institute: four
-  - name: Robert J. Gamble
-    institute: one
-  - name: Kimberly J. W. Hyde
-    institute: four
-  - name: D. Christopher Melrose
-    institute: four
-  - name: Ryan E. Morse
-    institute: [two, four]
-  - name: Chris D. Orphanides
-    institute: four
-  - name: Charles T. Perretti
-    institute: [two, one]
-  - name: Vincent S. Saba
-    institute: five
-  - name: Laurel A. Smith
-    institute: one
-  - name: John B. Walden
-    institute: one
-  - name: Harvey J. Walsh
-    institute: four
-  - name: Mark J. Wuenschel
-    institute: one
-  - name: Donald M. Anderson
-    institute: six
-  - name: Loren L. Kellogg
-    institute: [two, one]
-  - name: Kristin M. Kleisner
-    institute: seven
-  - name: Scott I. Large
-    institute: one
+  - Sean B. Hardison:
+      institute: [two, one]
+  - Sean M. Lucey:
+      institute: one
+  - Geret S. DePiper:
+      institute: one
+  - Patricia M. Clay:
+      institute: three
+  - Lisa L. Colburn:
+      institute: four
+  - Debra Duarte:
+      institute: one
+  - Michael J. Fogarty:
+      institute: one
+  - Kevin D. Friedland:
+      institute: four
+  - Robert J. Gamble:
+      institute: one
+  - Kimberly J. W. Hyde:
+     institute: four
+  - D. Christopher Melrose:
+      institute: four
+  - Ryan E. Morse:
+      institute: [two, four]
+  - Chris D. Orphanides:
+      institute: four
+  - Charles T. Perretti:
+      institute: [two, one]
+  - Vincent S. Saba:
+      institute: five
+  - Laurel A. Smith:
+      institute: one
+  - John B. Walden:
+      institute: one
+  - Harvey J. Walsh:
+      institute: four
+  - Mark J. Wuenschel:
+      institute: one
+  - Donald M. Anderson:
+      institute: six
+  - Loren L. Kellogg:
+      institute: [two, one]
+  - Kristin M. Kleisner:
+      institute: seven
+  - Scott I. Large:
+      institute: one
 institute:
   - one: Woods Hole Laboratory, NOAA NMFS Northeast Fisheries Science Center, Woods Hole, MA, USA
   - two: Integrated Statistics, Woods Hole, MA, USA
@@ -61,6 +61,8 @@ institute:
   - five: Geophysical Fluid Dynamics Laboratory, Princeton University, NOAA NMFS Northeast Fisheries Science Center, Princeton, NJ, USA
   - six: Biology Department, Woods Hole Oceanographic Institution, Woods Hole, MA, USA
   - seven: Environmental Defense Fund, Boston, MA, USA
+csl: ices-journal-of-marine-science.csl  
+bibliography: ["SOE.bib", "packages.bib"]
 output:
   rmarkdown::pdf_document:
     includes:
@@ -68,8 +70,6 @@ output:
     pandoc_args:
       - '--lua-filter=scholarly-metadata.lua'
       - '--lua-filter=author-info-blocks.lua'
-csl: ices-journal-of-marine-science.csl  
-bibliography: ["SOE.bib", "packages.bib"]
 ---
 
 \begin{abstract}
