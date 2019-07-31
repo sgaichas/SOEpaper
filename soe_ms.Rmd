@@ -741,7 +741,7 @@ We gratefully acknowledge Dr. John Boreman, chair of the MAFMC Scientific and St
 
 # Supplemental Data 
 
-**S1** [**State of the Ecosystem Technical Documentation.**](https://noaa-edab.github.io/tech-dat/) Detailed methods and references for each indicator and analysis in the State of the Ecosystem reports, with links to indicator data. 
+**S1** [**State of the Ecosystem Technical Documentation.**](https://noaa-edab.github.io/tech-doc/) Detailed methods and references for each indicator and analysis in the State of the Ecosystem reports, with links to indicator data. 
 
 **S2** [**Mid-Atlantic State of the Ecosystem 2018.**](http://www.mafmc.org/s/Tab04_State-of-the-Ecosystem-Apr2018.pdf) Report presented to the Mid-Atlantic Fishery Management Council on 11 April 2018.
 
